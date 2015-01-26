@@ -196,7 +196,7 @@ public String symName(int n) {
 private TokenGrammar actionObject;
 public int[][] getParseTable() { return parseTable; }
 public int numSymbols() { return 172;}
-private static final int MIN_REDUCTION = 1201;
+private static final int MIN_REDUCTION = 1212;
 public int minReduction() { return MIN_REDUCTION;}
 private static final int MAX_ACCEPT_REDUCTION = MIN_REDUCTION+1;
 public int maxAcceptReduction() { return MAX_ACCEPT_REDUCTION; }
@@ -228,224 +228,49 @@ public int doInit(int startIdx) {
 }
 private final int[][] myParseTable = {
 { // state 0
-0x80000000|812, // match move
-0x80000000|103, // no-match move
+0x80000000|793, // match move
+0x80000000|239, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 1
-2,251, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+278, // (default reduction)
   }
 ,
 { // state 2
+0x80000000|1, // match move
+0x80000000|1151, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 { // state 3
--1, // $$start
--1, // start
-202, // ws*
--1, // $$0
-MIN_REDUCTION+270, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+270, // $
--1, // $NT
-  }
-,
-{ // state 4
-101,502, // "l"
-  }
-,
-{ // state 5
-0x80000000|2, // match move
-0x80000000|862, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 6
-0x80000000|475, // match move
-0x80000000|474, // no-match move
+0x80000000|460, // match move
+0x80000000|459, // no-match move
 // T-test match for "0":
 143,
   }
 ,
+{ // state 4
+MIN_REDUCTION+308, // (default reduction)
+  }
+,
+{ // state 5
+99,235, // "e"
+  }
+,
+{ // state 6
+2,63, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+302, // (default reduction)
+  }
+,
 { // state 7
-102,651, // "n"
+108,747, // "d"
   }
 ,
 { // state 8
-MIN_REDUCTION+56, // (default reduction)
-  }
-,
-{ // state 9
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -504,364 +329,730 @@ MIN_REDUCTION+283, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+283, // $
 -1, // $NT
   }
 ,
+{ // state 9
+0x80000000|822, // match move
+0x80000000|1131, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
 { // state 10
-0x80000000|315, // match move
-0x80000000|614, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
+-1, // $$start
+-1, // start
+330, // ws*
+-1, // $$0
+MIN_REDUCTION+268, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+-1, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+-1, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+MIN_REDUCTION+268, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+268, // $
+-1, // $NT
   }
 ,
 { // state 11
-0x80000000|1090, // match move
-0x80000000|320, // no-match move
-// T-test match for "0":
-143,
+96,941, // "t"
   }
 ,
 { // state 12
-105,88, // "h"
+-1, // $$start
+-1, // start
+63, // ws*
+-1, // $$0
+MIN_REDUCTION+302, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+302, // $
+-1, // $NT
   }
 ,
 { // state 13
-MIN_REDUCTION+73, // (default reduction)
+105,684, // "h"
   }
 ,
 { // state 14
-99,388, // "e"
+0x80000000|1084, // match move
+0x80000000|315, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 15
-97,739, // "r"
-  }
-,
-{ // state 16
-MIN_REDUCTION+85, // (default reduction)
-  }
-,
-{ // state 17
-171,MIN_REDUCTION+110, // $NT
-MIN_REDUCTION+110, // (default reduction)
-  }
-,
-{ // state 18
-0x80000000|83, // match move
-0x80000000|1058, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 19
-0x80000000|271, // match move
-0x80000000|485, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 20
-171,MIN_REDUCTION+312, // $NT
-  }
-,
-{ // state 21
 -1, // $$start
 -1, // start
-938, // ws*
+1202, // ws*
 -1, // $$0
-MIN_REDUCTION+147, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+225, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+147, // "o"
-1008, // "l"
-437, // "n"
-MIN_REDUCTION+147, // "k"
-MIN_REDUCTION+147, // "y"
-MIN_REDUCTION+147, // "h"
-1006, // "i"
-MIN_REDUCTION+147, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+147, // "m"
-MIN_REDUCTION+147, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+147, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+225, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+225, // "k"
+MIN_REDUCTION+225, // "y"
+MIN_REDUCTION+225, // "h"
+501, // "i"
+MIN_REDUCTION+225, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+225, // "m"
+MIN_REDUCTION+225, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+225, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+147, // {"1".."9"}
+MIN_REDUCTION+225, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+147, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+225, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+147, // $
-MIN_REDUCTION+147, // $NT
+MIN_REDUCTION+225, // $
+MIN_REDUCTION+225, // $NT
+  }
+,
+{ // state 16
+106,329, // "i"
+  }
+,
+{ // state 17
+0x80000000|240, // match move
+0x80000000|104, // no-match move
+// T-test match for "*":
+126,
+  }
+,
+{ // state 18
+99,854, // "e"
+100,35, // "o"
+  }
+,
+{ // state 19
+171,MIN_REDUCTION+110, // $NT
+MIN_REDUCTION+110, // (default reduction)
+  }
+,
+{ // state 20
+100,236, // "o"
+  }
+,
+{ // state 21
+0x80000000|89, // match move
+0x80000000|1044, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 22
-0x80000000|65, // match move
-0x80000000|1070, // no-match move
-0x80000000|566, // NT-test-match state for digit
+0x80000000|274, // match move
+0x80000000|473, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 23
-171,MIN_REDUCTION+97, // $NT
+96,478, // "t"
   }
 ,
 { // state 24
+MIN_REDUCTION+6, // (default reduction)
+  }
+,
+{ // state 25
+171,MIN_REDUCTION+312, // $NT
+  }
+,
+{ // state 26
+171,MIN_REDUCTION+97, // $NT
+  }
+,
+{ // state 27
+0x80000000|67, // match move
+0x80000000|1058, // no-match move
+0x80000000|545, // NT-test-match state for digit
+  }
+,
+{ // state 28
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -920,369 +1111,361 @@ MIN_REDUCTION+305, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+305, // $
 -1, // $NT
   }
 ,
-{ // state 25
-108,472, // "d"
-  }
-,
-{ // state 26
-MIN_REDUCTION+349, // (default reduction)
-  }
-,
-{ // state 27
-0x80000000|753, // match move
-0x80000000|179, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 28
-0x80000000|1071, // match move
-0x80000000|552, // no-match move
-// T-test match for "0":
-143,
-  }
-,
 { // state 29
+MIN_REDUCTION+29, // (default reduction)
+  }
+,
+{ // state 30
+MIN_REDUCTION+351, // (default reduction)
+  }
+,
+{ // state 31
+0x80000000|1060, // match move
+0x80000000|536, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 32
+93,575, // "a"
+100,275, // "o"
+101,1132, // "l"
+106,628, // "i"
+  }
+,
+{ // state 33
 171,MIN_REDUCTION+221, // $NT
 MIN_REDUCTION+221, // (default reduction)
   }
 ,
-{ // state 30
-2,446, // ws*
-MIN_REDUCTION+284, // (default reduction)
+{ // state 34
+0x80000000|395, // match move
+0x80000000|855, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 31
--1, // $$start
--1, // start
-601, // ws*
--1, // $$0
-MIN_REDUCTION+254, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+254, // $
--1, // $NT
+{ // state 35
+0x80000000|185, // match move
+0x80000000|956, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 32
+{ // state 36
 171,MIN_REDUCTION+230, // $NT
 MIN_REDUCTION+230, // (default reduction)
   }
 ,
-{ // state 33
-MIN_REDUCTION+329, // (default reduction)
-  }
-,
-{ // state 34
-2,60, // ws*
-MIN_REDUCTION+302, // (default reduction)
-  }
-,
-{ // state 35
-0x80000000|523, // match move
-0x80000000|195, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 36
-0x80000000|2, // match move
-0x80000000|730, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
 { // state 37
-0x80000000|331, // match move
-0x80000000|343, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|388, // match move
+0x80000000|876, // no-match move
+// T-test match for "*":
+126,
   }
 ,
 { // state 38
-0x80000000|1060, // match move
-0x80000000|279, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|321, // match move
+0x80000000|332, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 39
+-1, // $$start
+-1, // start
+644, // ws*
+-1, // $$0
+MIN_REDUCTION+231, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+587, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+231, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+231, // "k"
+171, // "y"
+20, // "h"
+501, // "i"
+989, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+231, // "m"
+MIN_REDUCTION+231, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+355, // "w"
+MIN_REDUCTION+231, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+231, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+231, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+231, // $
+MIN_REDUCTION+231, // $NT
+  }
+,
+{ // state 40
+0x80000000|1045, // match move
+0x80000000|277, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 41
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -1341,157 +1524,326 @@ MIN_REDUCTION+281, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+281, // $
 -1, // $NT
   }
 ,
-{ // state 40
-0x80000000|592, // match move
-0x80000000|1037, // no-match move
+{ // state 42
+0x80000000|570, // match move
+0x80000000|1025, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 41
-MIN_REDUCTION+10, // (default reduction)
-  }
-,
-{ // state 42
-171,MIN_REDUCTION+321, // $NT
-  }
-,
 { // state 43
-93,7, // "a"
-104,775, // "y"
-106,76, // "i"
-107,908, // "u"
+MIN_REDUCTION+57, // (default reduction)
   }
 ,
 { // state 44
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+303, // (default reduction)
+-1, // $$start
+-1, // start
+668, // ws*
+-1, // $$0
+MIN_REDUCTION+89, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+352, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+89, // $
+-1, // $NT
   }
 ,
 { // state 45
+171,MIN_REDUCTION+321, // $NT
+  }
+,
+{ // state 46
 171,MIN_REDUCTION+101, // $NT
 MIN_REDUCTION+101, // (default reduction)
   }
 ,
-{ // state 46
+{ // state 47
+2,580, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+254, // (default reduction)
+  }
+,
+{ // state 48
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -1550,554 +1902,436 @@ MIN_REDUCTION+182, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+182, // $
 MIN_REDUCTION+182, // $NT
   }
 ,
-{ // state 47
+{ // state 49
+0x80000000|36, // match move
+0x80000000|254, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 50
 -1, // $$start
 -1, // start
-1188, // ws*
+3, // ws*
 -1, // $$0
-MIN_REDUCTION+201, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+MIN_REDUCTION+256, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
--1, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+201, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+201, // "k"
-MIN_REDUCTION+201, // "y"
-MIN_REDUCTION+201, // "h"
-1006, // "i"
-MIN_REDUCTION+201, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+201, // "m"
-MIN_REDUCTION+201, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+201, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+201, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+201, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
--1, // digit+
-MIN_REDUCTION+201, // $
-MIN_REDUCTION+201, // $NT
-  }
-,
-{ // state 48
-110,5, // "m"
-  }
-,
-{ // state 49
-0x80000000|32, // match move
-0x80000000|253, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 50
-101,503, // "l"
+206, // digit+
+MIN_REDUCTION+256, // $
+-1, // $NT
   }
 ,
 { // state 51
-0x80000000|611, // match move
-0x80000000|116, // no-match move
-0x80000000|1136, // NT-test-match state for printable
-  }
-,
-{ // state 52
-0x80000000|488, // match move
-0x80000000|632, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 53
-157,550, // eol
-158,387, // ws
-160,654, // comment
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+107, // (default reduction)
   }
 ,
+{ // state 52
+2,289, // ws*
+MIN_REDUCTION+280, // (default reduction)
+  }
+,
+{ // state 53
+96,1103, // "t"
+  }
+,
 { // state 54
-0x80000000|426, // match move
-0x80000000|484, // no-match move
+0x80000000|623, // match move
+0x80000000|1133, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 55
-0x80000000|644, // match move
-0x80000000|1127, // no-match move
-// T-test match for "0":
-143,
+113,1195, // "p"
   }
 ,
 { // state 56
-0x80000000|1190, // match move
-0x80000000|1053, // no-match move
-// T-test match for "0":
-143,
+93,650, // "a"
+94,650, // "b"
+95,650, // "s"
+96,650, // "t"
+97,650, // "r"
+98,650, // "c"
+99,650, // "e"
+100,650, // "o"
+101,650, // "l"
+102,650, // "n"
+103,650, // "k"
+104,650, // "y"
+105,650, // "h"
+106,650, // "i"
+107,650, // "u"
+108,650, // "d"
+109,650, // "f"
+110,650, // "m"
+111,650, // "x"
+112,650, // "g"
+113,650, // "p"
+114,650, // "v"
+115,650, // "w"
+116,650, // "z"
+117,650, // "!"
+118,650, // "="
+119,650, // "%"
+120,650, // "&"
+121,650, // "|"
+122,650, // "+"
+123,650, // ","
+124,650, // "-"
+125,650, // "."
+126,650, // "*"
+127,650, // "/"
+128,650, // ";"
+129,650, // "<"
+130,650, // ">"
+131,650, // "("
+132,650, // ")"
+133,650, // "["
+134,650, // "]"
+135,650, // "{"
+136,650, // "}"
+138,650, // "'"
+140,650, // '"'
+143,650, // "0"
+146,650, // "_"
+148,650, // "\"
+149,408, // printable
+150,650, // {"1".."9"}
+151,650, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,650, // {"A".."Z" "j" "q"}
+153,650, // " "
+154,650, // {9}
+161,653, // printable**
+167,178, // printable*
   }
 ,
 { // state 57
-0x80000000|252, // match move
-0x80000000|964, // no-match move
-// T-test match for "0":
-143,
+0x80000000|1122, // match move
+0x80000000|1173, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 58
--1, // $$start
--1, // start
-610, // ws*
--1, // $$0
-MIN_REDUCTION+237, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+237, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+237, // "k"
-MIN_REDUCTION+237, // "y"
-MIN_REDUCTION+237, // "h"
-1006, // "i"
-MIN_REDUCTION+237, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+237, // "m"
-MIN_REDUCTION+237, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+237, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+237, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+237, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+237, // $
-MIN_REDUCTION+237, // $NT
+0x80000000|1, // match move
+0x80000000|1176, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 { // state 59
-0x80000000|932, // match move
-0x80000000|811, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+MIN_REDUCTION+17, // (default reduction)
   }
 ,
 { // state 60
-0x80000000|876, // match move
-0x80000000|1163, // no-match move
-// T-test match for "0":
-143,
+0x80000000|922, // match move
+0x80000000|791, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 61
-0x80000000|1019, // match move
-0x80000000|1048, // no-match move
+MIN_REDUCTION+8, // (default reduction)
+  }
+,
+{ // state 62
+2,3, // ws*
+MIN_REDUCTION+256, // (default reduction)
+  }
+,
+{ // state 63
+0x80000000|853, // match move
+0x80000000|1172, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 62
+{ // state 64
+0x80000000|1011, // match move
+0x80000000|1037, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 65
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -2156,398 +2390,638 @@ MIN_REDUCTION+146, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+146, // $
 MIN_REDUCTION+146, // $NT
   }
 ,
-{ // state 63
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 66
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+305, // (default reduction)
   }
 ,
-{ // state 64
-0x80000000|2, // match move
-0x80000000|823, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 65
+{ // state 67
 MIN_REDUCTION+332, // (default reduction)
   }
 ,
-{ // state 66
+{ // state 68
 171,MIN_REDUCTION+215, // $NT
 MIN_REDUCTION+215, // (default reduction)
   }
 ,
-{ // state 67
-0x80000000|2, // match move
-0x80000000|384, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 68
-0x80000000|780, // match move
-0x80000000|412, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
 { // state 69
-171,MIN_REDUCTION+157, // $NT
+0x80000000|754, // match move
+0x80000000|398, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 { // state 70
+2,253, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+278, // (default reduction)
+  }
+,
+{ // state 71
+171,MIN_REDUCTION+157, // $NT
+  }
+,
+{ // state 72
+2,330, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+268, // (default reduction)
+  }
+,
+{ // state 73
+0x80000000|1, // match move
+0x80000000|672, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 74
 -1, // $$start
 -1, // start
-1034, // ws*
+1083, // ws*
 -1, // $$0
-MIN_REDUCTION+282, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+MIN_REDUCTION+126, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+-1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+126, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+126, // "k"
+MIN_REDUCTION+126, // "y"
+MIN_REDUCTION+126, // "h"
+501, // "i"
+MIN_REDUCTION+126, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+126, // "m"
+MIN_REDUCTION+126, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+126, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+708, // "0"
+-1, // digit++
+-1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+MIN_REDUCTION+126, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+126, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+282, // $
--1, // $NT
-  }
-,
-{ // state 71
-171,MIN_REDUCTION+106, // $NT
-  }
-,
-{ // state 72
-0x80000000|870, // match move
-0x80000000|396, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 73
-93,977, // "a"
-  }
-,
-{ // state 74
-0x80000000|1086, // match move
-0x80000000|685, // no-match move
-// T-test match for "0":
-143,
+-1, // digit+
+MIN_REDUCTION+126, // $
+MIN_REDUCTION+126, // $NT
   }
 ,
 { // state 75
-0x80000000|881, // match move
-0x80000000|748, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+171,MIN_REDUCTION+106, // $NT
   }
 ,
 { // state 76
-98,421, // "c"
+93,271, // "a"
+94,271, // "b"
+95,271, // "s"
+96,271, // "t"
+97,271, // "r"
+98,271, // "c"
+99,271, // "e"
+100,271, // "o"
+101,271, // "l"
+102,271, // "n"
+103,271, // "k"
+104,271, // "y"
+105,271, // "h"
+106,271, // "i"
+107,271, // "u"
+108,271, // "d"
+109,271, // "f"
+110,271, // "m"
+111,271, // "x"
+112,271, // "g"
+113,271, // "p"
+114,271, // "v"
+115,271, // "w"
+116,271, // "z"
+117,271, // "!"
+118,271, // "="
+119,271, // "%"
+120,271, // "&"
+121,271, // "|"
+122,271, // "+"
+123,271, // ","
+124,271, // "-"
+125,271, // "."
+126,678, // "*"
+127,37, // "/"
+128,271, // ";"
+129,271, // "<"
+130,271, // ">"
+131,271, // "("
+132,271, // ")"
+133,271, // "["
+134,271, // "]"
+135,271, // "{"
+136,271, // "}"
+138,271, // "'"
+140,271, // '"'
+143,271, // "0"
+146,271, // "_"
+148,271, // "\"
+150,271, // {"1".."9"}
+151,271, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,271, // {"A".."Z" "j" "q"}
+153,271, // " "
+154,271, // {9}
+156,457, // multilineCommentPrintable
+157,750, // eol
+162,308, // multilineCommentPrintable**
+163,1116, // {10}
+164,140, // {13}
+166,615, // multilineCommentPrintable*
   }
 ,
 { // state 77
-113,64, // "p"
+-1, // $$start
+-1, // start
+646, // ws*
+-1, // $$0
+MIN_REDUCTION+117, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+117, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+117, // "k"
+MIN_REDUCTION+117, // "y"
+MIN_REDUCTION+117, // "h"
+501, // "i"
+MIN_REDUCTION+117, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+117, // "m"
+MIN_REDUCTION+117, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+117, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+117, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+117, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+117, // $
+MIN_REDUCTION+117, // $NT
   }
 ,
 { // state 78
-0x80000000|645, // match move
-0x80000000|613, // no-match move
+0x80000000|847, // match move
+0x80000000|378, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 79
+0x80000000|1080, // match move
+0x80000000|660, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 79
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+224, // (default reduction)
-  }
-,
 { // state 80
-0x80000000|283, // match move
-0x80000000|268, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|626, // match move
+0x80000000|597, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 81
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+152, // (default reduction)
+0x80000000|1, // match move
+0x80000000|581, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 { // state 82
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+224, // (default reduction)
+  }
+,
+{ // state 83
+0x80000000|281, // match move
+0x80000000|270, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 84
+MIN_REDUCTION+27, // (default reduction)
+  }
+,
+{ // state 85
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+152, // (default reduction)
+  }
+,
+{ // state 86
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -2606,130 +3080,150 @@ MIN_REDUCTION+248, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+248, // $
 MIN_REDUCTION+248, // $NT
   }
 ,
-{ // state 83
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 87
+96,550, // "t"
+  }
+,
+{ // state 88
+MIN_REDUCTION+68, // (default reduction)
+  }
+,
+{ // state 89
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+188, // (default reduction)
   }
 ,
-{ // state 84
+{ // state 90
+2,249, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+272, // (default reduction)
+  }
+,
+{ // state 91
+102,814, // "n"
+  }
+,
+{ // state 92
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -2788,358 +3282,214 @@ MIN_REDUCTION+131, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+131, // $
 MIN_REDUCTION+131, // $NT
   }
 ,
-{ // state 85
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 93
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+279, // (default reduction)
   }
 ,
-{ // state 86
-171,MIN_REDUCTION+238, // $NT
-  }
-,
-{ // state 87
-0x80000000|184, // match move
-0x80000000|1032, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 88
-106,1144, // "i"
-  }
-,
-{ // state 89
-MIN_REDUCTION+5, // (default reduction)
-  }
-,
-{ // state 90
-0x80000000|846, // match move
-0x80000000|958, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 91
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+191, // (default reduction)
-  }
-,
-{ // state 92
-97,1029, // "r"
-  }
-,
-{ // state 93
-2,247, // ws*
-MIN_REDUCTION+272, // (default reduction)
-  }
-,
 { // state 94
-100,925, // "o"
+95,147, // "s"
   }
 ,
 { // state 95
--1, // $$start
--1, // start
-338, // ws*
--1, // $$0
-MIN_REDUCTION+96, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+96, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+96, // "k"
-MIN_REDUCTION+96, // "y"
-MIN_REDUCTION+96, // "h"
-1006, // "i"
-MIN_REDUCTION+96, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+96, // "m"
-MIN_REDUCTION+96, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+96, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+96, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+96, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+96, // $
-MIN_REDUCTION+96, // $NT
+171,MIN_REDUCTION+238, // $NT
   }
 ,
 { // state 96
-107,1077, // "u"
+102,723, // "n"
   }
 ,
 { // state 97
+96,616, // "t"
+  }
+,
+{ // state 98
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+191, // (default reduction)
+  }
+,
+{ // state 99
+113,1007, // "p"
+  }
+,
+{ // state 100
+100,381, // "o"
+  }
+,
+{ // state 101
+118,212, // "="
+  }
+,
+{ // state 102
+0x80000000|394, // match move
+0x80000000|9, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 103
+2,890, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+300, // (default reduction)
+  }
+,
+{ // state 104
+171,MIN_REDUCTION+328, // $NT
+  }
+,
+{ // state 105
+126,466, // "*"
+127,280, // "/"
+162,308, // multilineCommentPrintable**
+166,615, // multilineCommentPrintable*
+  }
+,
+{ // state 106
+MIN_REDUCTION+251, // (default reduction)
+  }
+,
+{ // state 107
+97,407, // "r"
+101,942, // "l"
+102,1093, // "n"
+111,53, // "x"
+  }
+,
+{ // state 108
+0x80000000|177, // match move
+0x80000000|183, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 109
 -1, // $$start
 -1, // start
-60, // ws*
+1096, // ws*
 -1, // $$0
-MIN_REDUCTION+302, // token
+MIN_REDUCTION+260, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -3193,222 +3543,889 @@ MIN_REDUCTION+302, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+302, // $
+206, // digit+
+MIN_REDUCTION+260, // $
 -1, // $NT
   }
 ,
-{ // state 98
-102,313, // "n"
-  }
-,
-{ // state 99
-MIN_REDUCTION+27, // (default reduction)
-  }
-,
-{ // state 100
-99,1114, // "e"
-  }
-,
-{ // state 101
-MIN_REDUCTION+251, // (default reduction)
-  }
-,
-{ // state 102
-99,1108, // "e"
-  }
-,
-{ // state 103
-0x80000000|322, // match move
-0x80000000|424, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 104
-2,691, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+288, // (default reduction)
-  }
-,
-{ // state 105
-93,1135, // "a"
-  }
-,
-{ // state 106
-0x80000000|850, // match move
-0x80000000|129, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 107
-MIN_REDUCTION+321, // (default reduction)
-  }
-,
-{ // state 108
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+362, // (default reduction)
-  }
-,
-{ // state 109
-0x80000000|538, // match move
-0x80000000|555, // no-match move
-// T-test match for "0":
-143,
-  }
-,
 { // state 110
-0x80000000|443, // match move
-0x80000000|370, // no-match move
-// T-test match for "0":
-143,
+0x80000000|357, // match move
+0x80000000|114, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 111
+-1, // $$start
+-1, // start
+696, // ws*
+-1, // $$0
+MIN_REDUCTION+123, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+123, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+123, // "k"
+MIN_REDUCTION+123, // "y"
+MIN_REDUCTION+123, // "h"
+501, // "i"
+MIN_REDUCTION+123, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+123, // "m"
+MIN_REDUCTION+123, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+123, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+123, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+123, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+123, // $
+MIN_REDUCTION+123, // $NT
+  }
+,
+{ // state 112
+MIN_REDUCTION+344, // (default reduction)
+  }
+,
+{ // state 113
+0x80000000|830, // match move
+0x80000000|136, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 114
+-1, // $$start
+-1, // start
+461, // ws*
+-1, // $$0
+MIN_REDUCTION+258, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+258, // $
+-1, // $NT
+  }
+,
+{ // state 115
+MIN_REDUCTION+321, // (default reduction)
+  }
+,
+{ // state 116
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+364, // (default reduction)
+  }
+,
+{ // state 117
+0x80000000|423, // match move
+0x80000000|354, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 118
+99,1036, // "e"
+  }
+,
+{ // state 119
+0x80000000|638, // match move
+0x80000000|611, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 120
 171,MIN_REDUCTION+233, // $NT
 MIN_REDUCTION+233, // (default reduction)
   }
 ,
-{ // state 112
-MIN_REDUCTION+358, // (default reduction)
+{ // state 121
+-1, // $$start
+-1, // start
+1024, // ws*
+-1, // $$0
+MIN_REDUCTION+282, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+282, // $
+-1, // $NT
   }
 ,
-{ // state 113
-0x80000000|66, // match move
-0x80000000|326, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 122
+-1, // $$start
+-1, // start
+748, // ws*
+-1, // $$0
+MIN_REDUCTION+174, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+107, // "e"
+MIN_REDUCTION+174, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+174, // "k"
+MIN_REDUCTION+174, // "y"
+MIN_REDUCTION+174, // "h"
+501, // "i"
+MIN_REDUCTION+174, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+174, // "m"
+MIN_REDUCTION+174, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+174, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+174, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+174, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+174, // $
+MIN_REDUCTION+174, // $NT
   }
 ,
-{ // state 114
+{ // state 123
+0x80000000|68, // match move
+0x80000000|317, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 124
 MIN_REDUCTION+322, // (default reduction)
   }
 ,
-{ // state 115
-0x80000000|942, // match move
-0x80000000|288, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 125
+0x80000000|930, // match move
+0x80000000|284, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 116
-MIN_REDUCTION+356, // (default reduction)
-  }
-,
-{ // state 117
+{ // state 126
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -3467,165 +4484,175 @@ MIN_REDUCTION+267, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+267, // $
 -1, // $NT
   }
 ,
-{ // state 118
-3,643, // $$0
-4,796, // token
-58,984, // `!
-59,1186, // `!=
-60,801, // `%
-61,772, // `&&
-62,535, // `*
-63,605, // `(
-64,316, // `)
-65,547, // `{
-66,232, // `}
-67,835, // `-
-68,440, // `+
-69,219, // `=
-70,660, // `==
-71,435, // `[
-72,781, // `]
-73,13, // `||
-74,254, // `<
-75,558, // `<=
-76,420, // `,
-77,1013, // `>
-78,537, // `>=
-79,459, // `.
-80,1056, // `;
-81,789, // `++
-82,147, // `--
-83,710, // `/
-84,803, // ID
-85,16, // INTLIT
-86,286, // STRINGLIT
-87,765, // CHARLIT
-89,75, // letter
-137,795, // intLit2
-143,736, // "0"
-157,550, // eol
-158,387, // ws
-160,654, // comment
-168,1152, // token*
+{ // state 127
+99,605, // "e"
   }
 ,
-{ // state 119
+{ // state 128
+0x80000000|1, // match move
+0x80000000|77, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 129
+3,622, // $$0
+4,694, // token
+58,432, // `!
+59,309, // `!=
+60,1115, // `%
+61,565, // `&&
+62,786, // `*
+63,450, // `(
+64,760, // `)
+65,396, // `{
+66,1013, // `}
+67,155, // `-
+68,88, // `+
+69,379, // `=
+70,849, // `==
+71,1001, // `[
+72,438, // `]
+73,515, // `||
+74,997, // `<
+75,931, // `<=
+76,579, // `,
+77,933, // `>
+78,446, // `>=
+79,1010, // `.
+80,1076, // `;
+81,510, // `++
+82,552, // `--
+83,258, // `/
+84,213, // ID
+85,625, // INTLIT
+86,658, // STRINGLIT
+87,1067, // CHARLIT
+89,307, // letter
+137,503, // intLit2
+143,708, // "0"
+157,534, // eol
+158,367, // ws
+160,634, // comment
+168,1159, // token*
+  }
+,
+{ // state 130
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -3684,352 +4711,354 @@ MIN_REDUCTION+233, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+233, // $
 MIN_REDUCTION+233, // $NT
   }
 ,
-{ // state 120
-112,1119, // "g"
-  }
-,
-{ // state 121
-MIN_REDUCTION+33, // (default reduction)
-  }
-,
-{ // state 122
+{ // state 131
 171,MIN_REDUCTION+148, // $NT
   }
 ,
-{ // state 123
+{ // state 132
 171,MIN_REDUCTION+107, // $NT
 MIN_REDUCTION+107, // (default reduction)
   }
 ,
-{ // state 124
-0x80000000|861, // match move
-0x80000000|746, // no-match move
-// T-test match for {"*" "/"}:
-126,
-127,
+{ // state 133
+101,823, // "l"
   }
 ,
-{ // state 125
-93,249, // "a"
-97,43, // "r"
-105,638, // "h"
+{ // state 134
+2,429, // ws*
+MIN_REDUCTION+284, // (default reduction)
   }
 ,
-{ // state 126
-93,1085, // "a"
+{ // state 135
+95,925, // "s"
   }
 ,
-{ // state 127
+{ // state 136
+0x80000000|19, // match move
+0x80000000|1111, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 137
 -1, // $$start
 -1, // start
-843, // ws*
+491, // ws*
 -1, // $$0
-MIN_REDUCTION+192, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+MIN_REDUCTION+292, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
--1, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+192, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+192, // "k"
-MIN_REDUCTION+192, // "y"
-MIN_REDUCTION+192, // "h"
-1006, // "i"
-MIN_REDUCTION+192, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+192, // "m"
-MIN_REDUCTION+192, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+192, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+192, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+192, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
--1, // digit+
-MIN_REDUCTION+192, // $
-MIN_REDUCTION+192, // $NT
+206, // digit+
+MIN_REDUCTION+292, // $
+-1, // $NT
   }
 ,
-{ // state 128
-171,MIN_REDUCTION+337, // $NT
-MIN_REDUCTION+337, // (default reduction)
+{ // state 138
+171,MIN_REDUCTION+338, // $NT
+MIN_REDUCTION+338, // (default reduction)
   }
 ,
-{ // state 129
-0x80000000|17, // match move
-0x80000000|1110, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 139
+93,97, // "a"
   }
 ,
-{ // state 130
-MIN_REDUCTION+29, // (default reduction)
+{ // state 140
+0x80000000|749, // match move
+0x80000000|1123, // no-match move
+// T-test match for 10:
+163,
   }
 ,
-{ // state 131
-MIN_REDUCTION+354, // (default reduction)
+{ // state 141
+2,866, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+252, // (default reduction)
   }
 ,
-{ // state 132
+{ // state 142
+MIN_REDUCTION+356, // (default reduction)
+  }
+,
+{ // state 143
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -4088,327 +5117,152 @@ MIN_REDUCTION+301, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+301, // $
 -1, // $NT
   }
 ,
-{ // state 133
-MIN_REDUCTION+24, // (default reduction)
+{ // state 144
+93,91, // "a"
   }
 ,
-{ // state 134
-97,521, // "r"
+{ // state 145
+MIN_REDUCTION+44, // (default reduction)
   }
 ,
-{ // state 135
-2,907, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+300, // (default reduction)
+{ // state 146
+0x80000000|1, // match move
+0x80000000|304, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 136
+{ // state 147
+99,777, // "e"
+  }
+,
+{ // state 148
+93,535, // "a"
+104,592, // "y"
+106,563, // "i"
+107,118, // "u"
+  }
+,
+{ // state 149
 171,MIN_REDUCTION+196, // $NT
   }
 ,
-{ // state 137
-2,580, // ws*
-MIN_REDUCTION+266, // (default reduction)
-  }
-,
-{ // state 138
--1, // $$start
--1, // start
-667, // ws*
--1, // $$0
-MIN_REDUCTION+117, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+117, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+117, // "k"
-MIN_REDUCTION+117, // "y"
-MIN_REDUCTION+117, // "h"
-1006, // "i"
-MIN_REDUCTION+117, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+117, // "m"
-MIN_REDUCTION+117, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+117, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+117, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+117, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+117, // $
-MIN_REDUCTION+117, // $NT
-  }
-,
-{ // state 139
-MIN_REDUCTION+344, // (default reduction)
-  }
-,
-{ // state 140
+{ // state 150
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -4467,366 +5321,264 @@ MIN_REDUCTION+255, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+255, // $
 -1, // $NT
   }
-,
-{ // state 141
--1, // $$start
--1, // start
-532, // ws*
--1, // $$0
-MIN_REDUCTION+159, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+159, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+159, // "k"
-MIN_REDUCTION+159, // "y"
-MIN_REDUCTION+159, // "h"
-1006, // "i"
-MIN_REDUCTION+159, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+159, // "m"
-MIN_REDUCTION+159, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+159, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+159, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+159, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+159, // $
-MIN_REDUCTION+159, // $NT
+};
+}
+private class Initter2{
+public int doInit(int startIdx) {
+  for (int i = 0; i < myParseTable.length; i++) {
+    parseTable[i+startIdx] = myParseTable[i];
   }
-,
-{ // state 142
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+261, // (default reduction)
-  }
-,
-{ // state 143
-171,MIN_REDUCTION+226, // $NT
-  }
-,
-{ // state 144
-99,391, // "e"
-  }
-,
-{ // state 145
-101,483, // "l"
-  }
-,
-{ // state 146
-171,MIN_REDUCTION+181, // $NT
-  }
-,
-{ // state 147
-MIN_REDUCTION+82, // (default reduction)
-  }
-,
-{ // state 148
-171,MIN_REDUCTION+326, // $NT
-  }
-,
-{ // state 149
-0x80000000|880, // match move
-0x80000000|919, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 150
-102,120, // "n"
-  }
-,
+  return myParseTable.length;
+}
+private final int[][] myParseTable = {
 { // state 151
-0x80000000|886, // match move
-0x80000000|993, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|662, // match move
+0x80000000|619, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 152
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+197, // (default reduction)
+0x80000000|738, // match move
+0x80000000|863, // no-match move
+// T-test match for "+":
+122,
   }
 ,
 { // state 153
-100,519, // "o"
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+261, // (default reduction)
   }
 ,
 { // state 154
-MIN_REDUCTION+265, // (default reduction)
+171,MIN_REDUCTION+226, // $NT
   }
 ,
 { // state 155
-0x80000000|2, // match move
-0x80000000|211, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+MIN_REDUCTION+67, // (default reduction)
   }
 ,
 { // state 156
+171,MIN_REDUCTION+181, // $NT
+  }
+,
+{ // state 157
+99,464, // "e"
+  }
+,
+{ // state 158
+171,MIN_REDUCTION+326, // $NT
+  }
+,
+{ // state 159
+0x80000000|857, // match move
+0x80000000|902, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 160
+109,99, // "f"
+  }
+,
+{ // state 161
+0x80000000|861, // match move
+0x80000000|987, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 162
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+197, // (default reduction)
+  }
+,
+{ // state 163
+99,918, // "e"
+  }
+,
+{ // state 164
+MIN_REDUCTION+265, // (default reduction)
+  }
+,
+{ // state 165
+93,158, // "a"
+94,158, // "b"
+95,158, // "s"
+96,158, // "t"
+97,158, // "r"
+98,158, // "c"
+99,158, // "e"
+100,158, // "o"
+101,158, // "l"
+102,158, // "n"
+103,158, // "k"
+104,158, // "y"
+105,158, // "h"
+106,158, // "i"
+107,158, // "u"
+108,158, // "d"
+109,158, // "f"
+110,158, // "m"
+111,158, // "x"
+112,158, // "g"
+113,158, // "p"
+114,158, // "v"
+115,158, // "w"
+116,158, // "z"
+117,158, // "!"
+118,158, // "="
+119,158, // "%"
+120,158, // "&"
+121,158, // "|"
+122,158, // "+"
+123,158, // ","
+124,158, // "-"
+125,158, // "."
+126,1026, // "*"
+127,17, // "/"
+128,158, // ";"
+129,158, // "<"
+130,158, // ">"
+131,158, // "("
+132,158, // ")"
+133,158, // "["
+134,158, // "]"
+135,158, // "{"
+136,158, // "}"
+138,158, // "'"
+140,158, // '"'
+143,158, // "0"
+146,158, // "_"
+148,158, // "\"
+150,158, // {"1".."9"}
+151,158, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,158, // {"A".."Z" "j" "q"}
+153,158, // " "
+154,158, // {9}
+157,196, // eol
+163,1062, // {10}
+164,1072, // {13}
+  }
+,
+{ // state 166
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -4885,324 +5637,746 @@ MIN_REDUCTION+149, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+149, // $
 MIN_REDUCTION+149, // $NT
   }
 ,
-{ // state 157
-102,719, // "n"
+{ // state 167
+MIN_REDUCTION+347, // (default reduction)
   }
 ,
-{ // state 158
-2,691, // ws*
-MIN_REDUCTION+288, // (default reduction)
-  }
-,
-{ // state 159
-MIN_REDUCTION+345, // (default reduction)
-  }
-,
-{ // state 160
-171,MIN_REDUCTION+167, // $NT
-MIN_REDUCTION+167, // (default reduction)
-  }
-,
-{ // state 161
+{ // state 168
 -1, // $$start
 -1, // start
-609, // ws*
+806, // ws*
 -1, // $$0
-MIN_REDUCTION+294, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+MIN_REDUCTION+228, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+-1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+798, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+228, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+228, // "k"
+MIN_REDUCTION+228, // "y"
+MIN_REDUCTION+228, // "h"
+501, // "i"
+MIN_REDUCTION+228, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+228, // "m"
+MIN_REDUCTION+228, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+228, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+708, // "0"
+-1, // digit++
+-1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+MIN_REDUCTION+228, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+228, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+294, // $
--1, // $NT
+-1, // digit+
+MIN_REDUCTION+228, // $
+MIN_REDUCTION+228, // $NT
   }
 ,
-{ // state 162
-118,877, // "="
+{ // state 169
+171,MIN_REDUCTION+167, // $NT
+MIN_REDUCTION+167, // (default reduction)
   }
 ,
-{ // state 163
-MIN_REDUCTION+308, // (default reduction)
+{ // state 170
+0x80000000|1054, // match move
+0x80000000|860, // no-match move
+// T-test match for "0":
+143,
   }
 ,
-{ // state 164
+{ // state 171
+102,864, // "n"
+  }
+,
+{ // state 172
+-1, // $$start
+-1, // start
+426, // ws*
+-1, // $$0
+MIN_REDUCTION+150, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+150, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+150, // "k"
+MIN_REDUCTION+150, // "y"
+MIN_REDUCTION+150, // "h"
+501, // "i"
+MIN_REDUCTION+150, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+150, // "m"
+MIN_REDUCTION+150, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+150, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+150, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+150, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+150, // $
+MIN_REDUCTION+150, // $NT
+  }
+,
+{ // state 173
+-1, // $$start
+-1, // start
+826, // ws*
+-1, // $$0
+MIN_REDUCTION+192, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+192, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+192, // "k"
+MIN_REDUCTION+192, // "y"
+MIN_REDUCTION+192, // "h"
+501, // "i"
+MIN_REDUCTION+192, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+192, // "m"
+MIN_REDUCTION+192, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+192, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+192, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+192, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+192, // $
+MIN_REDUCTION+192, // $NT
+  }
+,
+{ // state 174
+1,763, // start
+2,683, // ws*
+3,940, // $$0
+4,694, // token
+5,1137, // `boolean
+6,24, // `class
+7,869, // `extends
+8,61, // `void
+9,792, // `int
+10,1121, // `while
+11,525, // `if
+12,999, // `else
+13,232, // `for
+14,505, // `break
+15,440, // `this
+16,1162, // `false
+17,59, // `true
+18,389, // `super
+19,226, // `null
+20,910, // `return
+21,1097, // `instanceof
+22,891, // `new
+23,837, // `abstract
+24,374, // `assert
+25,776, // `byte
+26,802, // `case
+27,84, // `catch
+28,690, // `char
+29,29, // `const
+30,716, // `continue
+31,547, // `default
+32,1109, // `do
+33,1198, // `double
+34,875, // `enum
+35,1124, // `final
+36,796, // `finally
+37,614, // `float
+38,392, // `goto
+39,718, // `implements
+40,198, // `import
+41,1041, // `interface
+42,688, // `long
+43,419, // `native
+44,145, // `package
+45,1059, // `private
+46,215, // `protected
+47,651, // `public
+48,924, // `short
+49,368, // `static
+50,364, // `strictfp
+51,803, // `switch
+52,444, // `synchronized
+53,1090, // `throw
+54,985, // `throws
+55,320, // `transient
+56,400, // `try
+57,43, // `volatile
+93,885, // "a"
+94,467, // "b"
+95,995, // "s"
+96,1002, // "t"
+97,431, // "r"
+98,721, // "c"
+99,176, // "e"
+101,100, // "l"
+102,495, // "n"
+106,501, // "i"
+108,18, // "d"
+109,32, // "f"
+112,840, // "g"
+113,269, // "p"
+114,1006, // "v"
+115,13, // "w"
+168,1159, // token*
+170,MIN_REDUCTION+1, // $
+  }
+,
+{ // state 175
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -5261,348 +6435,864 @@ MIN_REDUCTION+137, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+137, // $
 MIN_REDUCTION+137, // $NT
   }
 ,
-{ // state 165
-105,429, // "h"
+{ // state 176
+101,942, // "l"
+102,1093, // "n"
+111,53, // "x"
   }
 ,
-{ // state 166
-0x80000000|575, // match move
-0x80000000|26, // no-match move
-0x80000000|1136, // NT-test-match state for printable
+{ // state 177
+2,543, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+286, // (default reduction)
   }
 ,
-{ // state 167
-98,165, // "c"
+{ // state 178
+0x80000000|553, // match move
+0x80000000|30, // no-match move
+0x80000000|1143, // NT-test-match state for printable
   }
 ,
-{ // state 168
-0x80000000|579, // match move
-0x80000000|113, // no-match move
+{ // state 179
+0x80000000|557, // match move
+0x80000000|123, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 169
-105,635, // "h"
-  }
-,
-{ // state 170
-0x80000000|2, // match move
-0x80000000|496, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 171
-0x80000000|945, // match move
-0x80000000|377, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 172
-2,251, // ws*
-MIN_REDUCTION+278, // (default reduction)
-  }
-,
-{ // state 173
-100,4, // "o"
-  }
-,
-{ // state 174
-0x80000000|852, // match move
-0x80000000|463, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 175
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+119, // (default reduction)
-  }
-,
-{ // state 176
-171,MIN_REDUCTION+241, // $NT
-  }
-,
-{ // state 177
-MIN_REDUCTION+53, // (default reduction)
-  }
-,
-{ // state 178
-99,972, // "e"
-  }
-,
-{ // state 179
-0x80000000|1141, // match move
-0x80000000|911, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
 { // state 180
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+203, // (default reduction)
+0x80000000|945, // match move
+0x80000000|290, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 181
-MIN_REDUCTION+22, // (default reduction)
+2,80, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+366, // (default reduction)
   }
 ,
 { // state 182
-101,199, // "l"
-102,688, // "n"
-111,598, // "x"
+108,135, // "d"
   }
 ,
 { // state 183
-0x80000000|641, // match move
-0x80000000|929, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|1165, // match move
+0x80000000|949, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 184
-96,257, // "t"
-104,98, // "y"
-105,452, // "h"
-107,237, // "u"
-115,672, // "w"
+0x80000000|938, // match move
+0x80000000|360, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 185
-171,MIN_REDUCTION+330, // $NT
+107,1040, // "u"
   }
 ,
 { // state 186
-0x80000000|836, // match move
-0x80000000|1099, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|831, // match move
+0x80000000|448, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 187
-MIN_REDUCTION+39, // (default reduction)
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+119, // (default reduction)
   }
 ,
 { // state 188
+171,MIN_REDUCTION+241, // $NT
+  }
+,
+{ // state 189
+171,MIN_REDUCTION+339, // $NT
+MIN_REDUCTION+339, // (default reduction)
+  }
+,
+{ // state 190
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+203, // (default reduction)
+  }
+,
+{ // state 191
+97,532, // "r"
+  }
+,
+{ // state 192
+96,338, // "t"
+  }
+,
+{ // state 193
+-1, // $$start
+-1, // start
+594, // ws*
+-1, // $$0
+MIN_REDUCTION+237, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+237, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+237, // "k"
+MIN_REDUCTION+237, // "y"
+MIN_REDUCTION+237, // "h"
+501, // "i"
+MIN_REDUCTION+237, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+237, // "m"
+MIN_REDUCTION+237, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+237, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+237, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+237, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+237, // $
+MIN_REDUCTION+237, // $NT
+  }
+,
+{ // state 194
+0x80000000|620, // match move
+0x80000000|919, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 195
+-1, // $$start
+-1, // start
+1199, // ws*
+-1, // $$0
+MIN_REDUCTION+201, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+201, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+201, // "k"
+MIN_REDUCTION+201, // "y"
+MIN_REDUCTION+201, // "h"
+501, // "i"
+MIN_REDUCTION+201, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+201, // "m"
+MIN_REDUCTION+201, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+201, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+201, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+201, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+201, // $
+MIN_REDUCTION+201, // $NT
+  }
+,
+{ // state 196
+171,MIN_REDUCTION+330, // $NT
+  }
+,
+{ // state 197
+0x80000000|813, // match move
+0x80000000|1092, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 198
+MIN_REDUCTION+40, // (default reduction)
+  }
+,
+{ // state 199
 171,MIN_REDUCTION+179, // $NT
 MIN_REDUCTION+179, // (default reduction)
   }
 ,
-{ // state 189
-102,126, // "n"
-  }
-,
-{ // state 190
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+267, // (default reduction)
-  }
-,
-{ // state 191
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+299, // (default reduction)
-  }
-,
-{ // state 192
-171,MIN_REDUCTION+329, // $NT
-  }
-,
-{ // state 193
-2,580, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+266, // (default reduction)
-  }
-,
-{ // state 194
-0x80000000|726, // match move
-0x80000000|1185, // no-match move
-0x80000000|566, // NT-test-match state for digit
-  }
-,
-{ // state 195
-0x80000000|1035, // match move
-0x80000000|392, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 196
-0x80000000|493, // match move
-0x80000000|118, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 197
-MIN_REDUCTION+291, // (default reduction)
-  }
-,
-{ // state 198
-MIN_REDUCTION+11, // (default reduction)
-  }
-,
-{ // state 199
-95,282, // "s"
-  }
-,
 { // state 200
-2,601, // ws*
-MIN_REDUCTION+254, // (default reduction)
+MIN_REDUCTION+343, // (default reduction)
   }
 ,
 { // state 201
-2,476, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+258, // (default reduction)
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+267, // (default reduction)
   }
 ,
 { // state 202
-0x80000000|1176, // match move
-0x80000000|266, // no-match move
+-1, // $$start
+-1, // start
+958, // ws*
+-1, // $$0
+MIN_REDUCTION+204, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+204, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+204, // "k"
+MIN_REDUCTION+204, // "y"
+MIN_REDUCTION+204, // "h"
+501, // "i"
+MIN_REDUCTION+204, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+204, // "m"
+MIN_REDUCTION+204, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+204, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+204, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+204, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+204, // $
+MIN_REDUCTION+204, // $NT
+  }
+,
+{ // state 203
+97,480, // "r"
+  }
+,
+{ // state 204
+171,MIN_REDUCTION+349, // $NT
+MIN_REDUCTION+349, // (default reduction)
+  }
+,
+{ // state 205
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+299, // (default reduction)
+  }
+,
+{ // state 206
+0x80000000|699, // match move
+0x80000000|1197, // no-match move
+0x80000000|545, // NT-test-match state for digit
+  }
+,
+{ // state 207
+0x80000000|482, // match move
+0x80000000|129, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 208
+0x80000000|181, // match move
+0x80000000|858, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 203
+{ // state 209
+MIN_REDUCTION+291, // (default reduction)
+  }
+,
+{ // state 210
+0x80000000|1190, // match move
+0x80000000|267, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 211
 171,MIN_REDUCTION+194, // $NT
 MIN_REDUCTION+194, // (default reduction)
   }
 ,
-{ // state 204
-106,50, // "i"
+{ // state 212
+0x80000000|624, // match move
+0x80000000|944, // no-match move
+// T-test match for "0":
+143,
   }
 ,
-{ // state 205
+{ // state 213
+MIN_REDUCTION+84, // (default reduction)
+  }
+,
+{ // state 214
 171,MIN_REDUCTION+187, // $NT
   }
 ,
-{ // state 206
+{ // state 215
+MIN_REDUCTION+46, // (default reduction)
+  }
+,
+{ // state 216
+0x80000000|578, // match move
+0x80000000|468, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 217
 171,MIN_REDUCTION+116, // $NT
 MIN_REDUCTION+116, // (default reduction)
   }
 ,
-{ // state 207
+{ // state 218
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -5661,836 +7351,335 @@ MIN_REDUCTION+245, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+245, // $
 MIN_REDUCTION+245, // $NT
   }
-};
-}
-private class Initter2{
-public int doInit(int startIdx) {
-  for (int i = 0; i < myParseTable.length; i++) {
-    parseTable[i+startIdx] = myParseTable[i];
-  }
-  return myParseTable.length;
-}
-private final int[][] myParseTable = {
-{ // state 208
--1, // $$start
--1, // start
-106, // ws*
--1, // $$0
-MIN_REDUCTION+111, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+111, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+111, // "k"
-MIN_REDUCTION+111, // "y"
-MIN_REDUCTION+111, // "h"
-1006, // "i"
-MIN_REDUCTION+111, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+111, // "m"
-MIN_REDUCTION+111, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+111, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+111, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+111, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+111, // $
-MIN_REDUCTION+111, // $NT
-  }
 ,
-{ // state 209
-95,335, // "s"
-96,1115, // "t"
-  }
-,
-{ // state 210
-93,607, // "a"
-94,607, // "b"
-95,607, // "s"
-96,607, // "t"
-97,607, // "r"
-98,607, // "c"
-99,607, // "e"
-100,607, // "o"
-101,607, // "l"
-102,607, // "n"
-103,607, // "k"
-104,607, // "y"
-105,607, // "h"
-106,607, // "i"
-107,607, // "u"
-108,607, // "d"
-109,607, // "f"
-110,607, // "m"
-111,607, // "x"
-112,607, // "g"
-113,607, // "p"
-114,607, // "v"
-115,607, // "w"
-116,607, // "z"
-117,607, // "!"
-118,607, // "="
-119,607, // "%"
-120,607, // "&"
-121,607, // "|"
-122,607, // "+"
-123,607, // ","
-124,607, // "-"
-125,607, // "."
-126,607, // "*"
-127,607, // "/"
-128,607, // ";"
-129,607, // "<"
-130,607, // ">"
-131,607, // "("
-132,607, // ")"
-133,607, // "["
-134,607, // "]"
-135,607, // "{"
-136,607, // "}"
-138,607, // "'"
-140,1024, // '"'
-141,565, // stringPrintable*
-142,163, // $$2
-143,607, // "0"
-146,607, // "_"
-147,847, // escapeSequence
-148,867, // "\"
-150,607, // {"1".."9"}
-151,607, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,607, // {"A".."Z" "j" "q"}
-153,607, // " "
-155,139, // stringPrintable
-  }
-,
-{ // state 211
--1, // $$start
--1, // start
-74, // ws*
--1, // $$0
-MIN_REDUCTION+249, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+249, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+249, // "k"
-MIN_REDUCTION+249, // "y"
-MIN_REDUCTION+249, // "h"
-1006, // "i"
-MIN_REDUCTION+249, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+249, // "m"
-MIN_REDUCTION+249, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+249, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+249, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+249, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+249, // $
-MIN_REDUCTION+249, // $NT
-  }
-,
-{ // state 212
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 219
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+122, // (default reduction)
   }
 ,
-{ // state 213
+{ // state 220
 MIN_REDUCTION+312, // (default reduction)
   }
 ,
-{ // state 214
-93,670, // "a"
-94,670, // "b"
-95,670, // "s"
-96,670, // "t"
-97,670, // "r"
-98,670, // "c"
-99,670, // "e"
-100,670, // "o"
-101,670, // "l"
-102,670, // "n"
-103,670, // "k"
-104,670, // "y"
-105,670, // "h"
-106,670, // "i"
-107,670, // "u"
-108,670, // "d"
-109,670, // "f"
-110,670, // "m"
-111,670, // "x"
-112,670, // "g"
-113,670, // "p"
-114,670, // "v"
-115,670, // "w"
-116,670, // "z"
-117,670, // "!"
-118,670, // "="
-119,670, // "%"
-120,670, // "&"
-121,670, // "|"
-122,670, // "+"
-123,670, // ","
-124,670, // "-"
-125,670, // "."
-126,670, // "*"
-127,670, // "/"
-128,670, // ";"
-129,670, // "<"
-130,670, // ">"
-131,670, // "("
-132,670, // ")"
-133,670, // "["
-134,670, // "]"
-135,670, // "{"
-136,670, // "}"
-138,670, // "'"
-140,670, // '"'
-143,670, // "0"
-146,670, // "_"
-148,670, // "\"
-149,51, // printable
-150,670, // {"1".."9"}
-151,670, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,670, // {"A".."Z" "j" "q"}
-153,670, // " "
-154,670, // {9}
-161,1073, // printable**
-167,166, // printable*
+{ // state 221
+105,753, // "h"
   }
 ,
-{ // state 215
-97,281, // "r"
+{ // state 222
+121,966, // "|"
   }
 ,
-{ // state 216
-115,333, // "w"
+{ // state 223
+99,252, // "e"
   }
 ,
-{ // state 217
-0x80000000|826, // match move
-0x80000000|792, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 224
+0x80000000|805, // match move
+0x80000000|764, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 218
+{ // state 225
+116,333, // "z"
+  }
+,
+{ // state 226
+MIN_REDUCTION+19, // (default reduction)
+  }
+,
+{ // state 227
 -1, // $$start
 -1, // start
-1092, // ws*
+313, // ws*
 -1, // $$0
-MIN_REDUCTION+171, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+99, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+171, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+171, // "k"
-MIN_REDUCTION+171, // "y"
-MIN_REDUCTION+171, // "h"
-1006, // "i"
-MIN_REDUCTION+171, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+171, // "m"
-MIN_REDUCTION+171, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+171, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+99, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+99, // "k"
+MIN_REDUCTION+99, // "y"
+MIN_REDUCTION+99, // "h"
+501, // "i"
+MIN_REDUCTION+99, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+99, // "m"
+MIN_REDUCTION+99, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+99, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+171, // {"1".."9"}
+MIN_REDUCTION+99, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+171, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+99, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+171, // $
-MIN_REDUCTION+171, // $NT
+MIN_REDUCTION+99, // $
+MIN_REDUCTION+99, // $NT
   }
 ,
-{ // state 219
-MIN_REDUCTION+69, // (default reduction)
-  }
-,
-{ // state 220
-0x80000000|873, // match move
-0x80000000|458, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 221
-0x80000000|104, // match move
-0x80000000|263, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 222
-171,MIN_REDUCTION+338, // $NT
-MIN_REDUCTION+338, // (default reduction)
-  }
-,
-{ // state 223
-93,351, // "a"
-100,274, // "o"
-101,494, // "l"
-105,793, // "h"
-  }
-,
-{ // state 224
+{ // state 228
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -6549,420 +7738,245 @@ MIN_REDUCTION+119, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+119, // $
 MIN_REDUCTION+119, // $NT
   }
 ,
-{ // state 225
-0x80000000|640, // match move
-0x80000000|758, // no-match move
-// T-test match for "=":
-118,
-  }
-,
-{ // state 226
-0x80000000|1, // match move
-0x80000000|1117, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 227
-96,628, // "t"
-  }
-,
-{ // state 228
-0x80000000|369, // match move
-0x80000000|590, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
 { // state 229
--1, // $$start
--1, // start
-691, // ws*
--1, // $$0
-MIN_REDUCTION+288, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
--1, // `=
--1, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-MIN_REDUCTION+288, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+288, // $
--1, // $NT
+0x80000000|353, // match move
+0x80000000|568, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 230
-118,109, // "="
+4,564, // token
+5,1137, // `boolean
+6,24, // `class
+7,869, // `extends
+8,61, // `void
+9,792, // `int
+10,1121, // `while
+11,525, // `if
+12,999, // `else
+13,232, // `for
+14,505, // `break
+15,440, // `this
+16,1162, // `false
+17,59, // `true
+18,389, // `super
+19,226, // `null
+20,910, // `return
+21,1097, // `instanceof
+22,891, // `new
+23,837, // `abstract
+24,374, // `assert
+25,776, // `byte
+26,802, // `case
+27,84, // `catch
+28,690, // `char
+29,29, // `const
+30,716, // `continue
+31,547, // `default
+32,1109, // `do
+33,1198, // `double
+34,875, // `enum
+35,1124, // `final
+36,796, // `finally
+37,614, // `float
+38,392, // `goto
+39,718, // `implements
+40,198, // `import
+41,1041, // `interface
+42,688, // `long
+43,419, // `native
+44,145, // `package
+45,1059, // `private
+46,215, // `protected
+47,651, // `public
+48,924, // `short
+49,368, // `static
+50,364, // `strictfp
+51,803, // `switch
+52,444, // `synchronized
+53,1090, // `throw
+54,985, // `throws
+55,320, // `transient
+56,400, // `try
+57,43, // `volatile
+93,885, // "a"
+94,467, // "b"
+95,995, // "s"
+96,1002, // "t"
+97,431, // "r"
+98,721, // "c"
+99,176, // "e"
+101,100, // "l"
+102,495, // "n"
+106,501, // "i"
+108,18, // "d"
+109,32, // "f"
+112,840, // "g"
+113,269, // "p"
+114,1006, // "v"
+115,13, // "w"
+MIN_REDUCTION+363, // (default reduction)
   }
 ,
 { // state 231
-4,587, // token
-5,89, // `boolean
-6,303, // `class
-7,1154, // `extends
-8,1010, // `void
-9,802, // `int
-10,41, // `while
-11,198, // `if
-12,427, // `else
-13,336, // `for
-14,1160, // `break
-15,480, // `this
-16,569, // `false
-17,595, // `true
-18,525, // `super
-19,724, // `null
-20,820, // `return
-21,414, // `instanceof
-22,181, // `new
-23,629, // `abstract
-24,133, // `assert
-25,1091, // `byte
-26,682, // `case
-27,99, // `catch
-28,371, // `char
-29,130, // `const
-30,1055, // `continue
-31,1165, // `default
-32,890, // `do
-33,121, // `double
-34,233, // `enum
-35,779, // `final
-36,859, // `finally
-37,766, // `float
-38,551, // `goto
-39,187, // `implements
-40,662, // `import
-41,622, // `interface
-42,413, // `long
-43,479, // `native
-44,1128, // `package
-45,709, // `private
-46,788, // `protected
-47,806, // `public
-48,344, // `short
-49,702, // `static
-50,824, // `strictfp
-51,995, // `switch
-52,447, // `synchronized
-53,177, // `throw
-54,1103, // `throws
-55,1082, // `transient
-56,8, // `try
-57,549, // `volatile
-93,973, // "a"
-94,1139, // "b"
-95,914, // "s"
-96,1059, // "t"
-97,626, // "r"
-98,223, // "c"
-99,182, // "e"
-101,1014, // "l"
-102,437, // "n"
-106,1006, // "i"
-108,734, // "d"
-109,879, // "f"
-112,1068, // "g"
-113,293, // "p"
-114,94, // "v"
-115,12, // "w"
-MIN_REDUCTION+361, // (default reduction)
+95,23, // "s"
+96,324, // "t"
   }
 ,
 { // state 232
-MIN_REDUCTION+66, // (default reduction)
+MIN_REDUCTION+13, // (default reduction)
   }
 ,
 { // state 233
-MIN_REDUCTION+34, // (default reduction)
-  }
-,
-{ // state 234
-0x80000000|175, // match move
-0x80000000|534, // no-match move
+0x80000000|187, // match move
+0x80000000|523, // no-match move
 // T-test match for "0":
 143,
   }
 ,
+{ // state 234
+171,MIN_REDUCTION+223, // $NT
+  }
+,
 { // state 235
+0x80000000|1, // match move
+0x80000000|799, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 236
+97,821, // "r"
+  }
+,
+{ // state 237
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+155, // (default reduction)
+  }
+,
+{ // state 238
 -1, // $$start
 -1, // start
-500, // ws*
+866, // ws*
 -1, // $$0
-MIN_REDUCTION+292, // token
+MIN_REDUCTION+252, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -7016,145 +8030,130 @@ MIN_REDUCTION+292, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+-1, // `=
+-1, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+MIN_REDUCTION+252, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+292, // $
+206, // digit+
+MIN_REDUCTION+252, // $
 -1, // $NT
   }
 ,
-{ // state 236
-171,MIN_REDUCTION+223, // $NT
-  }
-,
-{ // state 237
-113,785, // "p"
-  }
-,
-{ // state 238
-0x80000000|93, // match move
-0x80000000|975, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
 { // state 239
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+155, // (default reduction)
+0x80000000|174, // match move
+0x80000000|584, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 240
-98,422, // "c"
+126,303, // "*"
   }
 ,
 { // state 241
@@ -7162,73 +8161,239 @@ MIN_REDUCTION+155, // (default reduction)
   }
 ,
 { // state 242
-0x80000000|556, // match move
-0x80000000|24, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+101,833, // "l"
   }
 ,
 { // state 243
-171,MIN_REDUCTION+328, // $NT
-MIN_REDUCTION+328, // (default reduction)
+-1, // $$start
+-1, // start
+429, // ws*
+-1, // $$0
+MIN_REDUCTION+284, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+-1, // `=
+-1, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+MIN_REDUCTION+284, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+284, // $
+-1, // $NT
   }
 ,
 { // state 244
-2,907, // ws*
-MIN_REDUCTION+300, // (default reduction)
+0x80000000|538, // match move
+0x80000000|28, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 245
-0x80000000|1087, // match move
-0x80000000|747, // no-match move
-// T-test match for "0":
-143,
+MIN_REDUCTION+303, // (default reduction)
   }
 ,
 { // state 246
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+194, // (default reduction)
+100,265, // "o"
   }
 ,
 { // state 247
-0x80000000|1181, // match move
-0x80000000|509, // no-match move
+0x80000000|1081, // match move
+0x80000000|720, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 248
-0x80000000|524, // match move
-0x80000000|1097, // no-match move
-// T-test match for 10:
-163,
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+194, // (default reduction)
   }
 ,
 { // state 249
-96,1184, // "t"
-  }
-,
-{ // state 250
-102,367, // "n"
-  }
-,
-{ // state 251
-0x80000000|1095, // match move
-0x80000000|669, // no-match move
+0x80000000|1192, // match move
+0x80000000|499, // no-match move
 // T-test match for "0":
 143,
   }
 ,
+{ // state 250
+95,489, // "s"
+  }
+,
+{ // state 251
+MIN_REDUCTION+360, // (default reduction)
+  }
+,
 { // state 252
-2,339, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+268, // (default reduction)
+102,586, // "n"
   }
 ,
 { // state 253
+0x80000000|1088, // match move
+0x80000000|648, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 254
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -7287,159 +8452,332 @@ MIN_REDUCTION+230, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+230, // $
 MIN_REDUCTION+230, // $NT
   }
 ,
-{ // state 254
-MIN_REDUCTION+74, // (default reduction)
-  }
-,
 { // state 255
-99,363, // "e"
+100,73, // "o"
   }
 ,
 { // state 256
-2,1131, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+306, // (default reduction)
+97,912, // "r"
   }
 ,
 { // state 257
-93,249, // "a"
-97,1063, // "r"
+0x80000000|936, // match move
+0x80000000|759, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 258
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+236, // (default reduction)
+MIN_REDUCTION+83, // (default reduction)
   }
 ,
 { // state 259
-171,MIN_REDUCTION+118, // $NT
+-1, // $$start
+-1, // start
+-1, // ws*
+622, // $$0
+694, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+1159, // token*
+206, // digit+
+MIN_REDUCTION+3, // $
+-1, // $NT
   }
 ,
 { // state 260
-171,MIN_REDUCTION+235, // $NT
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+236, // (default reduction)
   }
 ,
 { // state 261
+171,MIN_REDUCTION+118, // $NT
+  }
+,
+{ // state 262
+171,MIN_REDUCTION+235, // $NT
+  }
+,
+{ // state 263
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -7498,413 +8836,410 @@ MIN_REDUCTION+161, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+161, // $
 MIN_REDUCTION+161, // $NT
   }
 ,
-{ // state 262
-0x80000000|738, // match move
-0x80000000|299, // no-match move
+{ // state 264
+0x80000000|710, // match move
+0x80000000|291, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 263
-0x80000000|158, // match move
-0x80000000|229, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 264
-4,587, // token
-58,984, // `!
-59,1186, // `!=
-60,801, // `%
-61,772, // `&&
-62,535, // `*
-63,605, // `(
-64,316, // `)
-65,547, // `{
-66,232, // `}
-67,835, // `-
-68,440, // `+
-69,219, // `=
-70,660, // `==
-71,435, // `[
-72,781, // `]
-73,13, // `||
-74,254, // `<
-75,558, // `<=
-76,420, // `,
-77,1013, // `>
-78,537, // `>=
-79,459, // `.
-80,1056, // `;
-81,789, // `++
-82,147, // `--
-83,710, // `/
-84,803, // ID
-85,16, // INTLIT
-86,286, // STRINGLIT
-87,765, // CHARLIT
-89,75, // letter
-93,68, // "a"
-94,68, // "b"
-95,68, // "s"
-96,68, // "t"
-97,68, // "r"
-98,68, // "c"
-99,68, // "e"
-100,68, // "o"
-101,68, // "l"
-102,68, // "n"
-103,68, // "k"
-104,68, // "y"
-105,68, // "h"
-106,68, // "i"
-107,68, // "u"
-108,68, // "d"
-109,68, // "f"
-110,68, // "m"
-111,68, // "x"
-112,68, // "g"
-113,68, // "p"
-114,68, // "v"
-115,68, // "w"
-116,68, // "z"
-117,225, // "!"
-118,683, // "="
-119,466, // "%"
-120,506, // "&"
-121,663, // "|"
-122,658, // "+"
-123,381, // ","
-124,478, // "-"
-125,390, // "."
-126,680, // "*"
-127,487, // "/"
-128,226, // ";"
-129,265, // "<"
-130,1022, // ">"
-131,405, // "("
-132,686, // ")"
-133,56, // "["
-134,27, // "]"
-135,892, // "{"
-136,375, // "}"
-137,795, // intLit2
-138,1178, // "'"
-140,210, // '"'
-143,22, // "0"
-144,418, // digit++
-145,967, // digit
-150,22, // {"1".."9"}
-152,68, // {"A".."Z" "j" "q"}
-169,194, // digit+
-MIN_REDUCTION+361, // (default reduction)
-  }
-,
 { // state 265
-0x80000000|162, // match move
-0x80000000|35, // no-match move
-// T-test match for "=":
-118,
+109,887, // "f"
   }
 ,
 { // state 266
-0x80000000|913, // match move
-0x80000000|1124, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+4,564, // token
+58,432, // `!
+59,309, // `!=
+60,1115, // `%
+61,565, // `&&
+62,786, // `*
+63,450, // `(
+64,760, // `)
+65,396, // `{
+66,1013, // `}
+67,155, // `-
+68,88, // `+
+69,379, // `=
+70,849, // `==
+71,1001, // `[
+72,438, // `]
+73,515, // `||
+74,997, // `<
+75,931, // `<=
+76,579, // `,
+77,933, // `>
+78,446, // `>=
+79,1010, // `.
+80,1076, // `;
+81,510, // `++
+82,552, // `--
+83,258, // `/
+84,213, // ID
+85,625, // INTLIT
+86,658, // STRINGLIT
+87,1067, // CHARLIT
+89,307, // letter
+93,69, // "a"
+94,69, // "b"
+95,69, // "s"
+96,69, // "t"
+97,69, // "r"
+98,69, // "c"
+99,69, // "e"
+100,69, // "o"
+101,69, // "l"
+102,69, // "n"
+103,69, // "k"
+104,69, // "y"
+105,69, // "h"
+106,69, // "i"
+107,69, // "u"
+108,69, // "d"
+109,69, // "f"
+110,69, // "m"
+111,69, // "x"
+112,69, // "g"
+113,69, // "p"
+114,69, // "v"
+115,69, // "w"
+116,69, // "z"
+117,780, // "!"
+118,420, // "="
+119,740, // "%"
+120,935, // "&"
+121,222, // "|"
+122,152, // "+"
+123,1113, // ","
+124,528, // "-"
+125,585, // "."
+126,934, // "*"
+127,905, // "/"
+128,712, // ";"
+129,337, // "<"
+130,773, // ">"
+131,180, // "("
+132,257, // ")"
+133,476, // "["
+134,1161, // "]"
+135,1196, // "{"
+136,1046, // "}"
+137,503, // intLit2
+138,555, // "'"
+140,610, // '"'
+143,27, // "0"
+144,403, // digit++
+145,962, // digit
+150,27, // {"1".."9"}
+152,69, // {"A".."Z" "j" "q"}
+169,206, // digit+
+MIN_REDUCTION+363, // (default reduction)
   }
 ,
 { // state 267
+0x80000000|895, // match move
+0x80000000|1127, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 268
 -1, // $$start
 -1, // start
--1, // ws*
-643, // $$0
-796, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+376, // ws*
+-1, // $$0
+MIN_REDUCTION+168, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+-1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+168, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+168, // "k"
+MIN_REDUCTION+168, // "y"
+MIN_REDUCTION+168, // "h"
+501, // "i"
+MIN_REDUCTION+168, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+168, // "m"
+MIN_REDUCTION+168, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+168, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+708, // "0"
+-1, // digit++
+-1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+MIN_REDUCTION+168, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+168, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
-1152, // token*
-194, // digit+
-MIN_REDUCTION+3, // $
--1, // $NT
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+168, // $
+MIN_REDUCTION+168, // $NT
   }
 ,
-{ // state 268
+{ // state 269
+93,554, // "a"
+97,519, // "r"
+107,685, // "u"
+  }
+,
+{ // state 270
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -7963,349 +9298,328 @@ MIN_REDUCTION+203, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+203, // $
 MIN_REDUCTION+203, // $NT
   }
 ,
-{ // state 269
-0x80000000|1021, // match move
-0x80000000|1145, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
-  }
-,
-{ // state 270
-0x80000000|783, // match move
-0x80000000|599, // no-match move
-// T-test match for "0":
-143,
-  }
-,
 { // state 271
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+185, // (default reduction)
+0x80000000|1014, // match move
+0x80000000|1149, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
   }
 ,
 { // state 272
 -1, // $$start
 -1, // start
-314, // ws*
+42, // ws*
 -1, // $$0
-MIN_REDUCTION+264, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+MIN_REDUCTION+180, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+-1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+180, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+180, // "k"
+MIN_REDUCTION+180, // "y"
+MIN_REDUCTION+180, // "h"
+501, // "i"
+MIN_REDUCTION+180, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+180, // "m"
+MIN_REDUCTION+180, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+180, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+708, // "0"
+-1, // digit++
+-1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+MIN_REDUCTION+180, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+180, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+264, // $
--1, // $NT
+-1, // digit+
+MIN_REDUCTION+180, // $
+MIN_REDUCTION+180, // $NT
   }
 ,
 { // state 273
-116,1050, // "z"
-  }
-,
-{ // state 274
-102,209, // "n"
-  }
-,
-{ // state 275
-0x80000000|1166, // match move
-0x80000000|863, // no-match move
+0x80000000|757, // match move
+0x80000000|574, // no-match move
 // T-test match for "0":
 143,
   }
 ,
+{ // state 274
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+185, // (default reduction)
+  }
+,
+{ // state 275
+97,1029, // "r"
+  }
+,
 { // state 276
-0x80000000|96, // match move
-0x80000000|625, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+0x80000000|345, // match move
+0x80000000|1177, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 { // state 277
-95,67, // "s"
-  }
-,
-{ // state 278
-0x80000000|361, // match move
-0x80000000|1168, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 279
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -8364,161 +9678,324 @@ MIN_REDUCTION+293, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+293, // $
 -1, // $NT
   }
 ,
+{ // state 278
+-1, // $$start
+-1, // start
+80, // ws*
+-1, // $$0
+MIN_REDUCTION+366, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+366, // $
+-1, // $NT
+  }
+,
+{ // state 279
+0x80000000|998, // match move
+0x80000000|886, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
 { // state 280
-0x80000000|1009, // match move
-0x80000000|904, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+126,1106, // "*"
   }
 ,
 { // state 281
-109,585, // "f"
-  }
-,
-{ // state 282
-99,692, // "e"
-  }
-,
-{ // state 283
 171,MIN_REDUCTION+203, // $NT
 MIN_REDUCTION+203, // (default reduction)
   }
 ,
-{ // state 284
+{ // state 282
 MIN_REDUCTION+315, // (default reduction)
   }
 ,
-{ // state 285
-127,128, // "/"
-  }
-,
-{ // state 286
-MIN_REDUCTION+86, // (default reduction)
-  }
-,
-{ // state 287
-0x80000000|416, // match move
-0x80000000|1134, // no-match move
+{ // state 283
+0x80000000|401, // match move
+0x80000000|1139, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 288
+{ // state 284
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -8577,156 +10054,133 @@ MIN_REDUCTION+273, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+273, // $
 -1, // $NT
   }
 ,
-{ // state 289
-0x80000000|923, // match move
-0x80000000|751, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 285
+0x80000000|909, // match move
+0x80000000|725, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 290
-99,292, // "e"
-  }
-,
-{ // state 291
-2,500, // ws*
-MIN_REDUCTION+292, // (default reduction)
-  }
-,
-{ // state 292
-93,997, // "a"
-  }
-,
-{ // state 293
-93,857, // "a"
-97,504, // "r"
-107,489, // "u"
-  }
-,
-{ // state 294
+{ // state 286
 MIN_REDUCTION+257, // (default reduction)
   }
 ,
-{ // state 295
-108,633, // "d"
-  }
-,
-{ // state 296
+{ // state 287
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -8785,147 +10239,516 @@ MIN_REDUCTION+104, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+104, // $
 MIN_REDUCTION+104, // $NT
   }
 ,
-{ // state 297
+{ // state 288
 171,MIN_REDUCTION+122, // $NT
 MIN_REDUCTION+122, // (default reduction)
   }
 ,
-{ // state 298
-0x80000000|85, // match move
-0x80000000|151, // no-match move
+{ // state 289
+0x80000000|93, // match move
+0x80000000|161, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 299
-0x80000000|676, // match move
-0x80000000|1116, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 290
+0x80000000|598, // match move
+0x80000000|137, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 300
-0x80000000|630, // match move
-0x80000000|21, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 291
+0x80000000|655, // match move
+0x80000000|1118, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 301
+{ // state 292
+-1, // $$start
+-1, // start
+848, // ws*
+-1, // $$0
+MIN_REDUCTION+298, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+298, // $
+-1, // $NT
+  }
+};
+}
+private class Initter3{
+public int doInit(int startIdx) {
+  for (int i = 0; i < myParseTable.length; i++) {
+    parseTable[i+startIdx] = myParseTable[i];
+  }
+  return myParseTable.length;
+}
+private final int[][] myParseTable = {
+{ // state 293
+171,MIN_REDUCTION+337, // $NT
+MIN_REDUCTION+337, // (default reduction)
+  }
+,
+{ // state 294
+-1, // $$start
+-1, // start
+22, // ws*
+-1, // $$0
+MIN_REDUCTION+186, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+186, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+186, // "k"
+MIN_REDUCTION+186, // "y"
+MIN_REDUCTION+186, // "h"
+501, // "i"
+MIN_REDUCTION+186, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+186, // "m"
+MIN_REDUCTION+186, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+186, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+186, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+186, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+186, // $
+MIN_REDUCTION+186, // $NT
+  }
+,
+{ // state 295
+171,MIN_REDUCTION+340, // $NT
+MIN_REDUCTION+340, // (default reduction)
+  }
+,
+{ // state 296
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -8984,544 +10807,401 @@ MIN_REDUCTION+92, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+92, // $
 MIN_REDUCTION+92, // $NT
   }
 ,
-{ // state 302
-93,561, // "a"
+{ // state 297
+2,305, // ws*
+MIN_REDUCTION+264, // (default reduction)
   }
 ,
-{ // state 303
-MIN_REDUCTION+6, // (default reduction)
+{ // state 298
+2,1096, // ws*
+MIN_REDUCTION+260, // (default reduction)
   }
 ,
-{ // state 304
-98,1030, // "c"
+{ // state 299
+115,502, // "w"
   }
 ,
-{ // state 305
-114,14, // "v"
-  }
-,
-{ // state 306
-MIN_REDUCTION+4, // (default reduction)
-  }
-,
-{ // state 307
+{ // state 300
 MIN_REDUCTION+320, // (default reduction)
   }
 ,
-{ // state 308
+{ // state 301
 MIN_REDUCTION+327, // (default reduction)
   }
 ,
-{ // state 309
+{ // state 302
 171,MIN_REDUCTION+327, // $NT
   }
 ,
-{ // state 310
-0x80000000|2, // match move
-0x80000000|441, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 303
+0x80000000|1, // match move
+0x80000000|346, // no-match move
+// T-test match for "/":
+127,
   }
 ,
-{ // state 311
+{ // state 304
 -1, // $$start
 -1, // start
-723, // ws*
+1069, // ws*
 -1, // $$0
-MIN_REDUCTION+123, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+222, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+123, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+123, // "k"
-MIN_REDUCTION+123, // "y"
-MIN_REDUCTION+123, // "h"
-1006, // "i"
-MIN_REDUCTION+123, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+123, // "m"
-MIN_REDUCTION+123, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+123, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+222, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+222, // "k"
+MIN_REDUCTION+222, // "y"
+MIN_REDUCTION+222, // "h"
+501, // "i"
+MIN_REDUCTION+222, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+222, // "m"
+MIN_REDUCTION+222, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+222, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+123, // {"1".."9"}
+MIN_REDUCTION+222, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+123, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+222, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+123, // $
-MIN_REDUCTION+123, // $NT
+MIN_REDUCTION+222, // $
+MIN_REDUCTION+222, // $NT
   }
 ,
-{ // state 312
-0x80000000|815, // match move
-0x80000000|604, // no-match move
+{ // state 305
+0x80000000|839, // match move
+0x80000000|868, // no-match move
 // T-test match for "0":
 143,
   }
 ,
+{ // state 306
+96,1073, // "t"
+  }
+,
+{ // state 307
+0x80000000|1184, // match move
+0x80000000|445, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 308
+126,1094, // "*"
+127,513, // "/"
+  }
+,
+{ // state 309
+MIN_REDUCTION+59, // (default reduction)
+  }
+,
+{ // state 310
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+125, // (default reduction)
+  }
+,
+{ // state 311
+0x80000000|630, // match move
+0x80000000|599, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 312
+138,102, // "'"
+  }
+,
 { // state 313
-98,362, // "c"
+0x80000000|521, // match move
+0x80000000|1168, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 314
-0x80000000|858, // match move
-0x80000000|894, // no-match move
+0x80000000|380, // match move
+0x80000000|351, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 315
-93,269, // "a"
-94,269, // "b"
-95,269, // "s"
-96,269, // "t"
-97,269, // "r"
-98,269, // "c"
-99,269, // "e"
-100,269, // "o"
-101,269, // "l"
-102,269, // "n"
-103,269, // "k"
-104,269, // "y"
-105,269, // "h"
-106,269, // "i"
-107,269, // "u"
-108,269, // "d"
-109,269, // "f"
-110,269, // "m"
-111,269, // "x"
-112,269, // "g"
-113,269, // "p"
-114,269, // "v"
-115,269, // "w"
-116,269, // "z"
-117,269, // "!"
-118,269, // "="
-119,269, // "%"
-120,269, // "&"
-121,269, // "|"
-122,269, // "+"
-123,269, // ","
-124,269, // "-"
-125,269, // "."
-126,704, // "*"
-127,762, // "/"
-128,269, // ";"
-129,269, // "<"
-130,269, // ">"
-131,269, // "("
-132,269, // ")"
-133,269, // "["
-134,269, // "]"
-135,269, // "{"
-136,269, // "}"
-138,269, // "'"
-140,269, // '"'
-143,269, // "0"
-146,269, // "_"
-148,269, // "\"
-150,269, // {"1".."9"}
-151,269, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,269, // {"A".."Z" "j" "q"}
-153,269, // " "
-154,269, // {9}
-156,664, // multilineCommentPrintable
-157,773, // eol
-162,359, // multilineCommentPrintable**
-163,1112, // {10}
-164,248, // {13}
-166,636, // multilineCommentPrintable*
+0x80000000|318, // match move
+0x80000000|383, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 316
-MIN_REDUCTION+64, // (default reduction)
+0x80000000|51, // match move
+0x80000000|492, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 317
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+125, // (default reduction)
-  }
-,
-{ // state 318
-0x80000000|649, // match move
-0x80000000|616, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 319
-0x80000000|531, // match move
-0x80000000|1159, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 320
-0x80000000|327, // match move
-0x80000000|400, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 321
-95,735, // "s"
-  }
-,
-{ // state 322
-1,790, // start
-2,782, // ws*
-3,306, // $$0
-4,796, // token
-5,89, // `boolean
-6,303, // `class
-7,1154, // `extends
-8,1010, // `void
-9,802, // `int
-10,41, // `while
-11,198, // `if
-12,427, // `else
-13,336, // `for
-14,1160, // `break
-15,480, // `this
-16,569, // `false
-17,595, // `true
-18,525, // `super
-19,724, // `null
-20,820, // `return
-21,414, // `instanceof
-22,181, // `new
-23,629, // `abstract
-24,133, // `assert
-25,1091, // `byte
-26,682, // `case
-27,99, // `catch
-28,371, // `char
-29,130, // `const
-30,1055, // `continue
-31,1165, // `default
-32,890, // `do
-33,121, // `double
-34,233, // `enum
-35,779, // `final
-36,859, // `finally
-37,766, // `float
-38,551, // `goto
-39,187, // `implements
-40,662, // `import
-41,622, // `interface
-42,413, // `long
-43,479, // `native
-44,1128, // `package
-45,709, // `private
-46,788, // `protected
-47,806, // `public
-48,344, // `short
-49,702, // `static
-50,824, // `strictfp
-51,995, // `switch
-52,447, // `synchronized
-53,177, // `throw
-54,1103, // `throws
-55,1082, // `transient
-56,8, // `try
-57,549, // `volatile
-93,973, // "a"
-94,1139, // "b"
-95,914, // "s"
-96,1059, // "t"
-97,626, // "r"
-98,223, // "c"
-99,182, // "e"
-101,1014, // "l"
-102,437, // "n"
-106,1006, // "i"
-108,734, // "d"
-109,879, // "f"
-112,1068, // "g"
-113,293, // "p"
-114,94, // "v"
-115,12, // "w"
-168,1152, // token*
-170,MIN_REDUCTION+1, // $
-  }
-,
-{ // state 323
-0x80000000|53, // match move
-0x80000000|501, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 324
-109,757, // "f"
-  }
-,
-{ // state 325
-MIN_REDUCTION+342, // (default reduction)
-  }
-,
-{ // state 326
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -9580,206 +11260,189 @@ MIN_REDUCTION+215, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+215, // $
 MIN_REDUCTION+215, // $NT
   }
 ,
-{ // state 327
+{ // state 318
 171,MIN_REDUCTION+164, // $NT
 MIN_REDUCTION+164, // (default reduction)
   }
 ,
-{ // state 328
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 319
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+137, // (default reduction)
   }
 ,
-{ // state 329
-0x80000000|2, // match move
-0x80000000|399, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 320
+MIN_REDUCTION+55, // (default reduction)
   }
 ,
-{ // state 330
-0x80000000|2, // match move
-0x80000000|411, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 331
+{ // state 321
 171,MIN_REDUCTION+128, // $NT
 MIN_REDUCTION+128, // (default reduction)
   }
 ,
-{ // state 332
-101,1005, // "l"
-  }
-,
-{ // state 333
-0x80000000|2, // match move
-0x80000000|722, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 334
-0x80000000|142, // match move
-0x80000000|318, // no-match move
+{ // state 322
+0x80000000|153, // match move
+0x80000000|311, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 335
-96,786, // "t"
+{ // state 323
+96,255, // "t"
   }
 ,
-{ // state 336
-MIN_REDUCTION+13, // (default reduction)
+{ // state 324
+106,1075, // "i"
   }
 ,
-{ // state 337
+{ // state 325
 MIN_REDUCTION+289, // (default reduction)
   }
 ,
-{ // state 338
-0x80000000|401, // match move
-0x80000000|415, // no-match move
+{ // state 326
+101,851, // "l"
+  }
+,
+{ // state 327
+0x80000000|382, // match move
+0x80000000|399, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 339
-0x80000000|190, // match move
-0x80000000|655, // no-match move
+{ // state 328
+97,11, // "r"
+  }
+,
+{ // state 329
+101,724, // "l"
+  }
+,
+{ // state 330
+0x80000000|201, // match move
+0x80000000|636, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 340
-96,713, // "t"
-  }
-,
-{ // state 341
-0x80000000|838, // match move
-0x80000000|460, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 342
+{ // state 331
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -9838,123 +11501,123 @@ MIN_REDUCTION+287, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+287, // $
 -1, // $NT
   }
 ,
-{ // state 343
+{ // state 332
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -10013,6286 +11676,236 @@ MIN_REDUCTION+128, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+128, // $
 MIN_REDUCTION+128, // $NT
   }
 ,
-{ // state 344
-MIN_REDUCTION+48, // (default reduction)
+{ // state 333
+99,540, // "e"
   }
 ,
-{ // state 345
-0x80000000|934, // match move
-0x80000000|976, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 334
+0x80000000|923, // match move
+0x80000000|970, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 346
-0x80000000|705, // match move
-0x80000000|70, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 347
-118,275, // "="
-  }
-,
-{ // state 348
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 335
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+206, // (default reduction)
   }
 ,
-{ // state 349
-97,36, // "r"
+{ // state 336
+118,600, // "="
   }
 ,
-{ // state 350
-0x80000000|29, // match move
-0x80000000|673, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 351
-95,178, // "s"
-96,799, // "t"
-  }
-,
-{ // state 352
+{ // state 337
 0x80000000|101, // match move
-0x80000000|834, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|785, // no-match move
+// T-test match for "=":
+118,
   }
 ,
-{ // state 353
+{ // state 338
+107,256, // "u"
+  }
+,
+{ // state 339
+0x80000000|33, // match move
+0x80000000|652, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 340
+0x80000000|106, // match move
+0x80000000|812, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 341
+102,231, // "n"
+  }
+,
+{ // state 342
 MIN_REDUCTION+283, // (default reduction)
   }
 ,
-{ // state 354
-0x80000000|1045, // match move
-0x80000000|935, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 355
-97,250, // "r"
-  }
-,
-{ // state 356
-0x80000000|137, // match move
-0x80000000|832, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 357
+{ // state 343
 MIN_REDUCTION+277, // (default reduction)
   }
 ,
-{ // state 358
--1, // $$start
--1, // start
-536, // ws*
--1, // $$0
-MIN_REDUCTION+156, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+156, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+156, // "k"
-MIN_REDUCTION+156, // "y"
-MIN_REDUCTION+156, // "h"
-1006, // "i"
-MIN_REDUCTION+156, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+156, // "m"
-MIN_REDUCTION+156, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+156, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+156, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+156, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+156, // $
-MIN_REDUCTION+156, // $NT
-  }
-,
-{ // state 359
-126,285, // "*"
-  }
-,
-{ // state 360
+{ // state 344
 171,MIN_REDUCTION+332, // $NT
   }
 ,
-{ // state 361
-MIN_REDUCTION+359, // (default reduction)
+{ // state 345
+MIN_REDUCTION+361, // (default reduction)
   }
 ,
-{ // state 362
-105,529, // "h"
+{ // state 346
+171,MIN_REDUCTION+329, // $NT
   }
 ,
-{ // state 363
-0x80000000|2, // match move
-0x80000000|963, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 364
+{ // state 347
 MIN_REDUCTION+255, // (default reduction)
   }
 ,
-{ // state 365
-0x80000000|848, // match move
-0x80000000|37, // no-match move
+{ // state 348
+0x80000000|828, // match move
+0x80000000|38, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 366
+{ // state 349
+MIN_REDUCTION+342, // (default reduction)
+  }
+,
+{ // state 350
 171,MIN_REDUCTION+244, // $NT
   }
 ,
-{ // state 367
-0x80000000|2, // match move
-0x80000000|1151, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 351
+0x80000000|1057, // match move
+0x80000000|562, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 368
+{ // state 352
 MIN_REDUCTION+88, // (default reduction)
   }
 ,
-{ // state 369
+{ // state 353
 171,MIN_REDUCTION+212, // $NT
 MIN_REDUCTION+212, // (default reduction)
   }
 ,
-{ // state 370
-0x80000000|714, // match move
-0x80000000|261, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 354
+0x80000000|689, // match move
+0x80000000|263, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 371
-MIN_REDUCTION+28, // (default reduction)
+{ // state 355
+105,684, // "h"
+106,449, // "i"
   }
 ,
-{ // state 372
-93,1170, // "a"
-  }
-,
-{ // state 373
-99,295, // "e"
-  }
-,
-{ // state 374
-101,406, // "l"
-  }
-,
-{ // state 375
-0x80000000|996, // match move
-0x80000000|947, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 376
-107,144, // "u"
-  }
-,
-{ // state 377
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+176, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+176, // $
-MIN_REDUCTION+176, // $NT
-  }
-,
-{ // state 378
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+265, // (default reduction)
-  }
-,
-{ // state 379
-171,MIN_REDUCTION+142, // $NT
-  }
-,
-{ // state 380
--1, // $$start
--1, // start
-1138, // ws*
--1, // $$0
-MIN_REDUCTION+246, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+246, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+246, // "k"
-MIN_REDUCTION+246, // "y"
-MIN_REDUCTION+246, // "h"
-1006, // "i"
-MIN_REDUCTION+246, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+246, // "m"
-MIN_REDUCTION+246, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+246, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+246, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+246, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+246, // $
-MIN_REDUCTION+246, // $NT
-  }
-,
-{ // state 381
-0x80000000|193, // match move
-0x80000000|356, // no-match move
-// T-test match for "0":
-143,
-  }
-};
-}
-private class Initter3{
-public int doInit(int startIdx) {
-  for (int i = 0; i < myParseTable.length; i++) {
-    parseTable[i+startIdx] = myParseTable[i];
-  }
-  return myParseTable.length;
-}
-private final int[][] myParseTable = {
-{ // state 382
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+122, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+122, // $
-MIN_REDUCTION+122, // $NT
-  }
-,
-{ // state 383
-3,643, // $$0
-4,796, // token
-5,89, // `boolean
-6,303, // `class
-7,1154, // `extends
-8,1010, // `void
-9,802, // `int
-10,41, // `while
-11,198, // `if
-12,427, // `else
-13,336, // `for
-14,1160, // `break
-15,480, // `this
-16,569, // `false
-17,595, // `true
-18,525, // `super
-19,724, // `null
-20,820, // `return
-21,414, // `instanceof
-22,181, // `new
-23,629, // `abstract
-24,133, // `assert
-25,1091, // `byte
-26,682, // `case
-27,99, // `catch
-28,371, // `char
-29,130, // `const
-30,1055, // `continue
-31,1165, // `default
-32,890, // `do
-33,121, // `double
-34,233, // `enum
-35,779, // `final
-36,859, // `finally
-37,766, // `float
-38,551, // `goto
-39,187, // `implements
-40,662, // `import
-41,622, // `interface
-42,413, // `long
-43,479, // `native
-44,1128, // `package
-45,709, // `private
-46,788, // `protected
-47,806, // `public
-48,344, // `short
-49,702, // `static
-50,824, // `strictfp
-51,995, // `switch
-52,447, // `synchronized
-53,177, // `throw
-54,1103, // `throws
-55,1082, // `transient
-56,8, // `try
-57,549, // `volatile
-93,973, // "a"
-94,1139, // "b"
-95,914, // "s"
-96,1059, // "t"
-97,626, // "r"
-98,223, // "c"
-99,182, // "e"
-101,1014, // "l"
-102,437, // "n"
-106,1006, // "i"
-108,734, // "d"
-109,879, // "f"
-112,1068, // "g"
-113,293, // "p"
-114,94, // "v"
-115,12, // "w"
-168,1152, // token*
-MIN_REDUCTION+3, // (default reduction)
-  }
-,
-{ // state 384
--1, // $$start
--1, // start
-11, // ws*
--1, // $$0
-MIN_REDUCTION+165, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+165, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+165, // "k"
-MIN_REDUCTION+165, // "y"
-MIN_REDUCTION+165, // "h"
-1006, // "i"
-MIN_REDUCTION+165, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+165, // "m"
-MIN_REDUCTION+165, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+165, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+165, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+165, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+165, // $
-MIN_REDUCTION+165, // $NT
-  }
-,
-{ // state 385
-171,MIN_REDUCTION+98, // $NT
-MIN_REDUCTION+98, // (default reduction)
-  }
-,
-{ // state 386
-171,MIN_REDUCTION+335, // $NT
-MIN_REDUCTION+335, // (default reduction)
-  }
-,
-{ // state 387
-171,MIN_REDUCTION+346, // $NT
-MIN_REDUCTION+346, // (default reduction)
-  }
-,
-{ // state 388
-0x80000000|2, // match move
-0x80000000|573, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 389
-0x80000000|544, // match move
-0x80000000|62, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 390
-0x80000000|874, // match move
-0x80000000|238, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 391
-0x80000000|2, // match move
-0x80000000|311, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 392
--1, // $$start
--1, // start
-298, // ws*
--1, // $$0
-MIN_REDUCTION+280, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
--1, // `=
--1, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-MIN_REDUCTION+280, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+280, // $
--1, // $NT
-  }
-,
-{ // state 393
-171,MIN_REDUCTION+184, // $NT
-  }
-,
-{ // state 394
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+173, // (default reduction)
-  }
-,
-{ // state 395
-0x80000000|559, // match move
-0x80000000|937, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 396
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+224, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+224, // $
-MIN_REDUCTION+224, // $NT
-  }
-,
-{ // state 397
-0x80000000|700, // match move
-0x80000000|3, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 398
-100,818, // "o"
-  }
-,
-{ // state 399
--1, // $$start
--1, // start
-930, // ws*
--1, // $$0
-MIN_REDUCTION+177, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+177, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+177, // "k"
-MIN_REDUCTION+177, // "y"
-MIN_REDUCTION+177, // "h"
-1006, // "i"
-MIN_REDUCTION+177, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+177, // "m"
-MIN_REDUCTION+177, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+177, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+177, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+177, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+177, // $
-MIN_REDUCTION+177, // $NT
-  }
-,
-{ // state 400
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+164, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+164, // $
-MIN_REDUCTION+164, // $NT
-  }
-,
-{ // state 401
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+95, // (default reduction)
-  }
-,
-{ // state 402
-0x80000000|291, // match move
-0x80000000|235, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 403
-MIN_REDUCTION+301, // (default reduction)
-  }
-,
-{ // state 404
-171,MIN_REDUCTION+200, // $NT
-MIN_REDUCTION+200, // (default reduction)
-  }
-,
-{ // state 405
-0x80000000|706, // match move
-0x80000000|402, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 406
-106,774, // "i"
-  }
-,
-{ // state 407
-MIN_REDUCTION+353, // (default reduction)
-  }
-,
-{ // state 408
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+143, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+143, // $
-MIN_REDUCTION+143, // $NT
-  }
-,
-{ // state 409
-171,MIN_REDUCTION+205, // $NT
-  }
-,
-{ // state 410
-171,MIN_REDUCTION+163, // $NT
-  }
-,
-{ // state 411
--1, // $$start
--1, // start
-61, // ws*
--1, // $$0
-MIN_REDUCTION+144, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+144, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+144, // "k"
-MIN_REDUCTION+144, // "y"
-MIN_REDUCTION+144, // "h"
-1006, // "i"
-MIN_REDUCTION+144, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+144, // "m"
-MIN_REDUCTION+144, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+144, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+144, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+144, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+144, // $
-MIN_REDUCTION+144, // $NT
-  }
-,
-{ // state 412
-90,MIN_REDUCTION+331, // idChar**
-146,MIN_REDUCTION+331, // "_"
-MIN_REDUCTION+331, // (default reduction)
-  }
-,
-{ // state 413
-MIN_REDUCTION+42, // (default reduction)
-  }
-,
-{ // state 414
-MIN_REDUCTION+21, // (default reduction)
-  }
-,
-{ // state 415
-0x80000000|849, // match move
-0x80000000|693, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 416
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+131, // (default reduction)
-  }
-,
-{ // state 417
--1, // $$start
--1, // start
-1131, // ws*
--1, // $$0
-MIN_REDUCTION+306, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+306, // $
--1, // $NT
-  }
-,
-{ // state 418
-MIN_REDUCTION+309, // (default reduction)
-  }
-,
-{ // state 419
-171,MIN_REDUCTION+199, // $NT
-  }
-,
-{ // state 420
-MIN_REDUCTION+76, // (default reduction)
-  }
-,
-{ // state 421
-96,436, // "t"
-  }
-,
-{ // state 422
-99,878, // "e"
-  }
-,
-{ // state 423
--1, // $$start
--1, // start
-827, // ws*
--1, // $$0
-MIN_REDUCTION+228, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-87, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+228, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+228, // "k"
-MIN_REDUCTION+228, // "y"
-MIN_REDUCTION+228, // "h"
-1006, // "i"
-MIN_REDUCTION+228, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+228, // "m"
-MIN_REDUCTION+228, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+228, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+228, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+228, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+228, // $
-MIN_REDUCTION+228, // $NT
-  }
-,
-{ // state 424
--1, // $$start
-790, // start
-782, // ws*
-306, // $$0
-796, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
-1152, // token*
-194, // digit+
-MIN_REDUCTION+1, // $
--1, // $NT
-  }
-,
-{ // state 425
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+289, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+289, // $
--1, // $NT
-  }
-,
-{ // state 426
-2,601, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+254, // (default reduction)
-  }
-,
-{ // state 427
-MIN_REDUCTION+12, // (default reduction)
-  }
-,
-{ // state 428
-97,543, // "r"
-  }
-,
-{ // state 429
-0x80000000|2, // match move
-0x80000000|486, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 430
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+158, // (default reduction)
-  }
-,
-{ // state 431
-171,MIN_REDUCTION+149, // $NT
-MIN_REDUCTION+149, // (default reduction)
-  }
-,
-{ // state 432
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+251, // (default reduction)
-  }
-,
-{ // state 433
-MIN_REDUCTION+321, // (default reduction)
-  }
-,
-{ // state 434
-0x80000000|572, // match move
-0x80000000|186, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 435
-MIN_REDUCTION+71, // (default reduction)
-  }
-,
-{ // state 436
-109,77, // "f"
-  }
-,
-{ // state 437
-93,989, // "a"
-99,216, // "e"
-107,464, // "u"
-  }
-,
-{ // state 438
-2,571, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+304, // (default reduction)
-  }
-,
-{ // state 439
-MIN_REDUCTION+342, // (default reduction)
-  }
-,
-{ // state 440
-MIN_REDUCTION+68, // (default reduction)
-  }
-,
-{ // state 441
--1, // $$start
--1, // start
-245, // ws*
--1, // $$0
-MIN_REDUCTION+210, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+210, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+210, // "k"
-MIN_REDUCTION+210, // "y"
-MIN_REDUCTION+210, // "h"
-1006, // "i"
-MIN_REDUCTION+210, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+210, // "m"
-MIN_REDUCTION+210, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+210, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+210, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+210, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+210, // $
-MIN_REDUCTION+210, // $NT
-  }
-,
-{ // state 442
-0x80000000|2, // match move
-0x80000000|928, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 443
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+161, // (default reduction)
-  }
-,
-{ // state 444
-0x80000000|674, // match move
-0x80000000|960, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 445
--1, // $$start
--1, // start
-810, // ws*
--1, // $$0
-MIN_REDUCTION+296, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+296, // $
--1, // $NT
-  }
-,
-{ // state 446
-0x80000000|593, // match move
-0x80000000|896, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 447
-MIN_REDUCTION+52, // (default reduction)
-  }
-,
-{ // state 448
-0x80000000|2, // match move
-0x80000000|95, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 449
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+200, // (default reduction)
-  }
-,
-{ // state 450
-0x80000000|1156, // match move
-0x80000000|131, // no-match move
-0x80000000|566, // NT-test-match state for digit
-  }
-,
-{ // state 451
-0x80000000|2, // match move
-0x80000000|634, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 452
-100,15, // "o"
-  }
-,
-{ // state 453
-102,376, // "n"
-  }
-,
-{ // state 454
-171,MIN_REDUCTION+137, // $NT
-MIN_REDUCTION+137, // (default reduction)
-  }
-,
-{ // state 455
-126,671, // "*"
-  }
-,
-{ // state 456
-MIN_REDUCTION+340, // (default reduction)
-  }
-,
-{ // state 457
-103,105, // "k"
-  }
-,
-{ // state 458
--1, // $$start
--1, // start
-771, // ws*
--1, // $$0
-MIN_REDUCTION+174, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-814, // "e"
-MIN_REDUCTION+174, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+174, // "k"
-MIN_REDUCTION+174, // "y"
-MIN_REDUCTION+174, // "h"
-1006, // "i"
-MIN_REDUCTION+174, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+174, // "m"
-MIN_REDUCTION+174, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+174, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+174, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+174, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+174, // $
-MIN_REDUCTION+174, // $NT
-  }
-,
-{ // state 459
-MIN_REDUCTION+79, // (default reduction)
-  }
-,
-{ // state 460
-0x80000000|933, // match move
-0x80000000|473, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 461
-171,MIN_REDUCTION+127, // $NT
-  }
-,
-{ // state 462
-MIN_REDUCTION+341, // (default reduction)
-  }
-,
-{ // state 463
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+285, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+285, // $
--1, // $NT
-  }
-,
-{ // state 464
-101,991, // "l"
-  }
-,
-{ // state 465
-MIN_REDUCTION+357, // (default reduction)
-  }
-,
-{ // state 466
-0x80000000|497, // match move
-0x80000000|90, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 467
-MIN_REDUCTION+340, // (default reduction)
-  }
-,
-{ // state 468
-171,MIN_REDUCTION+131, // $NT
-MIN_REDUCTION+131, // (default reduction)
-  }
-,
-{ // state 469
-2,1100, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+260, // (default reduction)
-  }
-,
-{ // state 470
-0x80000000|650, // match move
-0x80000000|603, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 471
-99,581, // "e"
-  }
-,
-{ // state 472
-0x80000000|2, // match move
-0x80000000|1094, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 473
--1, // $$start
--1, // start
-334, // ws*
--1, // $$0
-MIN_REDUCTION+262, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
--1, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
--1, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-MIN_REDUCTION+262, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+262, // $
--1, // $NT
-  }
-,
-{ // state 474
-0x80000000|364, // match move
-0x80000000|140, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 475
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+255, // (default reduction)
-  }
-,
-{ // state 476
-0x80000000|853, // match move
-0x80000000|708, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 477
-0x80000000|337, // match move
-0x80000000|425, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 478
-0x80000000|1062, // match move
-0x80000000|57, // no-match move
-// T-test match for "-":
-124,
-  }
-,
-{ // state 479
-MIN_REDUCTION+43, // (default reduction)
-  }
-,
-{ // state 480
-MIN_REDUCTION+15, // (default reduction)
-  }
-,
-{ // state 481
-171,MIN_REDUCTION+193, // $NT
-  }
-,
-{ // state 482
--1, // $$start
--1, // start
-619, // ws*
--1, // $$0
-MIN_REDUCTION+135, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+135, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+135, // "k"
-MIN_REDUCTION+135, // "y"
-MIN_REDUCTION+135, // "h"
-1006, // "i"
-MIN_REDUCTION+135, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+135, // "m"
-MIN_REDUCTION+135, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+135, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+135, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+135, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+135, // $
-MIN_REDUCTION+135, // $NT
-  }
-,
-{ // state 483
-96,442, // "t"
-  }
-,
-{ // state 484
-0x80000000|200, // match move
-0x80000000|31, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 485
-0x80000000|805, // match move
-0x80000000|743, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 486
--1, // $$start
--1, // start
-1023, // ws*
--1, // $$0
-MIN_REDUCTION+219, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+219, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+219, // "k"
-MIN_REDUCTION+219, // "y"
-MIN_REDUCTION+219, // "h"
-1006, // "i"
-MIN_REDUCTION+219, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+219, // "m"
-MIN_REDUCTION+219, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+219, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+219, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+219, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+219, // $
-MIN_REDUCTION+219, // $NT
-  }
-,
-{ // state 487
-0x80000000|2, // match move
-0x80000000|746, // no-match move
-// T-test match for {"*" "/"}:
-126,
-127,
-  }
-,
-{ // state 488
-2,1100, // ws*
-MIN_REDUCTION+260, // (default reduction)
-  }
-,
-{ // state 489
-94,374, // "b"
-  }
-,
-{ // state 490
-171,MIN_REDUCTION+100, // $NT
-  }
-,
-{ // state 491
-95,170, // "s"
-  }
-,
-{ // state 492
-0x80000000|965, // match move
-0x80000000|477, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 493
-3,643, // $$0
-4,796, // token
-5,89, // `boolean
-6,303, // `class
-7,1154, // `extends
-8,1010, // `void
-9,802, // `int
-10,41, // `while
-11,198, // `if
-12,427, // `else
-13,336, // `for
-14,1160, // `break
-15,480, // `this
-16,569, // `false
-17,595, // `true
-18,525, // `super
-19,724, // `null
-20,820, // `return
-21,414, // `instanceof
-22,181, // `new
-23,629, // `abstract
-24,133, // `assert
-25,1091, // `byte
-26,682, // `case
-27,99, // `catch
-28,371, // `char
-29,130, // `const
-30,1055, // `continue
-31,1165, // `default
-32,890, // `do
-33,121, // `double
-34,233, // `enum
-35,779, // `final
-36,859, // `finally
-37,766, // `float
-38,551, // `goto
-39,187, // `implements
-40,662, // `import
-41,622, // `interface
-42,413, // `long
-43,479, // `native
-44,1128, // `package
-45,709, // `private
-46,788, // `protected
-47,806, // `public
-48,344, // `short
-49,702, // `static
-50,824, // `strictfp
-51,995, // `switch
-52,447, // `synchronized
-53,177, // `throw
-54,1103, // `throws
-55,1082, // `transient
-56,8, // `try
-57,549, // `volatile
-168,1152, // token*
-  }
-,
-{ // state 494
-93,764, // "a"
-  }
-,
-{ // state 495
-0x80000000|45, // match move
-0x80000000|652, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 496
--1, // $$start
--1, // start
-1192, // ws*
--1, // $$0
-MIN_REDUCTION+225, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+225, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+225, // "k"
-MIN_REDUCTION+225, // "y"
-MIN_REDUCTION+225, // "h"
-1006, // "i"
-MIN_REDUCTION+225, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+225, // "m"
-MIN_REDUCTION+225, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+225, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+225, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+225, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+225, // $
-MIN_REDUCTION+225, // $NT
-  }
-,
-{ // state 497
-2,6, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+256, // (default reduction)
-  }
-,
-{ // state 498
-5,490, // `boolean
-6,259, // `class
-7,379, // `extends
-8,366, // `void
-9,727, // `int
-10,1069, // `while
-11,410, // `if
-12,1142, // `else
-13,69, // `for
-14,954, // `break
-15,143, // `this
-16,618, // `false
-17,86, // `true
-18,953, // `super
-19,920, // `null
-20,409, // `return
-21,1174, // `instanceof
-22,205, // `new
-23,637, // `abstract
-24,23, // `assert
-25,71, // `byte
-26,687, // `case
-27,1033, // `catch
-28,508, // `char
-29,725, // `const
-30,707, // `continue
-31,461, // `default
-32,241, // `do
-33,1120, // `double
-34,940, // `enum
-35,122, // `final
-36,1075, // `finally
-37,584, // `float
-38,961, // `goto
-39,694, // `implements
-40,887, // `import
-41,591, // `interface
-42,146, // `long
-43,393, // `native
-44,481, // `package
-45,136, // `private
-46,419, // `protected
-47,602, // `public
-48,1104, // `short
-49,527, // `static
-50,1161, // `strictfp
-51,916, // `switch
-52,236, // `synchronized
-53,983, // `throw
-54,957, // `throws
-55,260, // `transient
-56,176, // `try
-57,825, // `volatile
-93,973, // "a"
-94,1139, // "b"
-95,914, // "s"
-96,1059, // "t"
-97,626, // "r"
-98,223, // "c"
-99,182, // "e"
-101,1014, // "l"
-102,437, // "n"
-106,1006, // "i"
-108,734, // "d"
-109,879, // "f"
-112,1068, // "g"
-113,293, // "p"
-114,94, // "v"
-115,12, // "w"
-  }
-,
-{ // state 499
-171,MIN_REDUCTION+188, // $NT
-MIN_REDUCTION+188, // (default reduction)
-  }
-,
-{ // state 500
-0x80000000|1101, // match move
-0x80000000|807, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 501
-0x80000000|123, // match move
-0x80000000|1147, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 502
-99,372, // "e"
-  }
-,
-{ // state 503
-99,763, // "e"
-  }
-,
-{ // state 504
-100,567, // "o"
-106,844, // "i"
-  }
-,
-{ // state 505
--1, // $$start
--1, // start
-510, // ws*
--1, // $$0
-MIN_REDUCTION+207, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+207, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+207, // "k"
-MIN_REDUCTION+207, // "y"
-MIN_REDUCTION+207, // "h"
-1006, // "i"
-MIN_REDUCTION+207, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+207, // "m"
-MIN_REDUCTION+207, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+207, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+207, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+207, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+207, // $
-MIN_REDUCTION+207, // $NT
-  }
-,
-{ // state 506
-120,1083, // "&"
-  }
-,
-{ // state 507
-0x80000000|898, // match move
-0x80000000|718, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 508
-171,MIN_REDUCTION+115, // $NT
-  }
-,
-{ // state 509
-0x80000000|839, // match move
-0x80000000|768, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 510
-0x80000000|348, // match move
-0x80000000|59, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 511
--1, // $$start
--1, // start
-666, // ws*
--1, // $$0
-MIN_REDUCTION+195, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+195, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+195, // "k"
-MIN_REDUCTION+195, // "y"
-MIN_REDUCTION+195, // "h"
-1006, // "i"
-MIN_REDUCTION+195, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+195, // "m"
-MIN_REDUCTION+195, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+195, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+195, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+195, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+195, // $
-MIN_REDUCTION+195, // $NT
-  }
-,
-{ // state 512
-93,831, // "a"
-  }
-,
-{ // state 513
--1, // $$start
--1, // start
-696, // ws*
--1, // $$0
-MIN_REDUCTION+89, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
-368, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+89, // $
--1, // $NT
-  }
-,
-{ // state 514
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+287, // (default reduction)
-  }
-,
-{ // state 515
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+104, // (default reduction)
-  }
-,
-{ // state 516
--1, // $$start
--1, // start
-270, // ws*
--1, // $$0
-MIN_REDUCTION+114, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+114, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+114, // "k"
-MIN_REDUCTION+114, // "y"
-MIN_REDUCTION+114, // "h"
-1006, // "i"
-MIN_REDUCTION+114, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+114, // "m"
-MIN_REDUCTION+114, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+114, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+114, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+114, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+114, // $
-MIN_REDUCTION+114, // $NT
-  }
-,
-{ // state 517
-MIN_REDUCTION+355, // (default reduction)
-  }
-,
-{ // state 518
-138,1183, // "'"
-  }
-,
-{ // state 519
-115,689, // "w"
-  }
-,
-{ // state 520
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+170, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+170, // $
-MIN_REDUCTION+170, // $NT
-  }
-};
-}
-private class Initter4{
-public int doInit(int startIdx) {
-  for (int i = 0; i < myParseTable.length; i++) {
-    parseTable[i+startIdx] = myParseTable[i];
-  }
-  return myParseTable.length;
-}
-private final int[][] myParseTable = {
-{ // state 521
-96,448, // "t"
-  }
-,
-{ // state 522
--1, // $$start
--1, // start
-978, // ws*
--1, // $$0
-MIN_REDUCTION+102, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+102, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+102, // "k"
-MIN_REDUCTION+102, // "y"
-MIN_REDUCTION+102, // "h"
-1006, // "i"
-MIN_REDUCTION+102, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+102, // "m"
-MIN_REDUCTION+102, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+102, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+102, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+102, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+102, // $
-MIN_REDUCTION+102, // $NT
-  }
-,
-{ // state 523
-2,298, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+280, // (default reduction)
-  }
-,
-{ // state 524
-163,1067, // {10}
-  }
-,
-{ // state 525
-MIN_REDUCTION+18, // (default reduction)
-  }
-,
-{ // state 526
-0x80000000|2, // match move
-0x80000000|608, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 527
-171,MIN_REDUCTION+211, // $NT
-  }
-,
-{ // state 528
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+221, // (default reduction)
-  }
-,
-{ // state 529
-97,883, // "r"
-  }
-,
-{ // state 530
-126,10, // "*"
-127,943, // "/"
-  }
-,
-{ // state 531
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+98, // (default reduction)
-  }
-,
-{ // state 532
-0x80000000|430, // match move
-0x80000000|621, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 533
-108,578, // "d"
-  }
-,
-{ // state 534
-0x80000000|970, // match move
-0x80000000|224, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 535
-MIN_REDUCTION+62, // (default reduction)
-  }
-,
-{ // state 536
-0x80000000|239, // match move
-0x80000000|926, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 537
-MIN_REDUCTION+78, // (default reduction)
-  }
-,
-{ // state 538
-2,563, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+286, // (default reduction)
-  }
-,
-{ // state 539
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+230, // (default reduction)
-  }
-,
-{ // state 540
+{ // state 356
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -16351,464 +11964,992 @@ MIN_REDUCTION+303, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+303, // $
 -1, // $NT
   }
 ,
-{ // state 541
-MIN_REDUCTION+329, // (default reduction)
+{ // state 357
+2,461, // ws*
+MIN_REDUCTION+258, // (default reduction)
   }
 ,
-{ // state 542
-95,903, // "s"
-  }
-,
-{ // state 543
-96,871, // "t"
-  }
-,
-{ // state 544
-171,MIN_REDUCTION+146, // $NT
-MIN_REDUCTION+146, // (default reduction)
-  }
-,
-{ // state 545
-0x80000000|1066, // match move
-0x80000000|922, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 546
-MIN_REDUCTION+330, // (default reduction)
-  }
-,
-{ // state 547
-MIN_REDUCTION+65, // (default reduction)
-  }
-,
-{ // state 548
-96,167, // "t"
-  }
-,
-{ // state 549
-MIN_REDUCTION+57, // (default reduction)
-  }
-,
-{ // state 550
-171,MIN_REDUCTION+339, // $NT
-MIN_REDUCTION+339, // (default reduction)
-  }
-,
-{ // state 551
-MIN_REDUCTION+38, // (default reduction)
-  }
-,
-{ // state 552
-0x80000000|111, // match move
-0x80000000|119, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 553
-98,979, // "c"
-  }
-,
-{ // state 554
-MIN_REDUCTION+355, // (default reduction)
-  }
-,
-{ // state 555
-0x80000000|816, // match move
-0x80000000|1002, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 556
-MIN_REDUCTION+305, // (default reduction)
-  }
-,
-{ // state 557
-MIN_REDUCTION+362, // (default reduction)
-  }
-,
-{ // state 558
-MIN_REDUCTION+75, // (default reduction)
-  }
-,
-{ // state 559
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+167, // (default reduction)
-  }
-,
-{ // state 560
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+281, // (default reduction)
-  }
-,
-{ // state 561
-96,1133, // "t"
-  }
-,
-{ // state 562
-0x80000000|2, // match move
-0x80000000|522, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 563
-0x80000000|659, // match move
-0x80000000|174, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 564
-157,797, // eol
-161,1073, // printable**
-163,1146, // {10}
-164,733, // {13}
-167,166, // printable*
-  }
-,
-{ // state 565
-93,607, // "a"
-94,607, // "b"
-95,607, // "s"
-96,607, // "t"
-97,607, // "r"
-98,607, // "c"
-99,607, // "e"
-100,607, // "o"
-101,607, // "l"
-102,607, // "n"
-103,607, // "k"
-104,607, // "y"
-105,607, // "h"
-106,607, // "i"
-107,607, // "u"
-108,607, // "d"
-109,607, // "f"
-110,607, // "m"
-111,607, // "x"
-112,607, // "g"
-113,607, // "p"
-114,607, // "v"
-115,607, // "w"
-116,607, // "z"
-117,607, // "!"
-118,607, // "="
-119,607, // "%"
-120,607, // "&"
-121,607, // "|"
-122,607, // "+"
-123,607, // ","
-124,607, // "-"
-125,607, // "."
-126,607, // "*"
-127,607, // "/"
-128,607, // ";"
-129,607, // "<"
-130,607, // ">"
-131,607, // "("
-132,607, // ")"
-133,607, // "["
-134,607, // "]"
-135,607, // "{"
-136,607, // "}"
-138,607, // "'"
-140,1024, // '"'
-142,864, // $$2
-143,607, // "0"
-146,607, // "_"
-147,847, // escapeSequence
-148,867, // "\"
-150,607, // {"1".."9"}
-151,607, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,607, // {"A".."Z" "j" "q"}
-153,607, // " "
-155,1196, // stringPrintable
-  }
-,
-{ // state 566
-143,360, // "0"
-150,360, // {"1".."9"}
-  }
-,
-{ // state 567
-96,471, // "t"
-  }
-,
-{ // state 568
-0x80000000|2, // match move
-0x80000000|47, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 569
-MIN_REDUCTION+16, // (default reduction)
-  }
-,
-{ // state 570
+{ // state 358
 -1, // $$start
 -1, // start
-661, // ws*
+64, // ws*
 -1, // $$0
-MIN_REDUCTION+231, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+144, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+144, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+144, // "k"
+MIN_REDUCTION+144, // "y"
+MIN_REDUCTION+144, // "h"
+501, // "i"
+MIN_REDUCTION+144, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+144, // "m"
+MIN_REDUCTION+144, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+144, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+144, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+144, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+144, // $
+MIN_REDUCTION+144, // $NT
+  }
+,
+{ // state 359
+-1, // $$start
+-1, // start
+481, // ws*
+-1, // $$0
+MIN_REDUCTION+290, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+290, // $
+-1, // $NT
+  }
+,
+{ // state 360
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+176, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+176, // $
+MIN_REDUCTION+176, // $NT
+  }
+,
+{ // state 361
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+265, // (default reduction)
+  }
+,
+{ // state 362
+171,MIN_REDUCTION+142, // $NT
+  }
+,
+{ // state 363
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+122, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+122, // $
+MIN_REDUCTION+122, // $NT
+  }
+,
+{ // state 364
+MIN_REDUCTION+50, // (default reduction)
+  }
+,
+{ // state 365
+171,MIN_REDUCTION+98, // $NT
+MIN_REDUCTION+98, // (default reduction)
+  }
+,
+{ // state 366
+-1, // $$start
+-1, // start
+644, // ws*
+-1, // $$0
+MIN_REDUCTION+231, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
 MIN_REDUCTION+231, // "o"
-1014, // "l"
-437, // "n"
+100, // "l"
+495, // "n"
 MIN_REDUCTION+231, // "k"
 MIN_REDUCTION+231, // "y"
 MIN_REDUCTION+231, // "h"
-1006, // "i"
+501, // "i"
 MIN_REDUCTION+231, // "u"
-734, // "d"
-879, // "f"
+18, // "d"
+32, // "f"
 MIN_REDUCTION+231, // "m"
 MIN_REDUCTION+231, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
 MIN_REDUCTION+231, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
@@ -16818,18 +12959,18 @@ MIN_REDUCTION+231, // "z"
 MIN_REDUCTION+231, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
 MIN_REDUCTION+231, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
@@ -16839,333 +12980,4067 @@ MIN_REDUCTION+231, // $
 MIN_REDUCTION+231, // $NT
   }
 ,
-{ // state 571
-0x80000000|44, // match move
-0x80000000|982, // no-match move
+{ // state 367
+171,MIN_REDUCTION+348, // $NT
+MIN_REDUCTION+348, // (default reduction)
+  }
+,
+{ // state 368
+MIN_REDUCTION+49, // (default reduction)
+  }
+,
+{ // state 369
+0x80000000|485, // match move
+0x80000000|168, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 370
+0x80000000|529, // match move
+0x80000000|65, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 371
+2,481, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+290, // (default reduction)
+  }
+,
+{ // state 372
+171,MIN_REDUCTION+184, // $NT
+  }
+,
+{ // state 373
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+173, // (default reduction)
+  }
+,
+{ // state 374
+MIN_REDUCTION+24, // (default reduction)
+  }
+,
+{ // state 375
+99,81, // "e"
+  }
+,
+{ // state 376
+0x80000000|541, // match move
+0x80000000|926, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 572
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+242, // (default reduction)
+{ // state 377
+114,139, // "v"
   }
 ,
-{ // state 573
+{ // state 378
 -1, // $$start
 -1, // start
-1179, // ws*
+-1, // ws*
 -1, // $$0
-MIN_REDUCTION+183, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+224, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+224, // $
+MIN_REDUCTION+224, // $NT
+  }
+,
+{ // state 379
+MIN_REDUCTION+69, // (default reduction)
+  }
+,
+{ // state 380
+2,664, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+288, // (default reduction)
+  }
+,
+{ // state 381
+102,479, // "n"
+  }
+,
+{ // state 382
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+95, // (default reduction)
+  }
+,
+{ // state 383
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+164, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+164, // $
+MIN_REDUCTION+164, // $NT
+  }
+,
+{ // state 384
+0x80000000|1, // match move
+0x80000000|15, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 385
+101,512, // "l"
+  }
+,
+{ // state 386
+MIN_REDUCTION+301, // (default reduction)
+  }
+,
+{ // state 387
+171,MIN_REDUCTION+200, // $NT
+MIN_REDUCTION+200, // (default reduction)
+  }
+,
+{ // state 388
+126,1114, // "*"
+  }
+,
+{ // state 389
+MIN_REDUCTION+18, // (default reduction)
+  }
+,
+{ // state 390
+MIN_REDUCTION+355, // (default reduction)
+  }
+,
+{ // state 391
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+143, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+143, // $
+MIN_REDUCTION+143, // $NT
+  }
+,
+{ // state 392
+MIN_REDUCTION+38, // (default reduction)
+  }
+,
+{ // state 393
+171,MIN_REDUCTION+205, // $NT
+  }
+,
+{ // state 394
+2,1136, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+306, // (default reduction)
+  }
+,
+{ // state 395
+2,322, // ws*
+MIN_REDUCTION+262, // (default reduction)
+  }
+,
+{ // state 396
+MIN_REDUCTION+65, // (default reduction)
+  }
+,
+{ // state 397
+171,MIN_REDUCTION+163, // $NT
+  }
+,
+{ // state 398
+90,MIN_REDUCTION+331, // idChar**
+146,MIN_REDUCTION+331, // "_"
+MIN_REDUCTION+331, // (default reduction)
+  }
+,
+{ // state 399
+0x80000000|829, // match move
+0x80000000|665, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 400
+MIN_REDUCTION+56, // (default reduction)
+  }
+,
+{ // state 401
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+131, // (default reduction)
+  }
+,
+{ // state 402
+171,MIN_REDUCTION+343, // $NT
+MIN_REDUCTION+343, // (default reduction)
+  }
+,
+{ // state 403
+MIN_REDUCTION+309, // (default reduction)
+  }
+,
+{ // state 404
+171,MIN_REDUCTION+199, // $NT
+  }
+,
+{ // state 405
+0x80000000|1, // match move
+0x80000000|195, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 406
+93,133, // "a"
+  }
+,
+{ // state 407
+109,679, // "f"
+  }
+,
+{ // state 408
+0x80000000|889, // match move
+0x80000000|1055, // no-match move
+0x80000000|1143, // NT-test-match state for printable
+  }
+,
+{ // state 409
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+289, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+289, // $
+-1, // $NT
+  }
+,
+{ // state 410
+0x80000000|298, // match move
+0x80000000|109, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 411
+-1, // $$start
+-1, // start
+273, // ws*
+-1, // $$0
+MIN_REDUCTION+114, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+183, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+183, // "k"
-MIN_REDUCTION+183, // "y"
-MIN_REDUCTION+183, // "h"
-1006, // "i"
-MIN_REDUCTION+183, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+183, // "m"
-MIN_REDUCTION+183, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+183, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+114, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+114, // "k"
+MIN_REDUCTION+114, // "y"
+MIN_REDUCTION+114, // "h"
+501, // "i"
+MIN_REDUCTION+114, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+114, // "m"
+MIN_REDUCTION+114, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+114, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+183, // {"1".."9"}
+MIN_REDUCTION+114, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+183, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+114, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+183, // $
-MIN_REDUCTION+183, // $NT
+MIN_REDUCTION+114, // $
+MIN_REDUCTION+114, // $NT
   }
 ,
-{ // state 574
-0x80000000|2, // match move
-0x80000000|358, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 412
+2,1024, // ws*
+MIN_REDUCTION+282, // (default reduction)
   }
 ,
-{ // state 575
-93,670, // "a"
-94,670, // "b"
-95,670, // "s"
-96,670, // "t"
-97,670, // "r"
-98,670, // "c"
-99,670, // "e"
-100,670, // "o"
-101,670, // "l"
-102,670, // "n"
-103,670, // "k"
-104,670, // "y"
-105,670, // "h"
-106,670, // "i"
-107,670, // "u"
-108,670, // "d"
-109,670, // "f"
-110,670, // "m"
-111,670, // "x"
-112,670, // "g"
-113,670, // "p"
-114,670, // "v"
-115,670, // "w"
-116,670, // "z"
-117,670, // "!"
-118,670, // "="
-119,670, // "%"
-120,670, // "&"
-121,670, // "|"
-122,670, // "+"
-123,670, // ","
-124,670, // "-"
-125,670, // "."
-126,670, // "*"
-127,670, // "/"
-128,670, // ";"
-129,670, // "<"
-130,670, // ">"
-131,670, // "("
-132,670, // ")"
-133,670, // "["
-134,670, // "]"
-135,670, // "{"
-136,670, // "}"
-138,670, // "'"
-140,670, // '"'
-143,670, // "0"
-146,670, // "_"
-148,670, // "\"
-149,776, // printable
-150,670, // {"1".."9"}
-151,670, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,670, // {"A".."Z" "j" "q"}
-153,670, // " "
-154,670, // {9}
+{ // state 413
+-1, // $$start
+-1, // start
+1129, // ws*
+-1, // $$0
+MIN_REDUCTION+141, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+141, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+141, // "k"
+MIN_REDUCTION+141, // "y"
+MIN_REDUCTION+141, // "h"
+501, // "i"
+MIN_REDUCTION+141, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+141, // "m"
+MIN_REDUCTION+141, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+141, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+141, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+141, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+141, // $
+MIN_REDUCTION+141, // $NT
   }
 ,
-{ // state 576
-109,596, // "f"
+{ // state 414
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+158, // (default reduction)
   }
 ,
-{ // state 577
-99,905, // "e"
+{ // state 415
+171,MIN_REDUCTION+149, // $NT
+MIN_REDUCTION+149, // (default reduction)
   }
 ,
-{ // state 578
-95,526, // "s"
+{ // state 416
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+251, // (default reduction)
   }
 ,
-{ // state 579
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+215, // (default reduction)
+{ // state 417
+MIN_REDUCTION+321, // (default reduction)
   }
 ,
-{ // state 580
-0x80000000|378, // match move
-0x80000000|854, // no-match move
+{ // state 418
+0x80000000|551, // match move
+0x80000000|197, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 581
-98,992, // "c"
+{ // state 419
+MIN_REDUCTION+43, // (default reduction)
   }
 ,
-{ // state 582
-MIN_REDUCTION+303, // (default reduction)
+{ // state 420
+0x80000000|1099, // match move
+0x80000000|1047, // no-match move
+// T-test match for "=":
+118,
   }
 ,
-{ // state 583
-0x80000000|515, // match move
-0x80000000|851, // no-match move
+{ // state 421
+0x80000000|1, // match move
+0x80000000|1089, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 422
+126,577, // "*"
+127,561, // "/"
+  }
+,
+{ // state 423
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+161, // (default reduction)
+  }
+,
+{ // state 424
+98,734, // "c"
+  }
+,
+{ // state 425
+99,203, // "e"
+  }
+,
+{ // state 426
+0x80000000|654, // match move
+0x80000000|955, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 584
-171,MIN_REDUCTION+154, // $NT
+{ // state 427
+0x80000000|1, // match move
+0x80000000|366, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 585
-93,553, // "a"
+{ // state 428
+106,1050, // "i"
   }
 ,
-{ // state 586
-2,696, // ws*
-91,368, // $$1
-157,550, // eol
-158,1016, // ws
-160,654, // comment
+{ // state 429
+0x80000000|571, // match move
+0x80000000|870, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 430
+0x80000000|787, // match move
+0x80000000|110, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 431
+99,192, // "e"
+  }
+,
+{ // state 432
+MIN_REDUCTION+58, // (default reduction)
+  }
+,
+{ // state 433
+-1, // $$start
+-1, // start
+327, // ws*
+-1, // $$0
+MIN_REDUCTION+96, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+96, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+96, // "k"
+MIN_REDUCTION+96, // "y"
+MIN_REDUCTION+96, // "h"
+501, // "i"
+MIN_REDUCTION+96, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+96, // "m"
+MIN_REDUCTION+96, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+96, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+96, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+96, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+96, // $
+MIN_REDUCTION+96, // $NT
+  }
+,
+{ // state 434
+MIN_REDUCTION+344, // (default reduction)
+  }
+,
+{ // state 435
+-1, // $$start
+-1, // start
+1085, // ws*
+-1, // $$0
+MIN_REDUCTION+171, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+171, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+171, // "k"
+MIN_REDUCTION+171, // "y"
+MIN_REDUCTION+171, // "h"
+501, // "i"
+MIN_REDUCTION+171, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+171, // "m"
+MIN_REDUCTION+171, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+171, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+171, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+171, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+171, // $
+MIN_REDUCTION+171, // $NT
+  }
+,
+{ // state 436
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+200, // (default reduction)
+  }
+,
+{ // state 437
+0x80000000|1164, // match move
+0x80000000|142, // no-match move
+0x80000000|545, // NT-test-match state for digit
+  }
+,
+{ // state 438
+MIN_REDUCTION+72, // (default reduction)
+  }
+,
+{ // state 439
+99,246, // "e"
+  }
+,
+{ // state 440
+MIN_REDUCTION+15, // (default reduction)
+  }
+,
+{ // state 441
+0x80000000|1, // match move
+0x80000000|202, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 442
+0x80000000|1052, // match move
+0x80000000|726, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 443
+171,MIN_REDUCTION+137, // $NT
+MIN_REDUCTION+137, // (default reduction)
+  }
+,
+{ // state 444
+MIN_REDUCTION+52, // (default reduction)
+  }
+,
+{ // state 445
+-1, // $$start
+-1, // start
+668, // ws*
+-1, // $$0
+MIN_REDUCTION+91, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+765, // idChar**
+975, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+91, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+91, // "k"
+MIN_REDUCTION+91, // "y"
+MIN_REDUCTION+91, // "h"
+501, // "i"
+MIN_REDUCTION+91, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+91, // "m"
+MIN_REDUCTION+91, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+91, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+91, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+91, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+1112, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+91, // $
+-1, // $NT
+  }
+,
+{ // state 446
+MIN_REDUCTION+78, // (default reduction)
+  }
+,
+{ // state 447
+171,MIN_REDUCTION+127, // $NT
+  }
+,
+{ // state 448
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+285, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+285, // $
+-1, // $NT
+  }
+,
+{ // state 449
+96,1022, // "t"
+  }
+,
+{ // state 450
+MIN_REDUCTION+63, // (default reduction)
+  }
+,
+{ // state 451
+MIN_REDUCTION+359, // (default reduction)
+  }
+,
+{ // state 452
+2,593, // ws*
+MIN_REDUCTION+294, // (default reduction)
+  }
+,
+{ // state 453
+171,MIN_REDUCTION+131, // $NT
+MIN_REDUCTION+131, // (default reduction)
+  }
+,
+{ // state 454
+101,770, // "l"
+  }
+,
+{ // state 455
+2,558, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+266, // (default reduction)
+  }
+,
+{ // state 456
+0x80000000|631, // match move
+0x80000000|583, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 457
+0x80000000|251, // match move
+0x80000000|1175, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
+  }
+,
+{ // state 458
+95,128, // "s"
+  }
+,
+{ // state 459
+0x80000000|347, // match move
+0x80000000|150, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 460
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+255, // (default reduction)
+  }
+,
+{ // state 461
+0x80000000|834, // match move
+0x80000000|682, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 462
+0x80000000|325, // match move
+0x80000000|409, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 463
+93,516, // "a"
+  }
+,
+{ // state 464
+0x80000000|1, // match move
+0x80000000|892, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 465
+127,293, // "/"
+  }
+,
+{ // state 466
+127,295, // "/"
+  }
+,
+{ // state 467
+97,1126, // "r"
+100,1142, // "o"
+104,306, // "y"
+  }
+,
+{ // state 468
+MIN_REDUCTION+362, // (default reduction)
+  }
+,
+{ // state 469
+171,MIN_REDUCTION+193, // $NT
+  }
+,
+{ // state 470
+2,210, // ws*
+MIN_REDUCTION+270, // (default reduction)
+  }
+,
+{ // state 471
+96,1189, // "t"
+  }
+,
+{ // state 472
+0x80000000|1, // match move
+0x80000000|707, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 473
+0x80000000|781, // match move
+0x80000000|717, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 474
+2,668, // ws*
+91,352, // $$1
 MIN_REDUCTION+89, // (default reduction)
   }
 ,
-{ // state 587
-MIN_REDUCTION+350, // (default reduction)
+{ // state 475
+95,471, // "s"
+96,627, // "t"
   }
 ,
-{ // state 588
-0x80000000|1007, // match move
-0x80000000|1012, // no-match move
+{ // state 476
+0x80000000|576, // match move
+0x80000000|442, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 589
+{ // state 477
+171,MIN_REDUCTION+100, // $NT
+  }
+,
+{ // state 478
+0x80000000|1, // match move
+0x80000000|675, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 479
+112,820, // "g"
+  }
+,
+{ // state 480
+0x80000000|1, // match move
+0x80000000|715, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 481
+0x80000000|959, // match move
+0x80000000|462, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 482
+3,622, // $$0
+4,694, // token
+5,1137, // `boolean
+6,24, // `class
+7,869, // `extends
+8,61, // `void
+9,792, // `int
+10,1121, // `while
+11,525, // `if
+12,999, // `else
+13,232, // `for
+14,505, // `break
+15,440, // `this
+16,1162, // `false
+17,59, // `true
+18,389, // `super
+19,226, // `null
+20,910, // `return
+21,1097, // `instanceof
+22,891, // `new
+23,837, // `abstract
+24,374, // `assert
+25,776, // `byte
+26,802, // `case
+27,84, // `catch
+28,690, // `char
+29,29, // `const
+30,716, // `continue
+31,547, // `default
+32,1109, // `do
+33,1198, // `double
+34,875, // `enum
+35,1124, // `final
+36,796, // `finally
+37,614, // `float
+38,392, // `goto
+39,718, // `implements
+40,198, // `import
+41,1041, // `interface
+42,688, // `long
+43,419, // `native
+44,145, // `package
+45,1059, // `private
+46,215, // `protected
+47,651, // `public
+48,924, // `short
+49,368, // `static
+50,364, // `strictfp
+51,803, // `switch
+52,444, // `synchronized
+53,1090, // `throw
+54,985, // `throws
+55,320, // `transient
+56,400, // `try
+57,43, // `volatile
+168,1159, // token*
+  }
+,
+{ // state 483
+-1, // $$start
+-1, // start
+54, // ws*
+-1, // $$0
+MIN_REDUCTION+240, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+240, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+240, // "k"
+MIN_REDUCTION+240, // "y"
+MIN_REDUCTION+240, // "h"
+501, // "i"
+MIN_REDUCTION+240, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+240, // "m"
+MIN_REDUCTION+240, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+240, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+240, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+240, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+240, // $
+MIN_REDUCTION+240, // $NT
+  }
+,
+{ // state 484
+0x80000000|46, // match move
+0x80000000|633, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 485
+95,427, // "s"
+  }
+,
+{ // state 486
+-1, // $$start
+-1, // start
+1110, // ws*
+-1, // $$0
+MIN_REDUCTION+153, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+153, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+153, // "k"
+MIN_REDUCTION+153, // "y"
+MIN_REDUCTION+153, // "h"
+501, // "i"
+MIN_REDUCTION+153, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+153, // "m"
+MIN_REDUCTION+153, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+153, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+153, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+153, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+153, // $
+MIN_REDUCTION+153, // $NT
+  }
+,
+{ // state 487
+5,477, // `boolean
+6,261, // `class
+7,362, // `extends
+8,350, // `void
+9,700, // `int
+10,1056, // `while
+11,397, // `if
+12,1146, // `else
+13,71, // `for
+14,947, // `break
+15,154, // `this
+16,601, // `false
+17,95, // `true
+18,948, // `super
+19,904, // `null
+20,393, // `return
+21,1182, // `instanceof
+22,214, // `new
+23,617, // `abstract
+24,26, // `assert
+25,75, // `byte
+26,661, // `case
+27,1023, // `catch
+28,498, // `char
+29,697, // `const
+30,681, // `continue
+31,447, // `default
+32,241, // `do
+33,1120, // `double
+34,928, // `enum
+35,131, // `final
+36,1065, // `finally
+37,560, // `float
+38,957, // `goto
+39,666, // `implements
+40,862, // `import
+41,569, // `interface
+42,156, // `long
+43,372, // `native
+44,469, // `package
+45,149, // `private
+46,404, // `protected
+47,582, // `public
+48,1105, // `short
+49,517, // `static
+50,1169, // `strictfp
+51,898, // `switch
+52,234, // `synchronized
+53,974, // `throw
+54,952, // `throws
+55,262, // `transient
+56,188, // `try
+57,804, // `volatile
+93,885, // "a"
+94,467, // "b"
+95,995, // "s"
+96,1002, // "t"
+97,431, // "r"
+98,721, // "c"
+99,176, // "e"
+101,100, // "l"
+102,495, // "n"
+106,501, // "i"
+108,18, // "d"
+109,32, // "f"
+112,840, // "g"
+113,269, // "p"
+114,1006, // "v"
+115,13, // "w"
+  }
+,
+{ // state 488
+0x80000000|1, // match move
+0x80000000|1157, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 489
+99,782, // "e"
+  }
+,
+{ // state 490
+171,MIN_REDUCTION+188, // $NT
+MIN_REDUCTION+188, // (default reduction)
+  }
+,
+{ // state 491
+0x80000000|1098, // match move
+0x80000000|783, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 492
+0x80000000|132, // match move
+0x80000000|1153, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 493
+97,407, // "r"
+  }
+,
+{ // state 494
+171,MIN_REDUCTION+335, // $NT
+MIN_REDUCTION+335, // (default reduction)
+  }
+,
+{ // state 495
+93,588, // "a"
+99,299, // "e"
+107,454, // "u"
+  }
+,
+{ // state 496
+0x80000000|72, // match move
+0x80000000|591, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 497
+0x80000000|873, // match move
+0x80000000|693, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 498
+171,MIN_REDUCTION+115, // $NT
+  }
+,
+{ // state 499
+0x80000000|819, // match move
+0x80000000|741, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 500
+0x80000000|335, // match move
+0x80000000|60, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 501
+102,475, // "n"
+109,607, // "f"
+110,55, // "m"
+  }
+,
+{ // state 502
+0x80000000|1, // match move
+0x80000000|294, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 503
+0x80000000|1138, // match move
+0x80000000|992, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 504
+96,1079, // "t"
+  }
+,
+{ // state 505
+MIN_REDUCTION+14, // (default reduction)
+  }
+,
+{ // state 506
+2,691, // ws*
+153,595, // " "
+154,595, // {9}
+157,534, // eol
+158,204, // ws
+159,595, // {12}
+163,1062, // {10}
+164,1072, // {13}
+MIN_REDUCTION+274, // (default reduction)
+  }
+,
+{ // state 507
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+287, // (default reduction)
+  }
+,
+{ // state 508
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+104, // (default reduction)
+  }
+,
+{ // state 509
+MIN_REDUCTION+357, // (default reduction)
+  }
+,
+{ // state 510
+MIN_REDUCTION+81, // (default reduction)
+  }
+,
+{ // state 511
+MIN_REDUCTION+342, // (default reduction)
+  }
+,
+{ // state 512
+99,144, // "e"
+  }
+,
+{ // state 513
+126,465, // "*"
+  }
+,
+{ // state 514
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+170, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+170, // $
+MIN_REDUCTION+170, // $NT
+  }
+};
+}
+private class Initter4{
+public int doInit(int startIdx) {
+  for (int i = 0; i < myParseTable.length; i++) {
+    parseTable[i+startIdx] = myParseTable[i];
+  }
+  return myParseTable.length;
+}
+private final int[][] myParseTable = {
+{ // state 515
+MIN_REDUCTION+73, // (default reduction)
+  }
+,
+{ // state 516
+95,458, // "s"
+  }
+,
+{ // state 517
+171,MIN_REDUCTION+211, // $NT
+  }
+,
+{ // state 518
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+221, // (default reduction)
+  }
+,
+{ // state 519
+100,984, // "o"
+106,377, // "i"
+  }
+,
+{ // state 520
+110,527, // "m"
+  }
+,
+{ // state 521
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+98, // (default reduction)
+  }
+,
+{ // state 522
+0x80000000|414, // match move
+0x80000000|604, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 523
+0x80000000|967, // match move
+0x80000000|228, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 524
+0x80000000|237, // match move
+0x80000000|914, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 525
+MIN_REDUCTION+11, // (default reduction)
+  }
+,
+{ // state 526
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+230, // (default reduction)
+  }
+,
+{ // state 527
+0x80000000|1, // match move
+0x80000000|768, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 528
+0x80000000|990, // match move
+0x80000000|496, // no-match move
+// T-test match for "-":
+124,
+  }
+,
+{ // state 529
+171,MIN_REDUCTION+146, // $NT
+MIN_REDUCTION+146, // (default reduction)
+  }
+,
+{ // state 530
+93,191, // "a"
+  }
+,
+{ // state 531
+MIN_REDUCTION+330, // (default reduction)
+  }
+,
+{ // state 532
+0x80000000|1, // match move
+0x80000000|411, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 533
+97,835, // "r"
+  }
+,
+{ // state 534
+171,MIN_REDUCTION+341, // $NT
+MIN_REDUCTION+341, // (default reduction)
+  }
+,
+{ // state 535
+102,1043, // "n"
+  }
+,
+{ // state 536
+0x80000000|120, // match move
+0x80000000|130, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 537
+MIN_REDUCTION+357, // (default reduction)
+  }
+,
+{ // state 538
+MIN_REDUCTION+305, // (default reduction)
+  }
+,
+{ // state 539
+MIN_REDUCTION+364, // (default reduction)
+  }
+,
+{ // state 540
+108,146, // "d"
+  }
+,
+{ // state 541
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+167, // (default reduction)
+  }
+,
+{ // state 542
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+281, // (default reduction)
+  }
+,
+{ // state 543
+0x80000000|641, // match move
+0x80000000|186, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 544
+93,589, // "a"
+94,589, // "b"
+95,589, // "s"
+96,589, // "t"
+97,589, // "r"
+98,589, // "c"
+99,589, // "e"
+100,589, // "o"
+101,589, // "l"
+102,589, // "n"
+103,589, // "k"
+104,589, // "y"
+105,589, // "h"
+106,589, // "i"
+107,589, // "u"
+108,589, // "d"
+109,589, // "f"
+110,589, // "m"
+111,589, // "x"
+112,589, // "g"
+113,589, // "p"
+114,589, // "v"
+115,589, // "w"
+116,589, // "z"
+117,589, // "!"
+118,589, // "="
+119,589, // "%"
+120,589, // "&"
+121,589, // "|"
+122,589, // "+"
+123,589, // ","
+124,589, // "-"
+125,589, // "."
+126,589, // "*"
+127,589, // "/"
+128,589, // ";"
+129,589, // "<"
+130,589, // ">"
+131,589, // "("
+132,589, // ")"
+133,589, // "["
+134,589, // "]"
+135,589, // "{"
+136,589, // "}"
+138,589, // "'"
+140,208, // '"'
+142,841, // $$2
+143,589, // "0"
+146,589, // "_"
+147,827, // escapeSequence
+148,844, // "\"
+150,589, // {"1".."9"}
+151,589, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,589, // {"A".."Z" "j" "q"}
+153,589, // " "
+155,1208, // stringPrintable
+  }
+,
+{ // state 545
+143,344, // "0"
+150,344, // {"1".."9"}
+  }
+,
+{ // state 546
+96,1101, // "t"
+  }
+,
+{ // state 547
+MIN_REDUCTION+31, // (default reduction)
+  }
+,
+{ // state 548
+102,546, // "n"
+  }
+,
+{ // state 549
+0x80000000|62, // match move
+0x80000000|50, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 550
+106,687, // "i"
+  }
+,
+{ // state 551
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+242, // (default reduction)
+  }
+,
+{ // state 552
+MIN_REDUCTION+82, // (default reduction)
+  }
+,
+{ // state 553
+93,650, // "a"
+94,650, // "b"
+95,650, // "s"
+96,650, // "t"
+97,650, // "r"
+98,650, // "c"
+99,650, // "e"
+100,650, // "o"
+101,650, // "l"
+102,650, // "n"
+103,650, // "k"
+104,650, // "y"
+105,650, // "h"
+106,650, // "i"
+107,650, // "u"
+108,650, // "d"
+109,650, // "f"
+110,650, // "m"
+111,650, // "x"
+112,650, // "g"
+113,650, // "p"
+114,650, // "v"
+115,650, // "w"
+116,650, // "z"
+117,650, // "!"
+118,650, // "="
+119,650, // "%"
+120,650, // "&"
+121,650, // "|"
+122,650, // "+"
+123,650, // ","
+124,650, // "-"
+125,650, // "."
+126,650, // "*"
+127,650, // "/"
+128,650, // ";"
+129,650, // "<"
+130,650, // ">"
+131,650, // "("
+132,650, // ")"
+133,650, // "["
+134,650, // "]"
+135,650, // "{"
+136,650, // "}"
+138,650, // "'"
+140,650, // '"'
+143,650, // "0"
+146,650, // "_"
+148,650, // "\"
+149,751, // printable
+150,650, // {"1".."9"}
+151,650, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,650, // {"A".."Z" "j" "q"}
+153,650, // " "
+154,650, // {9}
+  }
+,
+{ // state 554
+98,867, // "c"
+  }
+,
+{ // state 555
+93,124, // "a"
+94,124, // "b"
+95,124, // "s"
+96,124, // "t"
+97,124, // "r"
+98,124, // "c"
+99,124, // "e"
+100,124, // "o"
+101,124, // "l"
+102,124, // "n"
+103,124, // "k"
+104,124, // "y"
+105,124, // "h"
+106,124, // "i"
+107,124, // "u"
+108,124, // "d"
+109,124, // "f"
+110,124, // "m"
+111,124, // "x"
+112,124, // "g"
+113,124, // "p"
+114,124, // "v"
+115,124, // "w"
+116,124, // "z"
+117,124, // "!"
+118,124, // "="
+119,124, // "%"
+120,124, // "&"
+121,124, // "|"
+122,124, // "+"
+123,124, // ","
+124,124, // "-"
+125,124, // "."
+126,124, // "*"
+127,124, // "/"
+128,124, // ";"
+129,124, // "<"
+130,124, // ">"
+131,124, // "("
+132,124, // ")"
+133,124, // "["
+134,124, // "]"
+135,124, // "{"
+136,124, // "}"
+139,312, // charPrintable
+140,124, // '"'
+143,124, // "0"
+146,124, // "_"
+147,567, // escapeSequence
+148,844, // "\"
+150,124, // {"1".."9"}
+151,124, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,124, // {"A".."Z" "j" "q"}
+153,124, // " "
+  }
+,
+{ // state 556
+-1, // $$start
+-1, // start
+593, // ws*
+-1, // $$0
+MIN_REDUCTION+294, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+294, // $
+-1, // $NT
+  }
+,
+{ // state 557
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+215, // (default reduction)
+  }
+,
+{ // state 558
+0x80000000|361, // match move
+0x80000000|836, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 559
+0x80000000|508, // match move
+0x80000000|832, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 560
+171,MIN_REDUCTION+154, // $NT
+  }
+,
+{ // state 561
+0x80000000|56, // match move
+0x80000000|629, // no-match move
+0x80000000|1143, // NT-test-match state for printable
+  }
+,
+{ // state 562
+-1, // $$start
+-1, // start
+664, // ws*
+-1, // $$0
+MIN_REDUCTION+288, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+-1, // `=
+-1, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+MIN_REDUCTION+288, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+288, // $
+-1, // $NT
+  }
+,
+{ // state 563
+98,758, // "c"
+  }
+,
+{ // state 564
+MIN_REDUCTION+352, // (default reduction)
+  }
+,
+{ // state 565
+MIN_REDUCTION+61, // (default reduction)
+  }
+,
+{ // state 566
+-1, // $$start
+-1, // start
+971, // ws*
+-1, // $$0
+MIN_REDUCTION+102, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+102, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+102, // "k"
+MIN_REDUCTION+102, // "y"
+MIN_REDUCTION+102, // "h"
+501, // "i"
+MIN_REDUCTION+102, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+102, // "m"
+MIN_REDUCTION+102, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+102, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+102, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+102, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+102, // $
+MIN_REDUCTION+102, // $NT
+  }
+,
+{ // state 567
 MIN_REDUCTION+323, // (default reduction)
   }
 ,
-{ // state 590
+{ // state 568
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -17224,184 +17099,367 @@ MIN_REDUCTION+212, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+212, // $
 MIN_REDUCTION+212, // $NT
   }
 ,
-{ // state 591
+{ // state 569
 171,MIN_REDUCTION+178, // $NT
   }
 ,
-{ // state 592
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 570
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+179, // (default reduction)
   }
 ,
-{ // state 593
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 571
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+283, // (default reduction)
   }
 ,
-{ // state 594
+{ // state 572
 MIN_REDUCTION+310, // (default reduction)
   }
 ,
-{ // state 595
-MIN_REDUCTION+17, // (default reduction)
+{ // state 573
+MIN_REDUCTION+359, // (default reduction)
   }
 ,
-{ // state 596
-0x80000000|2, // match move
-0x80000000|218, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 574
+0x80000000|982, // match move
+0x80000000|960, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 597
-MIN_REDUCTION+357, // (default reduction)
+{ // state 575
+101,94, // "l"
   }
 ,
-{ // state 598
-96,102, // "t"
+{ // state 576
+2,790, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+296, // (default reduction)
   }
 ,
-{ // state 599
-0x80000000|990, // match move
-0x80000000|966, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 577
+0x80000000|76, // match move
+0x80000000|105, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
   }
 ,
-{ // state 600
-102,777, // "n"
+{ // state 578
+MIN_REDUCTION+362, // (default reduction)
   }
 ,
-{ // state 601
-0x80000000|1076, // match move
-0x80000000|470, // no-match move
+{ // state 579
+MIN_REDUCTION+76, // (default reduction)
+  }
+,
+{ // state 580
+0x80000000|1068, // match move
+0x80000000|456, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 602
+{ // state 581
+-1, // $$start
+-1, // start
+283, // ws*
+-1, // $$0
+MIN_REDUCTION+132, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+132, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+132, // "k"
+MIN_REDUCTION+132, // "y"
+MIN_REDUCTION+132, // "h"
+501, // "i"
+MIN_REDUCTION+132, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+132, // "m"
+MIN_REDUCTION+132, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+132, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+132, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+132, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+132, // $
+MIN_REDUCTION+132, // $NT
+  }
+,
+{ // state 582
 171,MIN_REDUCTION+202, // $NT
   }
 ,
-{ // state 603
+{ // state 583
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -17460,358 +17518,128 @@ MIN_REDUCTION+253, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+253, // $
 -1, // $NT
   }
 ,
-{ // state 604
-0x80000000|721, // match move
-0x80000000|272, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 605
-MIN_REDUCTION+63, // (default reduction)
-  }
-,
-{ // state 606
-0x80000000|2, // match move
-0x80000000|936, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 607
-MIN_REDUCTION+324, // (default reduction)
-  }
-,
-{ // state 608
+{ // state 584
 -1, // $$start
--1, // start
-1126, // ws*
--1, // $$0
-MIN_REDUCTION+141, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+141, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+141, // "k"
-MIN_REDUCTION+141, // "y"
-MIN_REDUCTION+141, // "h"
-1006, // "i"
-MIN_REDUCTION+141, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+141, // "m"
-MIN_REDUCTION+141, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+141, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+141, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+141, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+141, // $
-MIN_REDUCTION+141, // $NT
-  }
-,
-{ // state 609
-0x80000000|1004, // match move
-0x80000000|38, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 610
-0x80000000|258, // match move
-0x80000000|794, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 611
-MIN_REDUCTION+356, // (default reduction)
-  }
-,
-{ // state 612
-171,MIN_REDUCTION+333, // $NT
-MIN_REDUCTION+333, // (default reduction)
-  }
-,
-{ // state 613
-0x80000000|624, // match move
-0x80000000|731, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 614
-126,675, // "*"
-162,359, // multilineCommentPrintable**
-166,636, // multilineCommentPrintable*
-  }
-,
-{ // state 615
--1, // $$start
--1, // start
-893, // ws*
--1, // $$0
-MIN_REDUCTION+252, // token
+763, // start
+683, // ws*
+940, // $$0
+694, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -17865,123 +17693,206 @@ MIN_REDUCTION+252, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
--1, // `=
--1, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-MIN_REDUCTION+252, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+252, // $
+1159, // token*
+206, // digit+
+MIN_REDUCTION+1, // $
 -1, // $NT
   }
 ,
-{ // state 616
+{ // state 585
+0x80000000|90, // match move
+0x80000000|731, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 586
+96,1042, // "t"
+  }
+,
+{ // state 587
+93,87, // "a"
+97,148, // "r"
+105,976, // "h"
+  }
+,
+{ // state 588
+96,428, // "t"
+  }
+,
+{ // state 589
+MIN_REDUCTION+324, // (default reduction)
+  }
+,
+{ // state 590
+96,1141, // "t"
+104,171, // "y"
+105,20, // "h"
+107,989, // "u"
+115,609, // "w"
+  }
+,
+{ // state 591
+0x80000000|774, // match move
+0x80000000|10, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 592
+0x80000000|1, // match move
+0x80000000|483, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 593
+0x80000000|996, // match move
+0x80000000|40, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 594
+0x80000000|260, // match move
+0x80000000|766, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 595
+171,MIN_REDUCTION+333, // $NT
+MIN_REDUCTION+333, // (default reduction)
+  }
+,
+{ // state 596
+2,305, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+264, // (default reduction)
+  }
+,
+{ // state 597
+0x80000000|606, // match move
+0x80000000|705, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 598
+2,491, // ws*
+MIN_REDUCTION+292, // (default reduction)
+  }
+,
+{ // state 599
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -18040,538 +17951,241 @@ MIN_REDUCTION+261, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+261, // $
 -1, // $NT
   }
 ,
-{ // state 617
--1, // $$start
--1, // start
-78, // ws*
--1, // $$0
-MIN_REDUCTION+364, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+364, // $
--1, // $NT
-  }
-,
-{ // state 618
-171,MIN_REDUCTION+145, // $NT
-  }
-,
-{ // state 619
-0x80000000|948, // match move
-0x80000000|345, // no-match move
+{ // state 600
+0x80000000|371, // match move
+0x80000000|1203, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 620
-163,1052, // {10}
+{ // state 601
+171,MIN_REDUCTION+145, // $NT
   }
 ,
-{ // state 621
-0x80000000|1001, // match move
-0x80000000|1162, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 602
+0x80000000|943, // match move
+0x80000000|334, // no-match move
+// T-test match for "0":
+143,
   }
 ,
-{ // state 622
-MIN_REDUCTION+41, // (default reduction)
+{ // state 603
+2,580, // ws*
+MIN_REDUCTION+254, // (default reduction)
   }
 ,
-{ // state 623
-96,255, // "t"
+{ // state 604
+0x80000000|994, // match move
+0x80000000|1171, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 624
-MIN_REDUCTION+363, // (default reduction)
+{ // state 605
+110,632, // "m"
   }
 ,
-{ // state 625
+{ // state 606
+MIN_REDUCTION+365, // (default reduction)
+  }
+,
+{ // state 607
+0x80000000|1, // match move
+0x80000000|771, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 608
+0x80000000|1206, // match move
+0x80000000|259, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 609
+106,449, // "i"
+  }
+,
+{ // state 610
+93,589, // "a"
+94,589, // "b"
+95,589, // "s"
+96,589, // "t"
+97,589, // "r"
+98,589, // "c"
+99,589, // "e"
+100,589, // "o"
+101,589, // "l"
+102,589, // "n"
+103,589, // "k"
+104,589, // "y"
+105,589, // "h"
+106,589, // "i"
+107,589, // "u"
+108,589, // "d"
+109,589, // "f"
+110,589, // "m"
+111,589, // "x"
+112,589, // "g"
+113,589, // "p"
+114,589, // "v"
+115,589, // "w"
+116,589, // "z"
+117,589, // "!"
+118,589, // "="
+119,589, // "%"
+120,589, // "&"
+121,589, // "|"
+122,589, // "+"
+123,589, // ","
+124,589, // "-"
+125,589, // "."
+126,589, // "*"
+127,589, // "/"
+128,589, // ";"
+129,589, // "<"
+130,589, // ">"
+131,589, // "("
+132,589, // ")"
+133,589, // "["
+134,589, // "]"
+135,589, // "{"
+136,589, // "}"
+138,589, // "'"
+140,208, // '"'
+141,544, // stringPrintable*
+142,4, // $$2
+143,589, // "0"
+146,589, // "_"
+147,827, // escapeSequence
+148,844, // "\"
+150,589, // {"1".."9"}
+151,589, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,589, // {"A".."Z" "j" "q"}
+153,589, // " "
+155,929, // stringPrintable
+  }
+,
+{ // state 611
 -1, // $$start
 -1, // start
-365, // ws*
+890, // ws*
 -1, // $$0
-MIN_REDUCTION+129, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+129, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+129, // "k"
-MIN_REDUCTION+129, // "y"
-MIN_REDUCTION+129, // "h"
-1006, // "i"
-1077, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+129, // "m"
-MIN_REDUCTION+129, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+129, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+129, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+129, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+129, // $
-MIN_REDUCTION+129, // $NT
-  }
-,
-{ // state 626
-99,340, // "e"
-  }
-,
-{ // state 627
-171,MIN_REDUCTION+342, // $NT
-MIN_REDUCTION+342, // (default reduction)
-  }
-,
-{ // state 628
-0x80000000|2, // match move
-0x80000000|939, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 629
-MIN_REDUCTION+23, // (default reduction)
-  }
-,
-{ // state 630
-101,712, // "l"
-  }
-,
-{ // state 631
-MIN_REDUCTION+263, // (default reduction)
-  }
-,
-{ // state 632
--1, // $$start
--1, // start
-1100, // ws*
--1, // $$0
-MIN_REDUCTION+260, // token
+MIN_REDUCTION+300, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -18625,445 +18239,287 @@ MIN_REDUCTION+260, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+260, // $
+206, // digit+
+MIN_REDUCTION+300, // $
 -1, // $NT
   }
 ,
-{ // state 633
-0x80000000|2, // match move
-0x80000000|698, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 612
+MIN_REDUCTION+329, // (default reduction)
   }
 ,
-{ // state 634
--1, // $$start
--1, // start
-1074, // ws*
--1, // $$0
-MIN_REDUCTION+93, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+93, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+93, // "k"
-MIN_REDUCTION+93, // "y"
-MIN_REDUCTION+93, // "h"
-1006, // "i"
-MIN_REDUCTION+93, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+93, // "m"
-MIN_REDUCTION+93, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+93, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+93, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+93, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+93, // $
-MIN_REDUCTION+93, // $NT
+{ // state 613
+MIN_REDUCTION+263, // (default reduction)
   }
 ,
-{ // state 635
-0x80000000|2, // match move
-0x80000000|208, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 614
+MIN_REDUCTION+37, // (default reduction)
   }
 ,
-{ // state 636
-0x80000000|999, // match move
-0x80000000|927, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
+{ // state 615
+0x80000000|991, // match move
+0x80000000|915, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
   }
 ,
-{ // state 637
+{ // state 616
+99,657, // "e"
+  }
+,
+{ // state 617
 171,MIN_REDUCTION+94, // $NT
   }
 ,
-{ // state 638
-97,153, // "r"
-106,491, // "i"
+{ // state 618
+1,763, // start
+2,683, // ws*
+3,940, // $$0
+4,694, // token
+5,1137, // `boolean
+6,24, // `class
+7,869, // `extends
+8,61, // `void
+9,792, // `int
+10,1121, // `while
+11,525, // `if
+12,999, // `else
+13,232, // `for
+14,505, // `break
+15,440, // `this
+16,1162, // `false
+17,59, // `true
+18,389, // `super
+19,226, // `null
+20,910, // `return
+21,1097, // `instanceof
+22,891, // `new
+23,837, // `abstract
+24,374, // `assert
+25,776, // `byte
+26,802, // `case
+27,84, // `catch
+28,690, // `char
+29,29, // `const
+30,716, // `continue
+31,547, // `default
+32,1109, // `do
+33,1198, // `double
+34,875, // `enum
+35,1124, // `final
+36,796, // `finally
+37,614, // `float
+38,392, // `goto
+39,718, // `implements
+40,198, // `import
+41,1041, // `interface
+42,688, // `long
+43,419, // `native
+44,145, // `package
+45,1059, // `private
+46,215, // `protected
+47,651, // `public
+48,924, // `short
+49,368, // `static
+50,364, // `strictfp
+51,803, // `switch
+52,444, // `synchronized
+53,1090, // `throw
+54,985, // `throws
+55,320, // `transient
+56,400, // `try
+57,43, // `volatile
+168,1159, // token*
   }
 ,
-{ // state 639
-1,790, // start
-2,782, // ws*
-3,306, // $$0
-4,796, // token
-5,89, // `boolean
-6,303, // `class
-7,1154, // `extends
-8,1010, // `void
-9,802, // `int
-10,41, // `while
-11,198, // `if
-12,427, // `else
-13,336, // `for
-14,1160, // `break
-15,480, // `this
-16,569, // `false
-17,595, // `true
-18,525, // `super
-19,724, // `null
-20,820, // `return
-21,414, // `instanceof
-22,181, // `new
-23,629, // `abstract
-24,133, // `assert
-25,1091, // `byte
-26,682, // `case
-27,99, // `catch
-28,371, // `char
-29,130, // `const
-30,1055, // `continue
-31,1165, // `default
-32,890, // `do
-33,121, // `double
-34,233, // `enum
-35,779, // `final
-36,859, // `finally
-37,766, // `float
-38,551, // `goto
-39,187, // `implements
-40,662, // `import
-41,622, // `interface
-42,413, // `long
-43,479, // `native
-44,1128, // `package
-45,709, // `private
-46,788, // `protected
-47,806, // `public
-48,344, // `short
-49,702, // `static
-50,824, // `strictfp
-51,995, // `switch
-52,447, // `synchronized
-53,177, // `throw
-54,1103, // `throws
-55,1082, // `transient
-56,8, // `try
-57,549, // `volatile
-168,1152, // token*
+{ // state 619
+0x80000000|470, // match move
+0x80000000|698, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 640
-118,54, // "="
-  }
-,
-{ // state 641
+{ // state 620
 171,MIN_REDUCTION+173, // $NT
 MIN_REDUCTION+173, // (default reduction)
   }
 ,
-{ // state 642
-0x80000000|213, // match move
-0x80000000|1018, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 621
+0x80000000|220, // match move
+0x80000000|1009, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 643
+{ // state 622
 MIN_REDUCTION+2, // (default reduction)
   }
 ,
-{ // state 644
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 623
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+239, // (default reduction)
   }
 ,
-{ // state 645
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+363, // (default reduction)
+{ // state 624
+2,1024, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+282, // (default reduction)
   }
 ,
-{ // state 646
-96,398, // "t"
+{ // state 625
+MIN_REDUCTION+85, // (default reduction)
   }
 ,
-{ // state 647
-95,1157, // "s"
+{ // state 626
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+365, // (default reduction)
   }
 ,
-{ // state 648
-2,696, // ws*
-91,368, // $$1
-MIN_REDUCTION+89, // (default reduction)
+{ // state 627
+0x80000000|1064, // match move
+0x80000000|122, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 649
+{ // state 628
+102,406, // "n"
+  }
+,
+{ // state 629
+157,800, // eol
+161,653, // printable**
+163,1062, // {10}
+164,1072, // {13}
+167,178, // printable*
+  }
+,
+{ // state 630
 MIN_REDUCTION+261, // (default reduction)
   }
 ,
-{ // state 650
+{ // state 631
 MIN_REDUCTION+253, // (default reduction)
   }
 ,
-{ // state 651
-95,728, // "s"
+{ // state 632
+99,548, // "e"
   }
 ,
-{ // state 652
+{ // state 633
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -19122,146 +18578,149 @@ MIN_REDUCTION+101, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+101, // $
 MIN_REDUCTION+101, // $NT
   }
 ,
-{ // state 653
-0x80000000|2, // match move
-0x80000000|127, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 654
+{ // state 634
 171,MIN_REDUCTION+334, // $NT
 MIN_REDUCTION+334, // (default reduction)
   }
 ,
-{ // state 655
-0x80000000|742, // match move
-0x80000000|117, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 635
+0x80000000|1180, // match move
+0x80000000|1038, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 656
-0x80000000|1171, // match move
-0x80000000|1049, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 636
+0x80000000|714, // match move
+0x80000000|126, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 657
+{ // state 637
+93,916, // "a"
+  }
+,
+{ // state 638
+2,890, // ws*
+MIN_REDUCTION+300, // (default reduction)
+  }
+,
+{ // state 639
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -19320,181 +18779,168 @@ MIN_REDUCTION+265, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+265, // $
 -1, // $NT
   }
 ,
-{ // state 658
-0x80000000|787, // match move
-0x80000000|341, // no-match move
-// T-test match for "+":
-122,
+{ // state 640
+0x80000000|1, // match move
+0x80000000|882, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 659
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 641
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+285, // (default reduction)
   }
 ,
-{ // state 660
-MIN_REDUCTION+70, // (default reduction)
+{ // state 642
+0x80000000|47, // match move
+0x80000000|649, // no-match move
+// T-test match for "0":
+143,
   }
 ,
-{ // state 661
-0x80000000|539, // match move
+{ // state 643
+MIN_REDUCTION+328, // (default reduction)
+  }
+,
+{ // state 644
+0x80000000|526, // match move
 0x80000000|49, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 662
-MIN_REDUCTION+40, // (default reduction)
-  }
-,
-{ // state 663
-121,1191, // "|"
-  }
-,
-{ // state 664
-0x80000000|756, // match move
-0x80000000|112, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
-  }
-,
-{ // state 665
-105,88, // "h"
-106,548, // "i"
-  }
-,
-{ // state 666
-0x80000000|246, // match move
-0x80000000|981, // no-match move
+{ // state 645
+0x80000000|248, // match move
+0x80000000|973, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 667
-0x80000000|865, // match move
-0x80000000|752, // no-match move
+{ // state 646
+0x80000000|842, // match move
+0x80000000|728, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 668
+{ // state 647
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -19553,145 +18999,145 @@ MIN_REDUCTION+218, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+218, // $
 MIN_REDUCTION+218, // $NT
   }
 ,
-{ // state 669
-0x80000000|357, // match move
-0x80000000|1040, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 648
+0x80000000|343, // match move
+0x80000000|1028, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 670
-0x80000000|433, // match move
-0x80000000|107, // no-match move
-0x80000000|1136, // NT-test-match state for printable
+{ // state 649
+0x80000000|603, // match move
+0x80000000|779, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 671
-0x80000000|33, // match move
-0x80000000|541, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
+{ // state 650
+0x80000000|417, // match move
+0x80000000|115, // no-match move
+0x80000000|1143, // NT-test-match state for printable
   }
 ,
-{ // state 672
-106,548, // "i"
+{ // state 651
+MIN_REDUCTION+47, // (default reduction)
   }
 ,
-{ // state 673
+{ // state 652
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -19750,205 +19196,177 @@ MIN_REDUCTION+221, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+221, // $
 MIN_REDUCTION+221, // $NT
   }
 ,
-{ // state 674
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 653
+157,494, // eol
+163,1062, // {10}
+164,1072, // {13}
+  }
+,
+{ // state 654
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+149, // (default reduction)
   }
 ,
-{ // state 675
-127,222, // "/"
-  }
-,
-{ // state 676
+{ // state 655
 MIN_REDUCTION+275, // (default reduction)
   }
 ,
-{ // state 677
+{ // state 656
 171,MIN_REDUCTION+125, // $NT
 MIN_REDUCTION+125, // (default reduction)
   }
 ,
-{ // state 678
-MIN_REDUCTION+360, // (default reduction)
+{ // state 657
+0x80000000|1, // match move
+0x80000000|1155, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 679
-2,78, // ws*
-MIN_REDUCTION+364, // (default reduction)
+{ // state 658
+MIN_REDUCTION+86, // (default reduction)
   }
 ,
-{ // state 680
-0x80000000|2, // match move
-0x80000000|1036, // no-match move
-// T-test match for "/":
-127,
-  }
-,
-{ // state 681
+{ // state 659
 MIN_REDUCTION+314, // (default reduction)
   }
 ,
-{ // state 682
-MIN_REDUCTION+26, // (default reduction)
+{ // state 660
+0x80000000|756, // match move
+0x80000000|86, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 683
-0x80000000|230, // match move
-0x80000000|588, // no-match move
-// T-test match for "=":
-118,
-  }
-,
-{ // state 684
-106,305, // "i"
-  }
-,
-{ // state 685
-0x80000000|784, // match move
-0x80000000|82, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 686
-0x80000000|845, // match move
-0x80000000|840, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 687
+{ // state 661
 171,MIN_REDUCTION+109, // $NT
   }
 ,
-{ // state 688
-107,48, // "u"
+{ // state 662
+2,210, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+270, // (default reduction)
   }
 ,
-{ // state 689
-0x80000000|542, // match move
-0x80000000|423, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 690
+{ // state 663
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -20007,136 +19425,130 @@ MIN_REDUCTION+257, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+257, // $
 -1, // $NT
   }
 ,
-{ // state 691
-0x80000000|514, // match move
-0x80000000|1051, // no-match move
+{ // state 664
+0x80000000|507, // match move
+0x80000000|1039, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 692
-0x80000000|2, // match move
-0x80000000|482, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 693
+{ // state 665
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -20195,491 +19607,320 @@ MIN_REDUCTION+95, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+95, // $
 MIN_REDUCTION+95, // $NT
   }
 ,
-{ // state 694
+{ // state 666
 171,MIN_REDUCTION+166, // $NT
   }
 ,
-{ // state 695
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 667
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+176, // (default reduction)
   }
 ,
-{ // state 696
-0x80000000|108, // match move
+{ // state 668
+0x80000000|116, // match move
 0x80000000|1102, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 697
+{ // state 669
+103,1066, // "k"
+  }
+,
+{ // state 670
 -1, // $$start
 -1, // start
-323, // ws*
+1004, // ws*
 -1, // $$0
-MIN_REDUCTION+108, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+213, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+108, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+108, // "k"
-MIN_REDUCTION+108, // "y"
-MIN_REDUCTION+108, // "h"
-1006, // "i"
-MIN_REDUCTION+108, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+108, // "m"
-MIN_REDUCTION+108, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+108, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+213, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+213, // "k"
+MIN_REDUCTION+213, // "y"
+MIN_REDUCTION+213, // "h"
+501, // "i"
+MIN_REDUCTION+213, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+213, // "m"
+MIN_REDUCTION+213, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+213, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+108, // {"1".."9"}
+MIN_REDUCTION+213, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+108, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+213, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+108, // $
-MIN_REDUCTION+108, // $NT
+MIN_REDUCTION+213, // $
+MIN_REDUCTION+213, // $NT
   }
 ,
-{ // state 698
--1, // $$start
--1, // start
-866, // ws*
--1, // $$0
-MIN_REDUCTION+198, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+198, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+198, // "k"
-MIN_REDUCTION+198, // "y"
-MIN_REDUCTION+198, // "h"
-1006, // "i"
-MIN_REDUCTION+198, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+198, // "m"
-MIN_REDUCTION+198, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+198, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+198, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+198, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+198, // $
-MIN_REDUCTION+198, // $NT
-  }
-,
-{ // state 699
+{ // state 671
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -20738,183 +19979,538 @@ MIN_REDUCTION+152, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+152, // $
 MIN_REDUCTION+152, // $NT
   }
 ,
-{ // state 700
-2,202, // ws*
-MIN_REDUCTION+270, // (default reduction)
+{ // state 672
+-1, // $$start
+-1, // start
+522, // ws*
+-1, // $$0
+MIN_REDUCTION+159, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+159, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+159, // "k"
+MIN_REDUCTION+159, // "y"
+MIN_REDUCTION+159, // "h"
+501, // "i"
+MIN_REDUCTION+159, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+159, // "m"
+MIN_REDUCTION+159, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+159, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+159, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+159, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+159, // $
+MIN_REDUCTION+159, // $NT
   }
 ,
-{ // state 701
-0x80000000|899, // match move
-0x80000000|520, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 673
+93,1078, // "a"
   }
 ,
-{ // state 702
-MIN_REDUCTION+49, // (default reduction)
+{ // state 674
+0x80000000|874, // match move
+0x80000000|514, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 703
-0x80000000|328, // match move
-0x80000000|1193, // no-match move
+{ // state 675
+-1, // $$start
+-1, // start
+233, // ws*
+-1, // $$0
+MIN_REDUCTION+120, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+120, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+120, // "k"
+MIN_REDUCTION+120, // "y"
+MIN_REDUCTION+120, // "h"
+501, // "i"
+MIN_REDUCTION+120, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+120, // "m"
+MIN_REDUCTION+120, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+120, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+120, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+120, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+120, // $
+MIN_REDUCTION+120, // $NT
+  }
+,
+{ // state 676
+0x80000000|319, // match move
+0x80000000|1204, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 704
-0x80000000|2, // match move
-0x80000000|1025, // no-match move
+{ // state 677
+0x80000000|1, // match move
+0x80000000|433, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 678
+0x80000000|1, // match move
+0x80000000|1016, // no-match move
 // T-test match for "/":
 127,
   }
 ,
-{ // state 705
-2,1034, // ws*
-MIN_REDUCTION+282, // (default reduction)
+{ // state 679
+93,1003, // "a"
   }
 ,
-{ // state 706
-2,500, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+292, // (default reduction)
+{ // state 680
+0x80000000|1, // match move
+0x80000000|172, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 707
+{ // state 681
 171,MIN_REDUCTION+124, // $NT
   }
 ,
-{ // state 708
-0x80000000|294, // match move
-0x80000000|690, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 682
+0x80000000|286, // match move
+0x80000000|663, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 709
-MIN_REDUCTION+45, // (default reduction)
+{ // state 683
+0x80000000|207, // match move
+0x80000000|608, // no-match move
+// T-test match for "0":
+143,
   }
 ,
-{ // state 710
-MIN_REDUCTION+83, // (default reduction)
+{ // state 684
+106,795, // "i"
   }
 ,
-{ // state 711
+{ // state 685
+94,856, // "b"
+  }
+,
+{ // state 686
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -20973,155 +20569,151 @@ MIN_REDUCTION+179, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+179, // $
 MIN_REDUCTION+179, // $NT
   }
 ,
-{ // state 712
-104,1057, // "y"
+{ // state 687
+98,421, // "c"
   }
 ,
-{ // state 713
-107,355, // "u"
+{ // state 688
+MIN_REDUCTION+42, // (default reduction)
   }
 ,
-{ // state 714
+{ // state 689
 171,MIN_REDUCTION+161, // $NT
 MIN_REDUCTION+161, // (default reduction)
   }
 ,
-{ // state 715
-0x80000000|800, // match move
-0x80000000|115, // no-match move
+{ // state 690
+MIN_REDUCTION+28, // (default reduction)
+  }
+,
+{ // state 691
+0x80000000|775, // match move
+0x80000000|125, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 716
-0x80000000|2, // match move
-0x80000000|505, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 692
+99,1187, // "e"
   }
 ,
-{ // state 717
-0x80000000|2, // match move
-0x80000000|516, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 718
+{ // state 693
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -21180,536 +20772,147 @@ MIN_REDUCTION+227, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+227, // $
 MIN_REDUCTION+227, // $NT
   }
 ,
-{ // state 719
-106,273, // "i"
+{ // state 694
+MIN_REDUCTION+353, // (default reduction)
   }
 ,
-{ // state 720
-0x80000000|2, // match move
-0x80000000|889, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 695
+118,642, // "="
   }
 ,
-{ // state 721
-2,314, // ws*
-MIN_REDUCTION+264, // (default reduction)
-  }
-,
-{ // state 722
--1, // $$start
--1, // start
-19, // ws*
--1, // $$0
-MIN_REDUCTION+186, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+186, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+186, // "k"
-MIN_REDUCTION+186, // "y"
-MIN_REDUCTION+186, // "h"
-1006, // "i"
-MIN_REDUCTION+186, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+186, // "m"
-MIN_REDUCTION+186, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+186, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+186, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+186, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+186, // $
-MIN_REDUCTION+186, // $NT
-  }
-};
-}
-private class Initter5{
-public int doInit(int startIdx) {
-  for (int i = 0; i < myParseTable.length; i++) {
-    parseTable[i+startIdx] = myParseTable[i];
-  }
-  return myParseTable.length;
-}
-private final int[][] myParseTable = {
-{ // state 723
-0x80000000|212, // match move
-0x80000000|1000, // no-match move
+{ // state 696
+0x80000000|219, // match move
+0x80000000|993, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 724
-MIN_REDUCTION+19, // (default reduction)
-  }
-,
-{ // state 725
+{ // state 697
 171,MIN_REDUCTION+121, // $NT
   }
 ,
-{ // state 726
-143,22, // "0"
-145,450, // digit
-150,22, // {"1".."9"}
-  }
-,
-{ // state 727
-171,MIN_REDUCTION+175, // $NT
-  }
-,
-{ // state 728
-106,1046, // "i"
-  }
-,
-{ // state 729
-171,MIN_REDUCTION+155, // $NT
-MIN_REDUCTION+155, // (default reduction)
-  }
-,
-{ // state 730
+{ // state 698
 -1, // $$start
 -1, // start
-168, // ws*
+210, // ws*
 -1, // $$0
-MIN_REDUCTION+216, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+216, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+216, // "k"
-MIN_REDUCTION+216, // "y"
-MIN_REDUCTION+216, // "h"
-1006, // "i"
-MIN_REDUCTION+216, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+216, // "m"
-MIN_REDUCTION+216, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+216, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+216, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+216, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+216, // $
-MIN_REDUCTION+216, // $NT
-  }
-,
-{ // state 731
--1, // $$start
--1, // start
--1, // ws*
--1, // $$0
-MIN_REDUCTION+363, // token
+MIN_REDUCTION+270, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -21763,149 +20966,521 @@ MIN_REDUCTION+363, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+363, // $
+206, // digit+
+MIN_REDUCTION+270, // $
 -1, // $NT
   }
 ,
-{ // state 732
-MIN_REDUCTION+353, // (default reduction)
+{ // state 699
+143,27, // "0"
+145,437, // digit
+150,27, // {"1".."9"}
   }
 ,
-{ // state 733
-0x80000000|620, // match move
-0x80000000|627, // no-match move
-// T-test match for 10:
-163,
+{ // state 700
+171,MIN_REDUCTION+175, // $NT
   }
 ,
-{ // state 734
-99,324, // "e"
-100,276, // "o"
+{ // state 701
+106,965, // "i"
   }
 ,
-{ // state 735
-96,92, // "t"
+{ // state 702
+102,182, // "n"
   }
 ,
-{ // state 736
-0x80000000|2, // match move
-0x80000000|594, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 703
+171,MIN_REDUCTION+155, // $NT
+MIN_REDUCTION+155, // (default reduction)
   }
 ,
-{ // state 737
+{ // state 704
+0x80000000|200, // match move
+0x80000000|818, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
+  }
+,
+{ // state 705
+-1, // $$start
+-1, // start
+-1, // ws*
+-1, // $$0
+MIN_REDUCTION+365, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+365, // $
+-1, // $NT
+  }
+};
+}
+private class Initter5{
+public int doInit(int startIdx) {
+  for (int i = 0; i < myParseTable.length; i++) {
+    parseTable[i+startIdx] = myParseTable[i];
+  }
+  return myParseTable.length;
+}
+private final int[][] myParseTable = {
+{ // state 706
+MIN_REDUCTION+355, // (default reduction)
+  }
+,
+{ // state 707
+-1, // $$start
+-1, // start
+1063, // ws*
+-1, // $$0
+MIN_REDUCTION+93, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+93, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+93, // "k"
+MIN_REDUCTION+93, // "y"
+MIN_REDUCTION+93, // "h"
+501, // "i"
+MIN_REDUCTION+93, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+93, // "m"
+MIN_REDUCTION+93, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+93, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+93, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+93, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+93, // $
+MIN_REDUCTION+93, // $NT
+  }
+,
+{ // state 708
+0x80000000|1, // match move
+0x80000000|572, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 709
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -21964,350 +21539,363 @@ MIN_REDUCTION+295, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+295, // $
 -1, // $NT
   }
 ,
-{ // state 738
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 710
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+275, // (default reduction)
   }
 ,
-{ // state 739
-96,716, // "t"
+{ // state 711
+0x80000000|1, // match move
+0x80000000|486, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 740
+{ // state 712
+0x80000000|70, // match move
+0x80000000|57, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 713
+4,564, // token
+58,432, // `!
+59,309, // `!=
+60,1115, // `%
+61,565, // `&&
+62,786, // `*
+63,450, // `(
+64,760, // `)
+65,396, // `{
+66,1013, // `}
+67,155, // `-
+68,88, // `+
+69,379, // `=
+70,849, // `==
+71,1001, // `[
+72,438, // `]
+73,515, // `||
+74,997, // `<
+75,931, // `<=
+76,579, // `,
+77,933, // `>
+78,446, // `>=
+79,1010, // `.
+80,1076, // `;
+81,510, // `++
+82,552, // `--
+83,258, // `/
+84,213, // ID
+85,625, // INTLIT
+86,658, // STRINGLIT
+87,1067, // CHARLIT
+89,307, // letter
+137,503, // intLit2
+143,708, // "0"
+  }
+,
+{ // state 714
+MIN_REDUCTION+267, // (default reduction)
+  }
+,
+{ // state 715
 -1, // $$start
 -1, // start
-251, // ws*
+179, // ws*
 -1, // $$0
-MIN_REDUCTION+278, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+MIN_REDUCTION+216, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+-1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+216, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+216, // "k"
+MIN_REDUCTION+216, // "y"
+MIN_REDUCTION+216, // "h"
+501, // "i"
+MIN_REDUCTION+216, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+216, // "m"
+MIN_REDUCTION+216, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+216, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+708, // "0"
+-1, // digit++
+-1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+MIN_REDUCTION+216, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+216, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+278, // $
--1, // $NT
+-1, // digit+
+MIN_REDUCTION+216, // $
+MIN_REDUCTION+216, // $NT
   }
 ,
-{ // state 741
-4,587, // token
-58,984, // `!
-59,1186, // `!=
-60,801, // `%
-61,772, // `&&
-62,535, // `*
-63,605, // `(
-64,316, // `)
-65,547, // `{
-66,232, // `}
-67,835, // `-
-68,440, // `+
-69,219, // `=
-70,660, // `==
-71,435, // `[
-72,781, // `]
-73,13, // `||
-74,254, // `<
-75,558, // `<=
-76,420, // `,
-77,1013, // `>
-78,537, // `>=
-79,459, // `.
-80,1056, // `;
-81,789, // `++
-82,147, // `--
-83,710, // `/
-84,803, // ID
-85,16, // INTLIT
-86,286, // STRINGLIT
-87,765, // CHARLIT
-89,75, // letter
-137,795, // intLit2
-143,736, // "0"
+{ // state 716
+MIN_REDUCTION+30, // (default reduction)
   }
 ,
-{ // state 742
-MIN_REDUCTION+267, // (default reduction)
-  }
-,
-{ // state 743
+{ // state 717
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -22366,338 +21954,329 @@ MIN_REDUCTION+185, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+185, // $
 MIN_REDUCTION+185, // $NT
   }
 ,
-{ // state 744
-0x80000000|244, // match move
-0x80000000|1123, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 718
+MIN_REDUCTION+39, // (default reduction)
   }
 ,
-{ // state 745
-97,717, // "r"
-  }
-,
-{ // state 746
-2,262, // ws*
-153,612, // " "
-154,612, // {9}
-157,550, // eol
-158,1016, // ws
-159,612, // {12}
-163,1146, // {10}
-164,733, // {13}
-MIN_REDUCTION+276, // (default reduction)
-  }
-,
-{ // state 747
-0x80000000|1172, // match move
-0x80000000|798, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 748
+{ // state 719
 -1, // $$start
 -1, // start
-696, // ws*
+843, // ws*
 -1, // $$0
-MIN_REDUCTION+91, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+198, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
-1003, // idChar**
-980, // $$1
+-1, // idChar**
+-1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+91, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+91, // "k"
-MIN_REDUCTION+91, // "y"
-MIN_REDUCTION+91, // "h"
-1006, // "i"
-MIN_REDUCTION+91, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+91, // "m"
-MIN_REDUCTION+91, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+91, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+198, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+198, // "k"
+MIN_REDUCTION+198, // "y"
+MIN_REDUCTION+198, // "h"
+501, // "i"
+MIN_REDUCTION+198, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+198, // "m"
+MIN_REDUCTION+198, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+198, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+91, // {"1".."9"}
+MIN_REDUCTION+198, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+91, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+198, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
-1111, // idChar*
+1062, // {10}
+1072, // {13}
+-1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+91, // $
--1, // $NT
+MIN_REDUCTION+198, // $
+MIN_REDUCTION+198, // $NT
   }
 ,
-{ // state 749
-0x80000000|760, // match move
-0x80000000|737, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 720
+0x80000000|1181, // match move
+0x80000000|772, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 750
-93,7, // "a"
-104,775, // "y"
-107,908, // "u"
+{ // state 721
+93,778, // "a"
+100,341, // "o"
+101,463, // "l"
+105,530, // "h"
   }
 ,
-{ // state 751
+{ // state 722
+0x80000000|737, // match move
+0x80000000|709, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 723
+106,225, // "i"
+  }
+,
+{ // state 724
+99,488, // "e"
+  }
+,
+{ // state 725
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -22756,137 +22335,322 @@ MIN_REDUCTION+299, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+299, // $
 -1, // $NT
   }
 ,
-{ // state 752
-0x80000000|206, // match move
-0x80000000|1125, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 726
+-1, // $$start
+-1, // start
+790, // ws*
+-1, // $$0
+MIN_REDUCTION+296, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+296, // $
+-1, // $NT
   }
 ,
-{ // state 753
-2,872, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+298, // (default reduction)
+{ // state 727
+99,939, // "e"
   }
 ,
-{ // state 754
+{ // state 728
+0x80000000|217, // match move
+0x80000000|1128, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 729
+MIN_REDUCTION+328, // (default reduction)
+  }
+,
+{ // state 730
+105,1087, // "h"
+  }
+,
+{ // state 731
+0x80000000|817, // match move
+0x80000000|752, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 732
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -22945,123 +22709,123 @@ MIN_REDUCTION+194, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+194, // $
 MIN_REDUCTION+194, // $NT
   }
 ,
-{ // state 755
+{ // state 733
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -23120,524 +22884,158 @@ MIN_REDUCTION+263, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+263, // $
 -1, // $NT
   }
 ,
-{ // state 756
-MIN_REDUCTION+358, // (default reduction)
+{ // state 734
+96,472, // "t"
   }
 ,
-{ // state 757
-93,817, // "a"
+{ // state 735
+0x80000000|983, // match move
+0x80000000|238, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 758
-0x80000000|1026, // match move
-0x80000000|955, // no-match move
+{ // state 736
+0x80000000|1, // match move
+0x80000000|761, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 737
+MIN_REDUCTION+295, // (default reduction)
+  }
+,
+{ // state 738
+122,981, // "+"
+  }
+,
+{ // state 739
+99,880, // "e"
+  }
+,
+{ // state 740
+0x80000000|824, // match move
+0x80000000|549, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 759
--1, // $$start
--1, // start
-444, // ws*
--1, // $$0
-MIN_REDUCTION+150, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+150, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+150, // "k"
-MIN_REDUCTION+150, // "y"
-MIN_REDUCTION+150, // "h"
-1006, // "i"
-MIN_REDUCTION+150, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+150, // "m"
-MIN_REDUCTION+150, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+150, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+150, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+150, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+150, // $
-MIN_REDUCTION+150, // $NT
-  }
-,
-{ // state 760
-MIN_REDUCTION+295, // (default reduction)
-  }
-,
-{ // state 761
--1, // $$start
--1, // start
-234, // ws*
--1, // $$0
-MIN_REDUCTION+120, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+120, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+120, // "k"
-MIN_REDUCTION+120, // "y"
-MIN_REDUCTION+120, // "h"
-1006, // "i"
-MIN_REDUCTION+120, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+120, // "m"
-MIN_REDUCTION+120, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+120, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+120, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+120, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+120, // $
-MIN_REDUCTION+120, // $NT
-  }
-,
-{ // state 762
-0x80000000|455, // match move
-0x80000000|243, // no-match move
-// T-test match for "*":
-126,
-  }
-,
-{ // state 763
-0x80000000|2, // match move
-0x80000000|380, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 764
-95,647, // "s"
-  }
-,
-{ // state 765
-MIN_REDUCTION+87, // (default reduction)
-  }
-,
-{ // state 766
-MIN_REDUCTION+37, // (default reduction)
-  }
-,
-{ // state 767
-0x80000000|1150, // match move
-0x80000000|243, // no-match move
-// T-test match for "*":
-126,
-  }
-,
-{ // state 768
+{ // state 741
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -23696,290 +23094,578 @@ MIN_REDUCTION+271, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+271, // $
 -1, // $NT
   }
 ,
-{ // state 769
+{ // state 742
+2,429, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+284, // (default reduction)
+  }
+,
+{ // state 743
 171,MIN_REDUCTION+311, // $NT
   }
 ,
-{ // state 770
+{ // state 744
+126,577, // "*"
+127,561, // "/"
+  }
+,
+{ // state 745
 171,MIN_REDUCTION+331, // $NT
   }
 ,
-{ // state 771
-0x80000000|394, // match move
-0x80000000|183, // no-match move
+{ // state 746
+0x80000000|1, // match move
+0x80000000|850, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 747
+0x80000000|1, // match move
+0x80000000|1034, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 748
+0x80000000|373, // match move
+0x80000000|194, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 772
-MIN_REDUCTION+61, // (default reduction)
+{ // state 749
+163,704, // {10}
   }
 ,
-{ // state 773
-0x80000000|924, // match move
-0x80000000|546, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
+{ // state 750
+0x80000000|911, // match move
+0x80000000|531, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
   }
 ,
-{ // state 774
-98,568, // "c"
+{ // state 751
+0x80000000|537, // match move
+0x80000000|509, // no-match move
+0x80000000|1143, // NT-test-match state for printable
   }
 ,
-{ // state 775
-0x80000000|2, // match move
-0x80000000|1078, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 752
+-1, // $$start
+-1, // start
+249, // ws*
+-1, // $$0
+MIN_REDUCTION+272, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+272, // $
+-1, // $NT
   }
 ,
-{ // state 776
-0x80000000|554, // match move
-0x80000000|517, // no-match move
-0x80000000|1136, // NT-test-match state for printable
+{ // state 753
+0x80000000|1, // match move
+0x80000000|1150, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 777
-96,277, // "t"
-  }
-,
-{ // state 778
-93,148, // "a"
-94,148, // "b"
-95,148, // "s"
-96,148, // "t"
-97,148, // "r"
-98,148, // "c"
-99,148, // "e"
-100,148, // "o"
-101,148, // "l"
-102,148, // "n"
-103,148, // "k"
-104,148, // "y"
-105,148, // "h"
-106,148, // "i"
-107,148, // "u"
-108,148, // "d"
-109,148, // "f"
-110,148, // "m"
-111,148, // "x"
-112,148, // "g"
-113,148, // "p"
-114,148, // "v"
-115,148, // "w"
-116,148, // "z"
-117,148, // "!"
-118,148, // "="
-119,148, // "%"
-120,148, // "&"
-121,148, // "|"
-122,148, // "+"
-123,148, // ","
-124,148, // "-"
-125,148, // "."
-126,1038, // "*"
-127,767, // "/"
-128,148, // ";"
-129,148, // "<"
-130,148, // ">"
-131,148, // "("
-132,148, // ")"
-133,148, // "["
-134,148, // "]"
-135,148, // "{"
-136,148, // "}"
-138,148, // "'"
-140,148, // '"'
-143,148, // "0"
-146,148, // "_"
-148,148, // "\"
-150,148, // {"1".."9"}
-151,148, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,148, // {"A".."Z" "j" "q"}
-153,148, // " "
-154,148, // {9}
-157,185, // eol
-163,1146, // {10}
-164,733, // {13}
-  }
-,
-{ // state 779
-MIN_REDUCTION+35, // (default reduction)
-  }
-,
-{ // state 780
+{ // state 754
 MIN_REDUCTION+331, // (default reduction)
   }
 ,
-{ // state 781
-MIN_REDUCTION+72, // (default reduction)
+{ // state 755
+96,677, // "t"
   }
 ,
-{ // state 782
-0x80000000|196, // match move
-0x80000000|1132, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 783
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+113, // (default reduction)
-  }
-,
-{ // state 784
+{ // state 756
 171,MIN_REDUCTION+248, // $NT
 MIN_REDUCTION+248, // (default reduction)
   }
 ,
-{ // state 785
-99,349, // "e"
+{ // state 757
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+113, // (default reduction)
   }
 ,
-{ // state 786
-0x80000000|2, // match move
-0x80000000|761, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 758
+96,160, // "t"
   }
 ,
-{ // state 787
-122,312, // "+"
+{ // state 759
+0x80000000|452, // match move
+0x80000000|556, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 788
-MIN_REDUCTION+46, // (default reduction)
+{ // state 760
+MIN_REDUCTION+64, // (default reduction)
   }
 ,
-{ // state 789
-MIN_REDUCTION+81, // (default reduction)
+{ // state 761
+-1, // $$start
+-1, // start
+1015, // ws*
+-1, // $$0
+MIN_REDUCTION+219, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+219, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+219, // "k"
+MIN_REDUCTION+219, // "y"
+MIN_REDUCTION+219, // "h"
+501, // "i"
+MIN_REDUCTION+219, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+219, // "m"
+MIN_REDUCTION+219, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+219, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+219, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+219, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+219, // $
+MIN_REDUCTION+219, // $NT
   }
 ,
-{ // state 790
-170,MIN_REDUCTION+0, // $
-  }
-,
-{ // state 791
+{ // state 762
 171,MIN_REDUCTION+236, // $NT
 MIN_REDUCTION+236, // (default reduction)
   }
 ,
-{ // state 792
+{ // state 763
+170,MIN_REDUCTION+0, // $
+  }
+,
+{ // state 764
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -24038,149 +23724,671 @@ MIN_REDUCTION+140, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+140, // $
 MIN_REDUCTION+140, // $NT
   }
 ,
-{ // state 793
-93,745, // "a"
-  }
-,
-{ // state 794
-0x80000000|791, // match move
-0x80000000|1164, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 795
-0x80000000|438, // match move
-0x80000000|354, // no-match move
+{ // state 765
+0x80000000|1020, // match move
+0x80000000|1017, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 796
-MIN_REDUCTION+351, // (default reduction)
+{ // state 766
+0x80000000|762, // match move
+0x80000000|1174, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 797
-171,MIN_REDUCTION+336, // $NT
-MIN_REDUCTION+336, // (default reduction)
+{ // state 767
+-1, // $$start
+-1, // start
+289, // ws*
+-1, // $$0
+MIN_REDUCTION+280, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+-1, // `=
+-1, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+MIN_REDUCTION+280, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+280, // $
+-1, // $NT
   }
 ,
-{ // state 798
+{ // state 768
+-1, // $$start
+-1, // start
+676, // ws*
+-1, // $$0
+MIN_REDUCTION+138, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+138, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+138, // "k"
+MIN_REDUCTION+138, // "y"
+MIN_REDUCTION+138, // "h"
+501, // "i"
+MIN_REDUCTION+138, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+138, // "m"
+MIN_REDUCTION+138, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+138, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+138, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+138, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+138, // $
+MIN_REDUCTION+138, // $NT
+  }
+,
+{ // state 769
+0x80000000|1, // match move
+0x80000000|797, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 770
+101,1158, // "l"
+  }
+,
+{ // state 771
+-1, // $$start
+-1, // start
+117, // ws*
+-1, // $$0
+MIN_REDUCTION+162, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+162, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+162, // "k"
+MIN_REDUCTION+162, // "y"
+MIN_REDUCTION+162, // "h"
+501, // "i"
+MIN_REDUCTION+162, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+162, // "m"
+MIN_REDUCTION+162, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+162, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+162, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+162, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+162, // $
+MIN_REDUCTION+162, // $NT
+  }
+,
+{ // state 772
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -24239,173 +24447,379 @@ MIN_REDUCTION+209, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+209, // $
 MIN_REDUCTION+209, // $NT
   }
 ,
-{ // state 799
-98,169, // "c"
+{ // state 773
+0x80000000|336, // match move
+0x80000000|314, // no-match move
+// T-test match for "=":
+118,
   }
 ,
-{ // state 800
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 774
+2,330, // ws*
+MIN_REDUCTION+268, // (default reduction)
+  }
+,
+{ // state 775
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+273, // (default reduction)
   }
 ,
-{ // state 801
-MIN_REDUCTION+60, // (default reduction)
+{ // state 776
+MIN_REDUCTION+25, // (default reduction)
   }
 ,
-{ // state 802
-MIN_REDUCTION+9, // (default reduction)
+{ // state 777
+0x80000000|1, // match move
+0x80000000|358, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 803
-MIN_REDUCTION+84, // (default reduction)
+{ // state 778
+95,157, // "s"
+96,815, // "t"
   }
 ,
-{ // state 804
-0x80000000|2, // match move
-0x80000000|1140, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 779
+-1, // $$start
+-1, // start
+580, // ws*
+-1, // $$0
+MIN_REDUCTION+254, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+254, // $
+-1, // $NT
   }
 ,
-{ // state 805
+{ // state 780
+0x80000000|695, // match move
+0x80000000|1166, // no-match move
+// T-test match for "=":
+118,
+  }
+,
+{ // state 781
 171,MIN_REDUCTION+185, // $NT
 MIN_REDUCTION+185, // (default reduction)
   }
 ,
-{ // state 806
-MIN_REDUCTION+47, // (default reduction)
+{ // state 782
+97,755, // "r"
   }
 ,
-{ // state 807
-0x80000000|197, // match move
-0x80000000|869, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 783
+0x80000000|209, // match move
+0x80000000|845, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 808
-0x80000000|813, // match move
-0x80000000|699, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 784
+0x80000000|794, // match move
+0x80000000|671, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 809
+{ // state 785
+0x80000000|1152, // match move
+0x80000000|1051, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 786
+MIN_REDUCTION+62, // (default reduction)
+  }
+,
+{ // state 787
+2,461, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+258, // (default reduction)
+  }
+,
+{ // state 788
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -24464,130 +24878,138 @@ MIN_REDUCTION+200, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+200, // $
 MIN_REDUCTION+200, // $NT
   }
 ,
-{ // state 810
-0x80000000|921, // match move
-0x80000000|749, // no-match move
+{ // state 789
+2,1096, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+260, // (default reduction)
+  }
+,
+{ // state 790
+0x80000000|908, // match move
+0x80000000|722, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 811
+{ // state 791
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -24646,747 +25068,561 @@ MIN_REDUCTION+206, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+206, // $
 MIN_REDUCTION+206, // $NT
   }
 ,
-{ // state 812
-0x80000000|639, // match move
-0x80000000|1081, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 792
+MIN_REDUCTION+9, // (default reduction)
   }
 ,
-{ // state 813
+{ // state 793
+0x80000000|618, // match move
+0x80000000|1074, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 794
 171,MIN_REDUCTION+152, // $NT
 MIN_REDUCTION+152, // (default reduction)
   }
 ,
-{ // state 814
-97,281, // "r"
-101,199, // "l"
-102,688, // "n"
-111,598, // "x"
+{ // state 795
+101,692, // "l"
   }
 ,
-{ // state 815
-2,314, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+264, // (default reduction)
+{ // state 796
+MIN_REDUCTION+36, // (default reduction)
   }
 ,
-{ // state 816
-2,563, // ws*
-MIN_REDUCTION+286, // (default reduction)
-  }
-,
-{ // state 817
-107,145, // "u"
-  }
-,
-{ // state 818
-0x80000000|2, // match move
-0x80000000|141, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 819
+{ // state 797
 -1, // $$start
 -1, // start
-1109, // ws*
+14, // ws*
 -1, // $$0
-MIN_REDUCTION+153, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+165, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+153, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+153, // "k"
-MIN_REDUCTION+153, // "y"
-MIN_REDUCTION+153, // "h"
-1006, // "i"
-MIN_REDUCTION+153, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+153, // "m"
-MIN_REDUCTION+153, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+153, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+165, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+165, // "k"
+MIN_REDUCTION+165, // "y"
+MIN_REDUCTION+165, // "h"
+501, // "i"
+MIN_REDUCTION+165, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+165, // "m"
+MIN_REDUCTION+165, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+165, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+153, // {"1".."9"}
+MIN_REDUCTION+165, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+153, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+165, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+153, // $
-MIN_REDUCTION+153, // $NT
+MIN_REDUCTION+165, // $
+MIN_REDUCTION+165, // $NT
   }
 ,
-{ // state 820
-MIN_REDUCTION+20, // (default reduction)
+{ // state 798
+0x80000000|590, // match move
+0x80000000|39, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 821
+{ // state 799
+-1, // $$start
+-1, // start
+921, // ws*
+-1, // $$0
+MIN_REDUCTION+177, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+177, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+177, // "k"
+MIN_REDUCTION+177, // "y"
+MIN_REDUCTION+177, // "h"
+501, // "i"
+MIN_REDUCTION+177, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+177, // "m"
+MIN_REDUCTION+177, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+177, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+177, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+177, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+177, // $
+MIN_REDUCTION+177, // $NT
+  }
+,
+{ // state 800
+171,MIN_REDUCTION+336, // $NT
+MIN_REDUCTION+336, // (default reduction)
+  }
+,
+{ // state 801
 MIN_REDUCTION+313, // (default reduction)
   }
 ,
-{ // state 822
-0x80000000|678, // match move
-0x80000000|952, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 802
+MIN_REDUCTION+26, // (default reduction)
   }
 ,
-{ // state 823
--1, // $$start
--1, // start
-1011, // ws*
--1, // $$0
-MIN_REDUCTION+213, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+213, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+213, // "k"
-MIN_REDUCTION+213, // "y"
-MIN_REDUCTION+213, // "h"
-1006, // "i"
-MIN_REDUCTION+213, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+213, // "m"
-MIN_REDUCTION+213, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+213, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+213, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+213, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+213, // $
-MIN_REDUCTION+213, // $NT
+{ // state 803
+MIN_REDUCTION+51, // (default reduction)
   }
 ,
-{ // state 824
-MIN_REDUCTION+50, // (default reduction)
-  }
-,
-{ // state 825
+{ // state 804
 171,MIN_REDUCTION+247, // $NT
   }
 ,
-{ // state 826
+{ // state 805
 171,MIN_REDUCTION+140, // $NT
 MIN_REDUCTION+140, // (default reduction)
   }
 ,
-{ // state 827
-0x80000000|1084, // match move
-0x80000000|507, // no-match move
+{ // state 806
+0x80000000|1077, // match move
+0x80000000|497, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 828
+{ // state 807
 171,MIN_REDUCTION+191, // $NT
 MIN_REDUCTION+191, // (default reduction)
   }
 ,
-{ // state 829
-0x80000000|830, // match move
-0x80000000|207, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 808
+0x80000000|809, // match move
+0x80000000|218, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 830
+{ // state 809
 171,MIN_REDUCTION+245, // $NT
 MIN_REDUCTION+245, // (default reduction)
   }
 ,
-{ // state 831
-96,204, // "t"
+{ // state 810
+0x80000000|1104, // match move
+0x80000000|292, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 832
--1, // $$start
--1, // start
-580, // ws*
--1, // $$0
-MIN_REDUCTION+266, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+266, // $
--1, // $NT
+{ // state 811
+112,739, // "g"
   }
 ,
-{ // state 833
-97,574, // "r"
-  }
-,
-{ // state 834
+{ // state 812
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -25445,164 +25681,185 @@ MIN_REDUCTION+251, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+251, // $
 -1, // $NT
   }
 ,
-{ // state 835
-MIN_REDUCTION+67, // (default reduction)
-  }
-,
-{ // state 836
+{ // state 813
 171,MIN_REDUCTION+242, // $NT
 MIN_REDUCTION+242, // (default reduction)
   }
 ,
-{ // state 837
-0x80000000|2, // match move
-0x80000000|511, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 814
+0x80000000|1, // match move
+0x80000000|227, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 838
-2,334, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+262, // (default reduction)
+{ // state 815
+98,221, // "c"
   }
 ,
-{ // state 839
+{ // state 816
+101,673, // "l"
+106,7, // "i"
+  }
+,
+{ // state 817
+2,249, // ws*
+MIN_REDUCTION+272, // (default reduction)
+  }
+,
+{ // state 818
+MIN_REDUCTION+343, // (default reduction)
+  }
+,
+{ // state 819
 MIN_REDUCTION+271, // (default reduction)
   }
 ,
-{ // state 840
-0x80000000|1167, // match move
-0x80000000|161, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 820
+0x80000000|1, // match move
+0x80000000|272, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 841
-2,202, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+270, // (default reduction)
+{ // state 821
+96,640, // "t"
   }
 ,
-{ // state 842
+{ // state 822
+2,1136, // ws*
+MIN_REDUCTION+306, // (default reduction)
+  }
+,
+{ // state 823
+0x80000000|242, // match move
+0x80000000|1095, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 824
+2,3, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+256, // (default reduction)
+  }
+,
+{ // state 825
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -25661,442 +25918,233 @@ MIN_REDUCTION+155, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+155, // $
 MIN_REDUCTION+155, // $NT
   }
 ,
+{ // state 826
+0x80000000|98, // match move
+0x80000000|888, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 827
+MIN_REDUCTION+325, // (default reduction)
+  }
+,
+{ // state 828
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+128, // (default reduction)
+  }
+,
+{ // state 829
+171,MIN_REDUCTION+95, // $NT
+MIN_REDUCTION+95, // (default reduction)
+  }
+,
+{ // state 830
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+110, // (default reduction)
+  }
+,
+{ // state 831
+MIN_REDUCTION+285, // (default reduction)
+  }
+,
+{ // state 832
+0x80000000|963, // match move
+0x80000000|287, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 833
+104,680, // "y"
+  }
+,
+{ // state 834
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+257, // (default reduction)
+  }
+,
+{ // state 835
+93,424, // "a"
+  }
+,
+{ // state 836
+0x80000000|164, // match move
+0x80000000|639, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 837
+MIN_REDUCTION+23, // (default reduction)
+  }
+,
+{ // state 838
+0x80000000|953, // match move
+0x80000000|1178, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 839
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+263, // (default reduction)
+  }
+,
+{ // state 840
+100,323, // "o"
+  }
+,
+{ // state 841
+MIN_REDUCTION+307, // (default reduction)
+  }
+,
+{ // state 842
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+116, // (default reduction)
+  }
+,
 { // state 843
-0x80000000|91, // match move
-0x80000000|906, // no-match move
+0x80000000|162, // match move
+0x80000000|838, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 844
-114,302, // "v"
+96,1188, // "t"
+97,300, // "r"
+102,1156, // "n"
+109,1201, // "f"
+138,1134, // "'"
+140,282, // '"'
+148,659, // "\"
   }
 ,
 { // state 845
-2,609, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+294, // (default reduction)
-  }
-,
-{ // state 846
-2,6, // ws*
-MIN_REDUCTION+256, // (default reduction)
-  }
-,
-{ // state 847
-MIN_REDUCTION+325, // (default reduction)
-  }
-,
-{ // state 848
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+128, // (default reduction)
-  }
-,
-{ // state 849
-171,MIN_REDUCTION+95, // $NT
-MIN_REDUCTION+95, // (default reduction)
-  }
-,
-{ // state 850
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+110, // (default reduction)
-  }
-,
-{ // state 851
-0x80000000|968, // match move
-0x80000000|296, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 852
-MIN_REDUCTION+285, // (default reduction)
-  }
-,
-{ // state 853
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+257, // (default reduction)
-  }
-,
-{ // state 854
-0x80000000|154, // match move
-0x80000000|657, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 855
-0x80000000|959, // match move
-0x80000000|1169, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 856
-99,653, // "e"
-  }
-,
-{ // state 857
-98,457, // "c"
-  }
-,
-{ // state 858
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+263, // (default reduction)
-  }
-,
-{ // state 859
-MIN_REDUCTION+36, // (default reduction)
-  }
-,
-{ // state 860
-0x80000000|2, // match move
-0x80000000|58, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 861
-126,10, // "*"
-127,943, // "/"
-  }
-,
-{ // state 862
--1, // $$start
--1, // start
-703, // ws*
--1, // $$0
-MIN_REDUCTION+138, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+138, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+138, // "k"
-MIN_REDUCTION+138, // "y"
-MIN_REDUCTION+138, // "h"
-1006, // "i"
-MIN_REDUCTION+138, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+138, // "m"
-MIN_REDUCTION+138, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+138, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+138, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+138, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+138, // $
-MIN_REDUCTION+138, // $NT
-  }
-,
-{ // state 863
-0x80000000|1061, // match move
-0x80000000|974, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 864
-MIN_REDUCTION+307, // (default reduction)
-  }
-,
-{ // state 865
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+116, // (default reduction)
-  }
-,
-{ // state 866
-0x80000000|152, // match move
-0x80000000|855, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 867
-96,1175, // "t"
-97,307, // "r"
-102,1149, // "n"
-109,1189, // "f"
-138,1129, // "'"
-140,284, // '"'
-148,681, // "\"
-  }
-,
-{ // state 868
-99,155, // "e"
-  }
-,
-{ // state 869
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -26155,153 +26203,323 @@ MIN_REDUCTION+291, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+291, // $
 -1, // $NT
   }
 ,
-{ // state 870
+{ // state 846
+171,MIN_REDUCTION+344, // $NT
+MIN_REDUCTION+344, // (default reduction)
+  }
+,
+{ // state 847
 171,MIN_REDUCTION+224, // $NT
 MIN_REDUCTION+224, // (default reduction)
   }
 ,
-{ // state 871
-0x80000000|2, // match move
-0x80000000|1137, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 872
-0x80000000|1044, // match move
-0x80000000|1182, // no-match move
+{ // state 848
+0x80000000|1032, // match move
+0x80000000|1193, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 873
-99,215, // "e"
+{ // state 849
+MIN_REDUCTION+70, // (default reduction)
   }
 ,
-{ // state 874
-2,247, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+272, // (default reduction)
+{ // state 850
+-1, // $$start
+-1, // start
+1191, // ws*
+-1, // $$0
+MIN_REDUCTION+183, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+183, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+183, // "k"
+MIN_REDUCTION+183, // "y"
+MIN_REDUCTION+183, // "h"
+501, // "i"
+MIN_REDUCTION+183, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+183, // "m"
+MIN_REDUCTION+183, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+183, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+183, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+183, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+183, // $
+MIN_REDUCTION+183, // $NT
   }
 ,
-{ // state 875
+{ // state 851
+96,1210, // "t"
+  }
+,
+{ // state 852
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -26360,200 +26578,332 @@ MIN_REDUCTION+191, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+191, // $
 MIN_REDUCTION+191, // $NT
   }
-,
-{ // state 876
-157,550, // eol
-158,387, // ws
-160,654, // comment
+};
+}
+private class Initter6{
+public int doInit(int startIdx) {
+  for (int i = 0; i < myParseTable.length; i++) {
+    parseTable[i+startIdx] = myParseTable[i];
+  }
+  return myParseTable.length;
+}
+private final int[][] myParseTable = {
+{ // state 853
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+301, // (default reduction)
   }
 ,
-{ // state 877
-0x80000000|1096, // match move
-0x80000000|346, // no-match move
-// T-test match for "0":
-143,
+{ // state 854
+109,1185, // "f"
   }
 ,
-{ // state 878
-100,576, // "o"
+{ // state 855
+-1, // $$start
+-1, // start
+322, // ws*
+-1, // $$0
+MIN_REDUCTION+262, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+-1, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+-1, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+MIN_REDUCTION+262, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+262, // $
+-1, // $NT
   }
 ,
-{ // state 879
-93,332, // "a"
-100,833, // "o"
-101,987, // "l"
-106,189, // "i"
+{ // state 856
+101,701, // "l"
   }
 ,
-{ // state 880
+{ // state 857
 MIN_REDUCTION+332, // (default reduction)
   }
 ,
-{ // state 881
-89,280, // letter
-90,1003, // idChar**
-92,822, // idChar
-93,68, // "a"
-94,68, // "b"
-95,68, // "s"
-96,68, // "t"
-97,68, // "r"
-98,68, // "c"
-99,68, // "e"
-100,68, // "o"
-101,68, // "l"
-102,68, // "n"
-103,68, // "k"
-104,68, // "y"
-105,68, // "h"
-106,68, // "i"
-107,68, // "u"
-108,68, // "d"
-109,68, // "f"
-110,68, // "m"
-111,68, // "x"
-112,68, // "g"
-113,68, // "p"
-114,68, // "v"
-115,68, // "w"
-116,68, // "z"
-143,149, // "0"
-145,642, // digit
-146,901, // "_"
-150,149, // {"1".."9"}
-152,68, // {"A".."Z" "j" "q"}
-165,1111, // idChar*
+{ // state 858
+0x80000000|1100, // match move
+0x80000000|278, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 882
-96,909, // "t"
-  }
-,
-{ // state 883
-100,157, // "o"
-  }
-,
-{ // state 884
-102,240, // "n"
-  }
-,
-{ // state 885
+{ // state 859
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -26612,440 +26962,646 @@ MIN_REDUCTION+239, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+239, // $
 MIN_REDUCTION+239, // $NT
   }
 ,
-{ // state 886
+{ // state 860
+0x80000000|245, // match move
+0x80000000|356, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 861
 MIN_REDUCTION+279, // (default reduction)
   }
 ,
-{ // state 887
+{ // state 862
 171,MIN_REDUCTION+169, // $NT
   }
 ,
-{ // state 888
-98,310, // "c"
-  }
-,
-{ // state 889
--1, // $$start
--1, // start
-110, // ws*
--1, // $$0
-MIN_REDUCTION+162, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+162, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+162, // "k"
-MIN_REDUCTION+162, // "y"
-MIN_REDUCTION+162, // "h"
-1006, // "i"
-MIN_REDUCTION+162, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+162, // "m"
-MIN_REDUCTION+162, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+162, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+162, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+162, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+162, // $
-MIN_REDUCTION+162, // $NT
-  }
-};
-}
-private class Initter6{
-public int doInit(int startIdx) {
-  for (int i = 0; i < myParseTable.length; i++) {
-    parseTable[i+startIdx] = myParseTable[i];
-  }
-  return myParseTable.length;
-}
-private final int[][] myParseTable = {
-{ // state 890
-MIN_REDUCTION+32, // (default reduction)
-  }
-,
-{ // state 891
-0x80000000|597, // match move
-0x80000000|465, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
-  }
-,
-{ // state 892
-0x80000000|135, // match move
-0x80000000|744, // no-match move
+{ // state 863
+0x80000000|906, // match move
+0x80000000|34, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 893
-0x80000000|432, // match move
-0x80000000|352, // no-match move
+{ // state 864
+98,730, // "c"
+  }
+,
+{ // state 865
+0x80000000|573, // match move
+0x80000000|451, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
+  }
+,
+{ // state 866
+0x80000000|416, // match move
+0x80000000|340, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 894
-0x80000000|631, // match move
-0x80000000|755, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 867
+103,920, // "k"
   }
 ,
-{ // state 895
-95,949, // "s"
+{ // state 868
+0x80000000|613, // match move
+0x80000000|733, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 896
-0x80000000|353, // match move
-0x80000000|9, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 869
+MIN_REDUCTION+7, // (default reduction)
   }
 ,
-{ // state 897
+{ // state 870
+0x80000000|342, // match move
+0x80000000|8, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 871
 MIN_REDUCTION+313, // (default reduction)
   }
 ,
-{ // state 898
+{ // state 872
+96,533, // "t"
+  }
+,
+{ // state 873
 171,MIN_REDUCTION+227, // $NT
 MIN_REDUCTION+227, // (default reduction)
   }
 ,
-{ // state 899
+{ // state 874
 171,MIN_REDUCTION+170, // $NT
 MIN_REDUCTION+170, // (default reduction)
   }
 ,
-{ // state 900
-2,78, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+364, // (default reduction)
+{ // state 875
+MIN_REDUCTION+34, // (default reduction)
   }
 ,
-{ // state 901
-0x80000000|897, // match move
-0x80000000|821, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 876
+0x80000000|729, // match move
+0x80000000|643, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
   }
 ,
-{ // state 902
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 877
+93,535, // "a"
+104,592, // "y"
+107,118, // "u"
+  }
+,
+{ // state 878
+95,872, // "s"
+  }
+,
+{ // state 879
+0x80000000|871, // match move
+0x80000000|801, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 880
+0x80000000|1, // match move
+0x80000000|173, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 881
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+101, // (default reduction)
   }
 ,
-{ // state 903
-0x80000000|2, // match move
-0x80000000|570, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 882
+-1, // $$start
+-1, // start
+500, // ws*
+-1, // $$0
+MIN_REDUCTION+207, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+207, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+207, // "k"
+MIN_REDUCTION+207, // "y"
+MIN_REDUCTION+207, // "h"
+501, // "i"
+MIN_REDUCTION+207, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+207, // "m"
+MIN_REDUCTION+207, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+207, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+207, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+207, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+207, // $
+MIN_REDUCTION+207, // $NT
   }
 ,
-{ // state 904
+{ // state 883
+2,63, // ws*
+MIN_REDUCTION+302, // (default reduction)
+  }
+,
+{ // state 884
+105,736, // "h"
+  }
+,
+{ // state 885
+94,878, // "b"
+95,250, // "s"
+  }
+,
+{ // state 886
 MIN_REDUCTION+311, // (default reduction)
   }
 ,
-{ // state 905
-0x80000000|2, // match move
-0x80000000|944, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 887
+0x80000000|1, // match move
+0x80000000|435, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 906
-0x80000000|828, // match move
-0x80000000|875, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 888
+0x80000000|807, // match move
+0x80000000|852, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 907
-0x80000000|191, // match move
-0x80000000|289, // no-match move
+{ // state 889
+MIN_REDUCTION+358, // (default reduction)
+  }
+,
+{ // state 890
+0x80000000|205, // match move
+0x80000000|285, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 908
-99,860, // "e"
+{ // state 891
+MIN_REDUCTION+22, // (default reduction)
   }
 ,
-{ // state 909
-93,884, // "a"
-  }
-,
-{ // state 910
-MIN_REDUCTION+341, // (default reduction)
-  }
-,
-{ // state 911
+{ // state 892
 -1, // $$start
 -1, // start
-872, // ws*
+316, // ws*
 -1, // $$0
-MIN_REDUCTION+298, // token
+MIN_REDUCTION+108, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+108, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+108, // "k"
+MIN_REDUCTION+108, // "y"
+MIN_REDUCTION+108, // "h"
+501, // "i"
+MIN_REDUCTION+108, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+108, // "m"
+MIN_REDUCTION+108, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+108, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+108, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+108, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+108, // $
+MIN_REDUCTION+108, // $NT
+  }
+,
+{ // state 893
+0x80000000|744, // match move
+0x80000000|980, // no-match move
+// T-test match for {"*" "/"}:
+126,
+127,
+  }
+,
+{ // state 894
+-1, // $$start
+-1, // start
+170, // ws*
+-1, // $$0
+MIN_REDUCTION+304, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -27099,353 +27655,221 @@ MIN_REDUCTION+298, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+298, // $
+206, // digit+
+MIN_REDUCTION+304, // $
 -1, // $NT
   }
 ,
-{ // state 912
--1, // $$start
--1, // start
-319, // ws*
--1, // $$0
-MIN_REDUCTION+99, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+99, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+99, // "k"
-MIN_REDUCTION+99, // "y"
-MIN_REDUCTION+99, // "h"
-1006, // "i"
-MIN_REDUCTION+99, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+99, // "m"
-MIN_REDUCTION+99, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+99, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+99, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+99, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+99, // $
-MIN_REDUCTION+99, // $NT
-  }
-,
-{ // state 913
+{ // state 895
 MIN_REDUCTION+269, // (default reduction)
   }
 ,
-{ // state 914
-96,257, // "t"
-104,98, // "y"
-105,452, // "h"
-107,237, // "u"
-115,672, // "w"
-  }
-,
-{ // state 915
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 896
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+146, // (default reduction)
   }
 ,
-{ // state 916
+{ // state 897
+0x80000000|297, // match move
+0x80000000|1117, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 898
 171,MIN_REDUCTION+220, // $NT
   }
 ,
-{ // state 917
-0x80000000|951, // match move
-0x80000000|301, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 899
+0x80000000|946, // match move
+0x80000000|296, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 918
-0x80000000|1143, // match move
-0x80000000|46, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 900
+0x80000000|1147, // match move
+0x80000000|48, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 919
+{ // state 901
+100,381, // "o"
+104,680, // "y"
+  }
+,
+{ // state 902
 MIN_REDUCTION+332, // (default reduction)
   }
 ,
-{ // state 920
+{ // state 903
+98,439, // "c"
+  }
+,
+{ // state 904
 171,MIN_REDUCTION+190, // $NT
   }
 ,
-{ // state 921
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 905
+0x80000000|1, // match move
+0x80000000|980, // no-match move
+// T-test match for {"*" "/"}:
+126,
+127,
+  }
+,
+{ // state 906
+2,322, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+262, // (default reduction)
+  }
+,
+{ // state 907
+99,746, // "e"
+  }
+,
+{ // state 908
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+295, // (default reduction)
   }
 ,
-{ // state 922
+{ // state 909
+MIN_REDUCTION+299, // (default reduction)
+  }
+,
+{ // state 910
+MIN_REDUCTION+20, // (default reduction)
+  }
+,
+{ // state 911
+MIN_REDUCTION+330, // (default reduction)
+  }
+,
+{ // state 912
+102,441, // "n"
+  }
+,
+{ // state 913
 -1, // $$start
 -1, // start
-476, // ws*
+558, // ws*
 -1, // $$0
-MIN_REDUCTION+258, // token
+MIN_REDUCTION+266, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -27499,321 +27923,147 @@ MIN_REDUCTION+258, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+258, // $
+206, // digit+
+MIN_REDUCTION+266, // $
 -1, // $NT
   }
 ,
-{ // state 923
-MIN_REDUCTION+299, // (default reduction)
+{ // state 914
+0x80000000|703, // match move
+0x80000000|825, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 924
-MIN_REDUCTION+330, // (default reduction)
+{ // state 915
+MIN_REDUCTION+350, // (default reduction)
   }
 ,
-{ // state 925
-101,512, // "l"
-106,1054, // "i"
+{ // state 916
+96,711, // "t"
   }
 ,
-{ // state 926
-0x80000000|729, // match move
-0x80000000|842, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 917
+99,58, // "e"
   }
 ,
-{ // state 927
-MIN_REDUCTION+348, // (default reduction)
+{ // state 918
+0x80000000|1, // match move
+0x80000000|111, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 928
--1, // $$start
--1, // start
-1089, // ws*
--1, // $$0
-MIN_REDUCTION+126, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+126, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+126, // "k"
-MIN_REDUCTION+126, // "y"
-MIN_REDUCTION+126, // "h"
-1006, // "i"
-MIN_REDUCTION+126, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+126, // "m"
-MIN_REDUCTION+126, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+126, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+126, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+126, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+126, // $
-MIN_REDUCTION+126, // $NT
-  }
-,
-{ // state 929
+{ // state 919
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -27872,953 +28122,277 @@ MIN_REDUCTION+173, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+173, // $
 MIN_REDUCTION+173, // $NT
   }
 ,
-{ // state 930
-0x80000000|695, // match move
-0x80000000|171, // no-match move
+{ // state 920
+93,811, // "a"
+  }
+,
+{ // state 921
+0x80000000|667, // match move
+0x80000000|184, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 931
-102,227, // "n"
-  }
-,
-{ // state 932
+{ // state 922
 171,MIN_REDUCTION+206, // $NT
 MIN_REDUCTION+206, // (default reduction)
   }
 ,
-{ // state 933
-2,334, // ws*
-MIN_REDUCTION+262, // (default reduction)
-  }
-,
-{ // state 934
+{ // state 923
 171,MIN_REDUCTION+134, // $NT
 MIN_REDUCTION+134, // (default reduction)
   }
 ,
-{ // state 935
--1, // $$start
--1, // start
-571, // ws*
--1, // $$0
-MIN_REDUCTION+304, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+304, // $
--1, // $NT
+{ // state 924
+MIN_REDUCTION+48, // (default reduction)
   }
 ,
-{ // state 936
--1, // $$start
--1, // start
-434, // ws*
--1, // $$0
-MIN_REDUCTION+243, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+243, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+243, // "k"
-MIN_REDUCTION+243, // "y"
-MIN_REDUCTION+243, // "h"
-1006, // "i"
-MIN_REDUCTION+243, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+243, // "m"
-MIN_REDUCTION+243, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+243, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+243, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+243, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+243, // $
-MIN_REDUCTION+243, // $NT
+{ // state 925
+0x80000000|1, // match move
+0x80000000|413, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 937
-0x80000000|160, // match move
-0x80000000|1065, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 926
+0x80000000|169, // match move
+0x80000000|1049, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 938
-0x80000000|915, // match move
-0x80000000|389, // no-match move
+{ // state 927
+0x80000000|896, // match move
+0x80000000|370, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 939
--1, // $$start
--1, // start
-28, // ws*
--1, // $$0
-MIN_REDUCTION+234, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+234, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+234, // "k"
-MIN_REDUCTION+234, // "y"
-MIN_REDUCTION+234, // "h"
-1006, // "i"
-MIN_REDUCTION+234, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+234, // "m"
-MIN_REDUCTION+234, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+234, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+234, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+234, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+234, // $
-MIN_REDUCTION+234, // $NT
-  }
-,
-{ // state 940
+{ // state 928
 171,MIN_REDUCTION+139, // $NT
   }
 ,
-{ // state 941
-100,428, // "o"
-101,100, // "l"
+{ // state 929
+MIN_REDUCTION+346, // (default reduction)
   }
 ,
-{ // state 942
+{ // state 930
 MIN_REDUCTION+273, // (default reduction)
   }
 ,
-{ // state 943
-0x80000000|214, // match move
-0x80000000|564, // no-match move
-0x80000000|1136, // NT-test-match state for printable
+{ // state 931
+MIN_REDUCTION+75, // (default reduction)
   }
 ,
-{ // state 944
--1, // $$start
--1, // start
-287, // ws*
--1, // $$0
-MIN_REDUCTION+132, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+132, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+132, // "k"
-MIN_REDUCTION+132, // "y"
-MIN_REDUCTION+132, // "h"
-1006, // "i"
-MIN_REDUCTION+132, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+132, // "m"
-MIN_REDUCTION+132, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+132, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+132, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+132, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+132, // $
-MIN_REDUCTION+132, // $NT
+{ // state 932
+2,558, // ws*
+MIN_REDUCTION+266, // (default reduction)
   }
 ,
-{ // state 945
+{ // state 933
+MIN_REDUCTION+77, // (default reduction)
+  }
+,
+{ // state 934
+0x80000000|1, // match move
+0x80000000|506, // no-match move
+// T-test match for "/":
+127,
+  }
+,
+{ // state 935
+120,430, // "&"
+  }
+,
+{ // state 936
+2,593, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+294, // (default reduction)
+  }
+,
+{ // state 937
+106,563, // "i"
+  }
+,
+{ // state 938
 171,MIN_REDUCTION+176, // $NT
 MIN_REDUCTION+176, // (default reduction)
   }
 ,
-{ // state 946
-0x80000000|1122, // match move
-0x80000000|417, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 939
+98,504, // "c"
   }
 ,
-{ // state 947
-0x80000000|34, // match move
-0x80000000|97, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 940
+MIN_REDUCTION+4, // (default reduction)
   }
 ,
-{ // state 948
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 941
+0x80000000|1, // match move
+0x80000000|268, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 942
+95,917, // "s"
+  }
+,
+{ // state 943
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+134, // (default reduction)
   }
 ,
-{ // state 949
-99,134, // "e"
+{ // state 944
+0x80000000|412, // match move
+0x80000000|121, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 950
-0x80000000|2, // match move
-0x80000000|819, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 945
+2,491, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+292, // (default reduction)
   }
 ,
-{ // state 951
+{ // state 946
 171,MIN_REDUCTION+92, // $NT
 MIN_REDUCTION+92, // (default reduction)
   }
 ,
-{ // state 952
-MIN_REDUCTION+360, // (default reduction)
-  }
-,
-{ // state 953
-171,MIN_REDUCTION+217, // $NT
-  }
-,
-{ // state 954
+{ // state 947
 171,MIN_REDUCTION+103, // $NT
   }
 ,
-{ // state 955
-0x80000000|1194, // match move
-0x80000000|615, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 948
+171,MIN_REDUCTION+217, // $NT
   }
 ,
-{ // state 956
-0x80000000|1148, // match move
-0x80000000|668, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 957
-171,MIN_REDUCTION+232, // $NT
-  }
-,
-{ // state 958
+{ // state 949
 -1, // $$start
 -1, // start
-6, // ws*
+543, // ws*
 -1, // $$0
-MIN_REDUCTION+256, // token
+MIN_REDUCTION+286, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -28872,333 +28446,345 @@ MIN_REDUCTION+256, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+256, // $
+206, // digit+
+MIN_REDUCTION+286, // $
 -1, // $NT
   }
 ,
-{ // state 959
+{ // state 950
+0x80000000|1154, // match move
+0x80000000|647, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 951
+163,402, // {10}
+  }
+,
+{ // state 952
+171,MIN_REDUCTION+232, // $NT
+  }
+,
+{ // state 953
 171,MIN_REDUCTION+197, // $NT
 MIN_REDUCTION+197, // (default reduction)
   }
 ,
-{ // state 960
-0x80000000|431, // match move
-0x80000000|156, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 954
+100,1145, // "o"
   }
 ,
-{ // state 961
-171,MIN_REDUCTION+160, // $NT
+{ // state 955
+0x80000000|415, // match move
+0x80000000|166, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 962
-0x80000000|180, // match move
-0x80000000|80, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 963
+{ // state 956
 -1, // $$start
 -1, // start
-583, // ws*
+348, // ws*
 -1, // $$0
-MIN_REDUCTION+105, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+129, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+105, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+105, // "k"
-MIN_REDUCTION+105, // "y"
-MIN_REDUCTION+105, // "h"
-1006, // "i"
-MIN_REDUCTION+105, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+105, // "m"
-MIN_REDUCTION+105, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+105, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+129, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+129, // "k"
+MIN_REDUCTION+129, // "y"
+MIN_REDUCTION+129, // "h"
+501, // "i"
+1040, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+129, // "m"
+MIN_REDUCTION+129, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+129, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+105, // {"1".."9"}
+MIN_REDUCTION+129, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+105, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+129, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+105, // $
-MIN_REDUCTION+105, // $NT
+MIN_REDUCTION+129, // $
+MIN_REDUCTION+129, // $NT
   }
 ,
-{ // state 964
-0x80000000|1107, // match move
-0x80000000|1042, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 957
+171,MIN_REDUCTION+160, // $NT
   }
 ,
-{ // state 965
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 958
+0x80000000|190, // match move
+0x80000000|83, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 959
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+289, // (default reduction)
   }
 ,
-{ // state 966
+{ // state 960
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -29257,514 +28843,176 @@ MIN_REDUCTION+113, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+113, // $
 MIN_REDUCTION+113, // $NT
   }
 ,
-{ // state 967
-0x80000000|732, // match move
-0x80000000|407, // no-match move
-0x80000000|566, // NT-test-match state for digit
+{ // state 961
+95,384, // "s"
   }
 ,
-{ // state 968
+{ // state 962
+0x80000000|706, // match move
+0x80000000|390, // no-match move
+0x80000000|545, // NT-test-match state for digit
+  }
+,
+{ // state 963
 171,MIN_REDUCTION+104, // $NT
 MIN_REDUCTION+104, // (default reduction)
   }
 ,
-{ // state 969
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 964
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+140, // (default reduction)
   }
 ,
-{ // state 970
+{ // state 965
+98,405, // "c"
+  }
+,
+{ // state 966
+0x80000000|789, // match move
+0x80000000|410, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 967
 171,MIN_REDUCTION+119, // $NT
 MIN_REDUCTION+119, // (default reduction)
   }
 ,
-{ // state 971
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 968
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+259, // (default reduction)
   }
 ,
-{ // state 972
-0x80000000|2, // match move
-0x80000000|697, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+{ // state 969
+2,848, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+298, // (default reduction)
   }
 ,
-{ // state 973
-94,321, // "b"
-95,895, // "s"
-  }
-,
-{ // state 974
--1, // $$start
--1, // start
-492, // ws*
--1, // $$0
-MIN_REDUCTION+290, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+290, // $
--1, // $NT
-  }
-,
-{ // state 975
--1, // $$start
--1, // start
-247, // ws*
--1, // $$0
-MIN_REDUCTION+272, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+272, // $
--1, // $NT
-  }
-,
-{ // state 976
+{ // state 970
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -29823,369 +29071,382 @@ MIN_REDUCTION+134, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+134, // $
 MIN_REDUCTION+134, // $NT
   }
 ,
-{ // state 977
-96,950, // "t"
-  }
-,
-{ // state 978
-0x80000000|902, // match move
-0x80000000|495, // no-match move
+{ // state 971
+0x80000000|881, // match move
+0x80000000|484, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 979
-99,329, // "e"
+{ // state 972
+107,163, // "u"
   }
 ,
-{ // state 980
-MIN_REDUCTION+90, // (default reduction)
+{ // state 973
+0x80000000|211, // match move
+0x80000000|732, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 981
-0x80000000|203, // match move
-0x80000000|754, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 982
-0x80000000|582, // match move
-0x80000000|540, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 983
+{ // state 974
 171,MIN_REDUCTION+229, // $NT
   }
 ,
-{ // state 984
-MIN_REDUCTION+58, // (default reduction)
+{ // state 975
+MIN_REDUCTION+90, // (default reduction)
   }
 ,
-{ // state 985
--1, // $$start
--1, // start
-446, // ws*
--1, // $$0
-MIN_REDUCTION+284, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
--1, // `=
--1, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-MIN_REDUCTION+284, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+284, // $
--1, // $NT
+{ // state 976
+97,954, // "r"
+106,961, // "i"
   }
 ,
-{ // state 986
-0x80000000|677, // match move
-0x80000000|1130, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 977
+0x80000000|656, // match move
+0x80000000|1135, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 987
-100,73, // "o"
-  }
-,
-{ // state 988
+{ // state 978
 171,MIN_REDUCTION+143, // $NT
 MIN_REDUCTION+143, // (default reduction)
   }
 ,
-{ // state 989
-96,684, // "t"
+{ // state 979
+-1, // $$start
+-1, // start
+31, // ws*
+-1, // $$0
+MIN_REDUCTION+234, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+234, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+234, // "k"
+MIN_REDUCTION+234, // "y"
+MIN_REDUCTION+234, // "h"
+501, // "i"
+MIN_REDUCTION+234, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+234, // "m"
+MIN_REDUCTION+234, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+234, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+234, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+234, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+234, // $
+MIN_REDUCTION+234, // $NT
   }
 ,
-{ // state 990
+{ // state 980
+2,264, // ws*
+153,595, // " "
+154,595, // {9}
+157,534, // eol
+158,204, // ws
+159,595, // {12}
+163,1062, // {10}
+164,1072, // {13}
+MIN_REDUCTION+276, // (default reduction)
+  }
+,
+{ // state 981
+0x80000000|596, // match move
+0x80000000|897, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 982
 171,MIN_REDUCTION+113, // $NT
 MIN_REDUCTION+113, // (default reduction)
   }
 ,
-{ // state 991
-101,804, // "l"
+{ // state 983
+2,866, // ws*
+MIN_REDUCTION+252, // (default reduction)
   }
 ,
-{ // state 992
-96,373, // "t"
+{ // state 984
+96,727, // "t"
   }
 ,
-{ // state 993
+{ // state 985
+MIN_REDUCTION+54, // (default reduction)
+  }
+,
+{ // state 986
+0x80000000|1183, // match move
+0x80000000|612, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
+  }
+,
+{ // state 987
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -30244,519 +29505,334 @@ MIN_REDUCTION+279, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+279, // $
 -1, // $NT
   }
 ,
+{ // state 988
+89,279, // letter
+92,276, // idChar
+93,69, // "a"
+94,69, // "b"
+95,69, // "s"
+96,69, // "t"
+97,69, // "r"
+98,69, // "c"
+99,69, // "e"
+100,69, // "o"
+101,69, // "l"
+102,69, // "n"
+103,69, // "k"
+104,69, // "y"
+105,69, // "h"
+106,69, // "i"
+107,69, // "u"
+108,69, // "d"
+109,69, // "f"
+110,69, // "m"
+111,69, // "x"
+112,69, // "g"
+113,69, // "p"
+114,69, // "v"
+115,69, // "w"
+116,69, // "z"
+143,159, // "0"
+145,621, // digit
+146,879, // "_"
+150,159, // {"1".."9"}
+152,69, // {"A".."Z" "j" "q"}
+  }
+,
+{ // state 989
+113,425, // "p"
+  }
+,
+{ // state 990
+124,151, // "-"
+  }
+,
+{ // state 991
+93,271, // "a"
+94,271, // "b"
+95,271, // "s"
+96,271, // "t"
+97,271, // "r"
+98,271, // "c"
+99,271, // "e"
+100,271, // "o"
+101,271, // "l"
+102,271, // "n"
+103,271, // "k"
+104,271, // "y"
+105,271, // "h"
+106,271, // "i"
+107,271, // "u"
+108,271, // "d"
+109,271, // "f"
+110,271, // "m"
+111,271, // "x"
+112,271, // "g"
+113,271, // "p"
+114,271, // "v"
+115,271, // "w"
+116,271, // "z"
+117,271, // "!"
+118,271, // "="
+119,271, // "%"
+120,271, // "&"
+121,271, // "|"
+122,271, // "+"
+123,271, // ","
+124,271, // "-"
+125,271, // "."
+126,678, // "*"
+127,37, // "/"
+128,271, // ";"
+129,271, // "<"
+130,271, // ">"
+131,271, // "("
+132,271, // ")"
+133,271, // "["
+134,271, // "]"
+135,271, // "{"
+136,271, // "}"
+138,271, // "'"
+140,271, // '"'
+143,271, // "0"
+146,271, // "_"
+148,271, // "\"
+150,271, // {"1".."9"}
+151,271, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,271, // {"A".."Z" "j" "q"}
+153,271, // " "
+154,271, // {9}
+156,865, // multilineCommentPrintable
+157,750, // eol
+163,1116, // {10}
+164,140, // {13}
+  }
+,
+{ // state 992
+0x80000000|1140, // match move
+0x80000000|894, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 993
+0x80000000|288, // match move
+0x80000000|363, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
 { // state 994
-89,280, // letter
-92,278, // idChar
-93,68, // "a"
-94,68, // "b"
-95,68, // "s"
-96,68, // "t"
-97,68, // "r"
-98,68, // "c"
-99,68, // "e"
-100,68, // "o"
-101,68, // "l"
-102,68, // "n"
-103,68, // "k"
-104,68, // "y"
-105,68, // "h"
-106,68, // "i"
-107,68, // "u"
-108,68, // "d"
-109,68, // "f"
-110,68, // "m"
-111,68, // "x"
-112,68, // "g"
-113,68, // "p"
-114,68, // "v"
-115,68, // "w"
-116,68, // "z"
-143,149, // "0"
-145,642, // digit
-146,901, // "_"
-150,149, // {"1".."9"}
-152,68, // {"A".."Z" "j" "q"}
-  }
-,
-{ // state 995
-MIN_REDUCTION+51, // (default reduction)
-  }
-,
-{ // state 996
-2,60, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+302, // (default reduction)
-  }
-,
-{ // state 997
-103,562, // "k"
-  }
-,
-{ // state 998
-101,577, // "l"
-  }
-,
-{ // state 999
-93,269, // "a"
-94,269, // "b"
-95,269, // "s"
-96,269, // "t"
-97,269, // "r"
-98,269, // "c"
-99,269, // "e"
-100,269, // "o"
-101,269, // "l"
-102,269, // "n"
-103,269, // "k"
-104,269, // "y"
-105,269, // "h"
-106,269, // "i"
-107,269, // "u"
-108,269, // "d"
-109,269, // "f"
-110,269, // "m"
-111,269, // "x"
-112,269, // "g"
-113,269, // "p"
-114,269, // "v"
-115,269, // "w"
-116,269, // "z"
-117,269, // "!"
-118,269, // "="
-119,269, // "%"
-120,269, // "&"
-121,269, // "|"
-122,269, // "+"
-123,269, // ","
-124,269, // "-"
-125,269, // "."
-126,704, // "*"
-127,762, // "/"
-128,269, // ";"
-129,269, // "<"
-130,269, // ">"
-131,269, // "("
-132,269, // ")"
-133,269, // "["
-134,269, // "]"
-135,269, // "{"
-136,269, // "}"
-138,269, // "'"
-140,269, // '"'
-143,269, // "0"
-146,269, // "_"
-148,269, // "\"
-150,269, // {"1".."9"}
-151,269, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,269, // {"A".."Z" "j" "q"}
-153,269, // " "
-154,269, // {9}
-156,891, // multilineCommentPrintable
-157,773, // eol
-163,1112, // {10}
-164,248, // {13}
-  }
-,
-{ // state 1000
-0x80000000|297, // match move
-0x80000000|382, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1001
 171,MIN_REDUCTION+158, // $NT
 MIN_REDUCTION+158, // (default reduction)
   }
 ,
-{ // state 1002
--1, // $$start
--1, // start
-563, // ws*
--1, // $$0
-MIN_REDUCTION+286, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+286, // $
--1, // $NT
+{ // state 995
+96,1141, // "t"
+104,171, // "y"
+105,20, // "h"
+107,989, // "u"
+115,609, // "w"
   }
 ,
-{ // state 1003
-0x80000000|586, // match move
-0x80000000|1113, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 1004
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 996
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+293, // (default reduction)
   }
 ,
-{ // state 1005
-95,1158, // "s"
+{ // state 997
+MIN_REDUCTION+74, // (default reduction)
   }
 ,
-{ // state 1006
-102,1187, // "n"
-109,720, // "f"
-110,1180, // "m"
-  }
-,
-{ // state 1007
-2,446, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+284, // (default reduction)
-  }
-,
-{ // state 1008
-100,150, // "o"
-104,1057, // "y"
-  }
-,
-{ // state 1009
+{ // state 998
 MIN_REDUCTION+311, // (default reduction)
   }
 ,
-{ // state 1010
-MIN_REDUCTION+8, // (default reduction)
+{ // state 999
+MIN_REDUCTION+12, // (default reduction)
   }
 ,
-{ // state 1011
-0x80000000|1072, // match move
-0x80000000|228, // no-match move
+{ // state 1000
+0x80000000|883, // match move
+0x80000000|12, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1001
+MIN_REDUCTION+71, // (default reduction)
+  }
+,
+{ // state 1002
+97,877, // "r"
+105,976, // "h"
+  }
+,
+{ // state 1003
+98,5, // "c"
+  }
+,
+{ // state 1004
+0x80000000|1061, // match move
+0x80000000|229, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1012
-0x80000000|30, // match move
-0x80000000|985, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1013
-MIN_REDUCTION+77, // (default reduction)
-  }
-,
-{ // state 1014
-100,150, // "o"
-  }
-,
-{ // state 1015
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1005
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+182, // (default reduction)
   }
 ,
-{ // state 1016
-171,MIN_REDUCTION+347, // $NT
-MIN_REDUCTION+347, // (default reduction)
+{ // state 1006
+100,816, // "o"
   }
 ,
-{ // state 1017
-0x80000000|404, // match move
-0x80000000|809, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 1007
+0x80000000|1, // match move
+0x80000000|670, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 1018
+{ // state 1008
+0x80000000|387, // match move
+0x80000000|788, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1009
 MIN_REDUCTION+312, // (default reduction)
   }
 ,
-{ // state 1019
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1010
+MIN_REDUCTION+79, // (default reduction)
+  }
+,
+{ // state 1011
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+143, // (default reduction)
   }
 ,
-{ // state 1020
+{ // state 1012
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -30815,459 +29891,260 @@ MIN_REDUCTION+188, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+188, // $
 MIN_REDUCTION+188, // $NT
   }
 ,
-{ // state 1021
+{ // state 1013
+MIN_REDUCTION+66, // (default reduction)
+  }
+,
+{ // state 1014
 MIN_REDUCTION+326, // (default reduction)
   }
 ,
-{ // state 1022
-0x80000000|347, // match move
-0x80000000|221, // no-match move
-// T-test match for "=":
-118,
-  }
-,
-{ // state 1023
-0x80000000|1153, // match move
-0x80000000|956, // no-match move
+{ // state 1015
+0x80000000|1160, // match move
+0x80000000|950, // no-match move
 // T-test match for "0":
 143,
   }
 ,
+{ // state 1016
+0x80000000|301, // match move
+0x80000000|1209, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
+  }
+,
+{ // state 1017
+0x80000000|474, // match move
+0x80000000|44, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1018
+MIN_REDUCTION+281, // (default reduction)
+  }
+,
+{ // state 1019
+4,564, // token
+5,1137, // `boolean
+6,24, // `class
+7,869, // `extends
+8,61, // `void
+9,792, // `int
+10,1121, // `while
+11,525, // `if
+12,999, // `else
+13,232, // `for
+14,505, // `break
+15,440, // `this
+16,1162, // `false
+17,59, // `true
+18,389, // `super
+19,226, // `null
+20,910, // `return
+21,1097, // `instanceof
+22,891, // `new
+23,837, // `abstract
+24,374, // `assert
+25,776, // `byte
+26,802, // `case
+27,84, // `catch
+28,690, // `char
+29,29, // `const
+30,716, // `continue
+31,547, // `default
+32,1109, // `do
+33,1198, // `double
+34,875, // `enum
+35,1124, // `final
+36,796, // `finally
+37,614, // `float
+38,392, // `goto
+39,718, // `implements
+40,198, // `import
+41,1041, // `interface
+42,688, // `long
+43,419, // `native
+44,145, // `package
+45,1059, // `private
+46,215, // `protected
+47,651, // `public
+48,924, // `short
+49,368, // `static
+50,364, // `strictfp
+51,803, // `switch
+52,444, // `synchronized
+53,1090, // `throw
+54,985, // `throws
+55,320, // `transient
+56,400, // `try
+57,43, // `volatile
+  }
+,
+{ // state 1020
+2,668, // ws*
+91,352, // $$1
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+89, // (default reduction)
+  }
+,
+{ // state 1021
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+170, // (default reduction)
+  }
+,
+{ // state 1022
+98,884, // "c"
+  }
+,
+{ // state 1023
+171,MIN_REDUCTION+112, // $NT
+  }
+,
 { // state 1024
-0x80000000|900, // match move
-0x80000000|1197, // no-match move
+0x80000000|542, // match move
+0x80000000|1207, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 1025
-0x80000000|308, // match move
-0x80000000|1198, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
+0x80000000|199, // match move
+0x80000000|686, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 1026
-2,893, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+252, // (default reduction)
-  }
-,
-{ // state 1027
-MIN_REDUCTION+281, // (default reduction)
-  }
-,
-{ // state 1028
-4,587, // token
-5,89, // `boolean
-6,303, // `class
-7,1154, // `extends
-8,1010, // `void
-9,802, // `int
-10,41, // `while
-11,198, // `if
-12,427, // `else
-13,336, // `for
-14,1160, // `break
-15,480, // `this
-16,569, // `false
-17,595, // `true
-18,525, // `super
-19,724, // `null
-20,820, // `return
-21,414, // `instanceof
-22,181, // `new
-23,629, // `abstract
-24,133, // `assert
-25,1091, // `byte
-26,682, // `case
-27,99, // `catch
-28,371, // `char
-29,130, // `const
-30,1055, // `continue
-31,1165, // `default
-32,890, // `do
-33,121, // `double
-34,233, // `enum
-35,779, // `final
-36,859, // `finally
-37,766, // `float
-38,551, // `goto
-39,187, // `implements
-40,662, // `import
-41,622, // `interface
-42,413, // `long
-43,479, // `native
-44,1128, // `package
-45,709, // `private
-46,788, // `protected
-47,806, // `public
-48,344, // `short
-49,702, // `static
-50,824, // `strictfp
-51,995, // `switch
-52,447, // `synchronized
-53,177, // `throw
-54,1103, // `throws
-55,1082, // `transient
-56,8, // `try
-57,549, // `volatile
-  }
-,
-{ // state 1029
-93,304, // "a"
-  }
-,
-{ // state 1030
-96,451, // "t"
-  }
-,
-{ // state 1031
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+170, // (default reduction)
-  }
-,
-{ // state 1032
--1, // $$start
--1, // start
-661, // ws*
--1, // $$0
-MIN_REDUCTION+231, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-125, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+231, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+231, // "k"
-98, // "y"
-452, // "h"
-1006, // "i"
-237, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+231, // "m"
-MIN_REDUCTION+231, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-665, // "w"
-MIN_REDUCTION+231, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+231, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+231, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+231, // $
-MIN_REDUCTION+231, // $NT
-  }
-,
-{ // state 1033
-171,MIN_REDUCTION+112, // $NT
-  }
-,
-{ // state 1034
-0x80000000|560, // match move
-0x80000000|1195, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 1035
-2,298, // ws*
-MIN_REDUCTION+280, // (default reduction)
-  }
-,
-{ // state 1036
-2,715, // ws*
-153,612, // " "
-154,612, // {9}
-157,550, // eol
-158,1016, // ws
-159,612, // {12}
-163,1146, // {10}
-164,733, // {13}
-MIN_REDUCTION+274, // (default reduction)
-  }
-,
-{ // state 1037
-0x80000000|188, // match move
-0x80000000|711, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1038
-0x80000000|2, // match move
-0x80000000|309, // no-match move
+0x80000000|1, // match move
+0x80000000|302, // no-match move
 // T-test match for "/":
 127,
   }
 ,
-{ // state 1039
+{ // state 1027
 171,MIN_REDUCTION+239, // $NT
 MIN_REDUCTION+239, // (default reduction)
   }
 ,
-{ // state 1040
+{ // state 1028
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -31326,364 +30203,371 @@ MIN_REDUCTION+277, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+277, // $
 -1, // $NT
   }
 ,
-{ // state 1041
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1029
+0x80000000|1, // match move
+0x80000000|1148, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 1030
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+245, // (default reduction)
   }
 ,
-{ // state 1042
+{ // state 1031
+89,743, // letter
+93,745, // "a"
+94,745, // "b"
+95,745, // "s"
+96,745, // "t"
+97,745, // "r"
+98,745, // "c"
+99,745, // "e"
+100,745, // "o"
+101,745, // "l"
+102,745, // "n"
+103,745, // "k"
+104,745, // "y"
+105,745, // "h"
+106,745, // "i"
+107,745, // "u"
+108,745, // "d"
+109,745, // "f"
+110,745, // "m"
+111,745, // "x"
+112,745, // "g"
+113,745, // "p"
+114,745, // "v"
+115,745, // "w"
+116,745, // "z"
+143,344, // "0"
+145,25, // digit
+146,1119, // "_"
+150,344, // {"1".."9"}
+152,745, // {"A".."Z" "j" "q"}
+  }
+,
+{ // state 1032
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+297, // (default reduction)
+  }
+,
+{ // state 1033
+93,669, // "a"
+  }
+,
+{ // state 1034
 -1, // $$start
 -1, // start
-339, // ws*
+418, // ws*
 -1, // $$0
-MIN_REDUCTION+268, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
--1, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
--1, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+MIN_REDUCTION+243, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+-1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-MIN_REDUCTION+268, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+243, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+243, // "k"
+MIN_REDUCTION+243, // "y"
+MIN_REDUCTION+243, // "h"
+501, // "i"
+MIN_REDUCTION+243, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+243, // "m"
+MIN_REDUCTION+243, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+243, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+708, // "0"
+-1, // digit++
+-1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+MIN_REDUCTION+243, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+243, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+268, // $
--1, // $NT
+-1, // digit+
+MIN_REDUCTION+243, // $
+MIN_REDUCTION+243, // $NT
   }
 ,
-{ // state 1043
-89,769, // letter
-93,770, // "a"
-94,770, // "b"
-95,770, // "s"
-96,770, // "t"
-97,770, // "r"
-98,770, // "c"
-99,770, // "e"
-100,770, // "o"
-101,770, // "l"
-102,770, // "n"
-103,770, // "k"
-104,770, // "y"
-105,770, // "h"
-106,770, // "i"
-107,770, // "u"
-108,770, // "d"
-109,770, // "f"
-110,770, // "m"
-111,770, // "x"
-112,770, // "g"
-113,770, // "p"
-114,770, // "v"
-115,770, // "w"
-116,770, // "z"
-143,360, // "0"
-145,20, // digit
-146,1118, // "_"
-150,360, // {"1".."9"}
-152,770, // {"A".."Z" "j" "q"}
-  }
-,
-{ // state 1044
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1035
 MIN_REDUCTION+297, // (default reduction)
   }
 ,
-{ // state 1045
-2,571, // ws*
-MIN_REDUCTION+304, // (default reduction)
+{ // state 1036
+0x80000000|1, // match move
+0x80000000|193, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 1046
-99,931, // "e"
+{ // state 1037
+0x80000000|978, // match move
+0x80000000|391, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 1047
-MIN_REDUCTION+297, // (default reduction)
-  }
-,
-{ // state 1048
-0x80000000|988, // match move
-0x80000000|408, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1049
+{ // state 1038
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -31742,190 +30626,171 @@ MIN_REDUCTION+259, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+259, // $
 -1, // $NT
   }
 ,
-{ // state 1050
-99,25, // "e"
+{ // state 1039
+0x80000000|1107, // match move
+0x80000000|331, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 1051
-0x80000000|1105, // match move
-0x80000000|342, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 1040
+94,1167, // "b"
   }
 ,
-{ // state 1052
-171,MIN_REDUCTION+341, // $NT
-MIN_REDUCTION+341, // (default reduction)
+{ // state 1041
+MIN_REDUCTION+41, // (default reduction)
   }
 ,
-{ // state 1053
-0x80000000|1173, // match move
-0x80000000|445, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 1042
+0x80000000|1, // match move
+0x80000000|979, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 1054
-108,606, // "d"
+{ // state 1043
+95,1179, // "s"
   }
 ,
-{ // state 1055
-MIN_REDUCTION+30, // (default reduction)
+{ // state 1044
+0x80000000|490, // match move
+0x80000000|1012, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 1056
-MIN_REDUCTION+80, // (default reduction)
-  }
-,
-{ // state 1057
-0x80000000|2, // match move
-0x80000000|759, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 1058
-0x80000000|499, // match move
-0x80000000|1020, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1059
-97,750, // "r"
-105,638, // "h"
-  }
-,
-{ // state 1060
+{ // state 1045
 MIN_REDUCTION+293, // (default reduction)
   }
 ,
-{ // state 1061
-2,492, // ws*
-MIN_REDUCTION+290, // (default reduction)
+{ // state 1046
+0x80000000|6, // match move
+0x80000000|1000, // no-match move
+// T-test match for "0":
+143,
   }
 ,
-{ // state 1062
-124,1177, // "-"
+{ // state 1047
+0x80000000|742, // match move
+0x80000000|1053, // no-match move
+// T-test match for "0":
+143,
   }
 ,
-{ // state 1063
-106,76, // "i"
-  }
-,
-{ // state 1064
+{ // state 1048
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -31984,123 +30849,123 @@ MIN_REDUCTION+98, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+98, // $
 MIN_REDUCTION+98, // $NT
   }
 ,
-{ // state 1065
+{ // state 1049
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -32159,379 +31024,230 @@ MIN_REDUCTION+167, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+167, // $
 MIN_REDUCTION+167, // $NT
   }
-};
-}
-private class Initter7{
-public int doInit(int startIdx) {
-  for (int i = 0; i < myParseTable.length; i++) {
-    parseTable[i+startIdx] = myParseTable[i];
-  }
-  return myParseTable.length;
-}
-private final int[][] myParseTable = {
-{ // state 1066
-2,476, // ws*
-MIN_REDUCTION+258, // (default reduction)
+,
+{ // state 1050
+114,907, // "v"
   }
 ,
-{ // state 1067
-0x80000000|910, // match move
-0x80000000|462, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
+{ // state 1051
+0x80000000|52, // match move
+0x80000000|767, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 1068
-100,646, // "o"
+{ // state 1052
+2,790, // ws*
+MIN_REDUCTION+296, // (default reduction)
   }
 ,
-{ // state 1069
+{ // state 1053
+0x80000000|134, // match move
+0x80000000|243, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1054
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+303, // (default reduction)
+  }
+,
+{ // state 1055
+MIN_REDUCTION+358, // (default reduction)
+  }
+,
+{ // state 1056
 171,MIN_REDUCTION+250, // $NT
   }
 ,
-{ // state 1070
+{ // state 1057
+2,664, // ws*
+MIN_REDUCTION+288, // (default reduction)
+  }
+,
+{ // state 1058
 MIN_REDUCTION+332, // (default reduction)
   }
 ,
-{ // state 1071
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1059
+MIN_REDUCTION+45, // (default reduction)
+  }
+,
+{ // state 1060
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+233, // (default reduction)
   }
 ,
-{ // state 1072
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1061
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+212, // (default reduction)
   }
 ,
-{ // state 1073
-157,386, // eol
-163,1146, // {10}
-164,733, // {13}
+{ // state 1062
+171,MIN_REDUCTION+342, // $NT
+MIN_REDUCTION+342, // (default reduction)
   }
 ,
-{ // state 1074
-0x80000000|1093, // match move
-0x80000000|917, // no-match move
+{ // state 1063
+0x80000000|1086, // match move
+0x80000000|899, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1075
+{ // state 1064
+99,493, // "e"
+  }
+,
+{ // state 1065
 171,MIN_REDUCTION+151, // $NT
   }
 ,
-{ // state 1076
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1066
+0x80000000|1, // match move
+0x80000000|566, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 1067
+MIN_REDUCTION+87, // (default reduction)
+  }
+,
+{ // state 1068
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+253, // (default reduction)
   }
 ,
-{ // state 1077
-94,998, // "b"
-  }
-,
-{ // state 1078
--1, // $$start
--1, // start
-55, // ws*
--1, // $$0
-MIN_REDUCTION+240, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+240, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+240, // "k"
-MIN_REDUCTION+240, // "y"
-MIN_REDUCTION+240, // "h"
-1006, // "i"
-MIN_REDUCTION+240, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+240, // "m"
-MIN_REDUCTION+240, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+240, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+240, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+240, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+240, // $
-MIN_REDUCTION+240, // $NT
-  }
-,
-{ // state 1079
-0x80000000|528, // match move
-0x80000000|350, // no-match move
+{ // state 1069
+0x80000000|518, // match move
+0x80000000|339, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1080
+{ // state 1070
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -32590,443 +31306,451 @@ MIN_REDUCTION+297, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+297, // $
 -1, // $NT
   }
 ,
+{ // state 1071
+0x80000000|932, // match move
+0x80000000|913, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1072
+0x80000000|951, // match move
+0x80000000|846, // no-match move
+// T-test match for 10:
+163,
+  }
+,
+{ // state 1073
+99,2, // "e"
+  }
+,
+{ // state 1074
+1,763, // start
+2,683, // ws*
+3,940, // $$0
+4,694, // token
+58,432, // `!
+59,309, // `!=
+60,1115, // `%
+61,565, // `&&
+62,786, // `*
+63,450, // `(
+64,760, // `)
+65,396, // `{
+66,1013, // `}
+67,155, // `-
+68,88, // `+
+69,379, // `=
+70,849, // `==
+71,1001, // `[
+72,438, // `]
+73,515, // `||
+74,997, // `<
+75,931, // `<=
+76,579, // `,
+77,933, // `>
+78,446, // `>=
+79,1010, // `.
+80,1076, // `;
+81,510, // `++
+82,552, // `--
+83,258, // `/
+84,213, // ID
+85,625, // INTLIT
+86,658, // STRINGLIT
+87,1067, // CHARLIT
+89,307, // letter
+137,503, // intLit2
+143,708, // "0"
+157,534, // eol
+158,204, // ws
+160,634, // comment
+168,1159, // token*
+  }
+,
+{ // state 1075
+102,972, // "n"
+  }
+,
+{ // state 1076
+MIN_REDUCTION+80, // (default reduction)
+  }
+,
+{ // state 1077
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+227, // (default reduction)
+  }
+,
+{ // state 1078
+96,16, // "t"
+  }
+,
+{ // state 1079
+99,1194, // "e"
+  }
+,
+{ // state 1080
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+248, // (default reduction)
+  }
+,
 { // state 1081
-1,790, // start
-2,782, // ws*
-3,306, // $$0
-4,796, // token
-58,984, // `!
-59,1186, // `!=
-60,801, // `%
-61,772, // `&&
-62,535, // `*
-63,605, // `(
-64,316, // `)
-65,547, // `{
-66,232, // `}
-67,835, // `-
-68,440, // `+
-69,219, // `=
-70,660, // `==
-71,435, // `[
-72,781, // `]
-73,13, // `||
-74,254, // `<
-75,558, // `<=
-76,420, // `,
-77,1013, // `>
-78,537, // `>=
-79,459, // `.
-80,1056, // `;
-81,789, // `++
-82,147, // `--
-83,710, // `/
-84,803, // ID
-85,16, // INTLIT
-86,286, // STRINGLIT
-87,765, // CHARLIT
-89,75, // letter
-137,795, // intLit2
-143,736, // "0"
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-168,1152, // token*
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+209, // (default reduction)
   }
 ,
 { // state 1082
-MIN_REDUCTION+55, // (default reduction)
+0x80000000|1019, // match move
+0x80000000|713, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 1083
-0x80000000|201, // match move
-0x80000000|545, // no-match move
+0x80000000|310, // match move
+0x80000000|977, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 1084
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+227, // (default reduction)
-  }
-,
-{ // state 1085
-101,300, // "l"
-  }
-,
-{ // state 1086
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+248, // (default reduction)
-  }
-,
-{ // state 1087
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+209, // (default reduction)
-  }
-,
-{ // state 1088
-0x80000000|1028, // match move
-0x80000000|741, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1089
-0x80000000|317, // match move
-0x80000000|986, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 1090
-157,550, // eol
-158,387, // ws
-160,654, // comment
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+164, // (default reduction)
   }
 ,
-{ // state 1091
-MIN_REDUCTION+25, // (default reduction)
-  }
-,
-{ // state 1092
-0x80000000|1031, // match move
-0x80000000|701, // no-match move
+{ // state 1085
+0x80000000|1021, // match move
+0x80000000|674, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1093
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1086
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+92, // (default reduction)
   }
 ,
-{ // state 1094
+{ // state 1087
+97,1200, // "r"
+  }
+,
+{ // state 1088
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+277, // (default reduction)
+  }
+,
+{ // state 1089
 -1, // $$start
 -1, // start
-1079, // ws*
+247, // ws*
 -1, // $$0
-MIN_REDUCTION+222, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+210, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+222, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+222, // "k"
-MIN_REDUCTION+222, // "y"
-MIN_REDUCTION+222, // "h"
-1006, // "i"
-MIN_REDUCTION+222, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+222, // "m"
-MIN_REDUCTION+222, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+222, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+210, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+210, // "k"
+MIN_REDUCTION+210, // "y"
+MIN_REDUCTION+210, // "h"
+501, // "i"
+MIN_REDUCTION+210, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+210, // "m"
+MIN_REDUCTION+210, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+210, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+222, // {"1".."9"}
+MIN_REDUCTION+210, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+222, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+210, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+222, // $
-MIN_REDUCTION+222, // $NT
+MIN_REDUCTION+210, // $
+MIN_REDUCTION+210, // $NT
   }
 ,
-{ // state 1095
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+277, // (default reduction)
+{ // state 1090
+MIN_REDUCTION+53, // (default reduction)
   }
 ,
-{ // state 1096
-2,1034, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+282, // (default reduction)
+{ // state 1091
+0x80000000|230, // match move
+0x80000000|266, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 1097
-0x80000000|439, // match move
-0x80000000|325, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
-  }
-,
-{ // state 1098
-0x80000000|231, // match move
-0x80000000|264, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1099
+{ // state 1092
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -33085,160 +31809,378 @@ MIN_REDUCTION+242, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+242, // $
 MIN_REDUCTION+242, // $NT
   }
 ,
-{ // state 1100
-0x80000000|971, // match move
-0x80000000|656, // no-match move
+{ // state 1093
+107,520, // "u"
+  }
+,
+{ // state 1094
+127,189, // "/"
+  }
+,
+{ // state 1095
+-1, // $$start
+-1, // start
+927, // ws*
+-1, // $$0
+MIN_REDUCTION+147, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+147, // "o"
+901, // "l"
+495, // "n"
+MIN_REDUCTION+147, // "k"
+MIN_REDUCTION+147, // "y"
+MIN_REDUCTION+147, // "h"
+501, // "i"
+MIN_REDUCTION+147, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+147, // "m"
+MIN_REDUCTION+147, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+147, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+147, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+147, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+147, // $
+MIN_REDUCTION+147, // $NT
+  }
+};
+}
+private class Initter7{
+public int doInit(int startIdx) {
+  for (int i = 0; i < myParseTable.length; i++) {
+    parseTable[i+startIdx] = myParseTable[i];
+  }
+  return myParseTable.length;
+}
+private final int[][] myParseTable = {
+{ // state 1096
+0x80000000|968, // match move
+0x80000000|635, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1101
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1097
+MIN_REDUCTION+21, // (default reduction)
+  }
+,
+{ // state 1098
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+291, // (default reduction)
   }
 ,
+{ // state 1099
+118,108, // "="
+  }
+,
+{ // state 1100
+2,80, // ws*
+MIN_REDUCTION+366, // (default reduction)
+  }
+,
+{ // state 1101
+95,769, // "s"
+  }
+,
 { // state 1102
-0x80000000|557, // match move
-0x80000000|1106, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|539, // match move
+0x80000000|1108, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
 { // state 1103
-MIN_REDUCTION+54, // (default reduction)
+99,702, // "e"
   }
 ,
 { // state 1104
-171,MIN_REDUCTION+208, // $NT
+2,848, // ws*
+MIN_REDUCTION+298, // (default reduction)
   }
 ,
 { // state 1105
-MIN_REDUCTION+287, // (default reduction)
+171,MIN_REDUCTION+208, // $NT
   }
 ,
 { // state 1106
+127,138, // "/"
+  }
+,
+{ // state 1107
+MIN_REDUCTION+287, // (default reduction)
+  }
+,
+{ // state 1108
 -1, // $$start
 -1, // start
 -1, // ws*
 -1, // $$0
-MIN_REDUCTION+362, // token
+MIN_REDUCTION+364, // token
 -1, // `boolean
 -1, // `class
 -1, // `extends
@@ -33292,139 +32234,134 @@ MIN_REDUCTION+362, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
-MIN_REDUCTION+362, // $
+206, // digit+
+MIN_REDUCTION+364, // $
 -1, // $NT
   }
 ,
-{ // state 1107
-2,339, // ws*
-MIN_REDUCTION+268, // (default reduction)
-  }
-,
-{ // state 1108
-102,533, // "n"
-  }
-,
 { // state 1109
-0x80000000|81, // match move
-0x80000000|808, // no-match move
+MIN_REDUCTION+32, // (default reduction)
+  }
+,
+{ // state 1110
+0x80000000|85, // match move
+0x80000000|784, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1110
+{ // state 1111
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -33483,149 +32420,328 @@ MIN_REDUCTION+110, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+110, // $
 MIN_REDUCTION+110, // $NT
   }
 ,
-{ // state 1111
-0x80000000|994, // match move
-0x80000000|159, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
 { // state 1112
-0x80000000|456, // match move
-0x80000000|467, // no-match move
-0x80000000|778, // NT-test-match state for multilineCommentPrintable
+0x80000000|988, // match move
+0x80000000|167, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 { // state 1113
-0x80000000|648, // match move
-0x80000000|513, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+0x80000000|455, // match move
+0x80000000|1071, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 1114
-110,1155, // "m"
+0x80000000|1, // match move
+0x80000000|986, // no-match move
+// T-test match for "/":
+127,
   }
 ,
 { // state 1115
-106,453, // "i"
+MIN_REDUCTION+60, // (default reduction)
   }
 ,
 { // state 1116
+0x80000000|511, // match move
+0x80000000|349, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
+  }
+,
+{ // state 1117
+-1, // $$start
+-1, // start
+305, // ws*
+-1, // $$0
+MIN_REDUCTION+264, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+264, // $
+-1, // $NT
+  }
+,
+{ // state 1118
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -33684,136 +32800,124 @@ MIN_REDUCTION+275, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+275, // $
 -1, // $NT
   }
 ,
-{ // state 1117
-0x80000000|172, // match move
-0x80000000|740, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1118
-171,MIN_REDUCTION+313, // $NT
-  }
-,
 { // state 1119
-0x80000000|2, // match move
-0x80000000|1199, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+171,MIN_REDUCTION+313, // $NT
   }
 ,
 { // state 1120
@@ -33821,192 +32925,33 @@ MIN_REDUCTION+275, // $
   }
 ,
 { // state 1121
-0x80000000|2, // match move
-0x80000000|912, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
+MIN_REDUCTION+10, // (default reduction)
   }
 ,
 { // state 1122
-2,1131, // ws*
-MIN_REDUCTION+306, // (default reduction)
+2,253, // ws*
+MIN_REDUCTION+278, // (default reduction)
   }
 ,
 { // state 1123
--1, // $$start
--1, // start
-907, // ws*
--1, // $$0
-MIN_REDUCTION+300, // token
--1, // `boolean
--1, // `class
--1, // `extends
--1, // `void
--1, // `int
--1, // `while
--1, // `if
--1, // `else
--1, // `for
--1, // `break
--1, // `this
--1, // `false
--1, // `true
--1, // `super
--1, // `null
--1, // `return
--1, // `instanceof
--1, // `new
--1, // `abstract
--1, // `assert
--1, // `byte
--1, // `case
--1, // `catch
--1, // `char
--1, // `const
--1, // `continue
--1, // `default
--1, // `do
--1, // `double
--1, // `enum
--1, // `final
--1, // `finally
--1, // `float
--1, // `goto
--1, // `implements
--1, // `import
--1, // `interface
--1, // `long
--1, // `native
--1, // `package
--1, // `private
--1, // `protected
--1, // `public
--1, // `short
--1, // `static
--1, // `strictfp
--1, // `switch
--1, // `synchronized
--1, // `throw
--1, // `throws
--1, // `transient
--1, // `try
--1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
-75, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-22, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
-194, // digit+
-MIN_REDUCTION+300, // $
--1, // $NT
+0x80000000|112, // match move
+0x80000000|434, // no-match move
+0x80000000|165, // NT-test-match state for multilineCommentPrintable
   }
 ,
 { // state 1124
+MIN_REDUCTION+35, // (default reduction)
+  }
+,
+{ // state 1125
+102,903, // "n"
+  }
+,
+{ // state 1126
+99,1033, // "e"
+  }
+,
+{ // state 1127
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -34065,123 +33010,123 @@ MIN_REDUCTION+269, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+269, // $
 -1, // $NT
   }
 ,
-{ // state 1125
+{ // state 1128
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -34240,144 +33185,325 @@ MIN_REDUCTION+116, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+116, // $
 MIN_REDUCTION+116, // $NT
   }
 ,
-{ // state 1126
-0x80000000|969, // match move
-0x80000000|217, // no-match move
+{ // state 1129
+0x80000000|964, // match move
+0x80000000|224, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1127
-0x80000000|1039, // match move
-0x80000000|885, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 1130
+0x80000000|1, // match move
+0x80000000|719, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
-{ // state 1128
-MIN_REDUCTION+44, // (default reduction)
+{ // state 1131
+-1, // $$start
+-1, // start
+1136, // ws*
+-1, // $$0
+MIN_REDUCTION+306, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+306, // $
+-1, // $NT
   }
 ,
-{ // state 1129
+{ // state 1132
+100,637, // "o"
+  }
+,
+{ // state 1133
+0x80000000|1027, // match move
+0x80000000|859, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1134
 MIN_REDUCTION+316, // (default reduction)
   }
 ,
-{ // state 1130
+{ // state 1135
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -34436,597 +33562,776 @@ MIN_REDUCTION+125, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+125, // $
 MIN_REDUCTION+125, // $NT
   }
 ,
-{ // state 1131
-0x80000000|63, // match move
-0x80000000|242, // no-match move
+{ // state 1136
+0x80000000|66, // match move
+0x80000000|244, // no-match move
 // T-test match for "0":
 143,
-  }
-,
-{ // state 1132
-0x80000000|383, // match move
-0x80000000|267, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1133
-99,837, // "e"
-  }
-,
-{ // state 1134
-0x80000000|468, // match move
-0x80000000|84, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1135
-112,856, // "g"
-  }
-,
-{ // state 1136
-93,42, // "a"
-94,42, // "b"
-95,42, // "s"
-96,42, // "t"
-97,42, // "r"
-98,42, // "c"
-99,42, // "e"
-100,42, // "o"
-101,42, // "l"
-102,42, // "n"
-103,42, // "k"
-104,42, // "y"
-105,42, // "h"
-106,42, // "i"
-107,42, // "u"
-108,42, // "d"
-109,42, // "f"
-110,42, // "m"
-111,42, // "x"
-112,42, // "g"
-113,42, // "p"
-114,42, // "v"
-115,42, // "w"
-116,42, // "z"
-117,42, // "!"
-118,42, // "="
-119,42, // "%"
-120,42, // "&"
-121,42, // "|"
-122,42, // "+"
-123,42, // ","
-124,42, // "-"
-125,42, // "."
-126,42, // "*"
-127,42, // "/"
-128,42, // ";"
-129,42, // "<"
-130,42, // ">"
-131,42, // "("
-132,42, // ")"
-133,42, // "["
-134,42, // "]"
-135,42, // "{"
-136,42, // "}"
-138,42, // "'"
-140,42, // '"'
-143,42, // "0"
-146,42, // "_"
-148,42, // "\"
-150,42, // {"1".."9"}
-151,42, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,42, // {"A".."Z" "j" "q"}
-153,42, // " "
-154,42, // {9}
   }
 ,
 { // state 1137
--1, // $$start
--1, // start
-395, // ws*
--1, // $$0
-MIN_REDUCTION+168, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+168, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+168, // "k"
-MIN_REDUCTION+168, // "y"
-MIN_REDUCTION+168, // "h"
-1006, // "i"
-MIN_REDUCTION+168, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+168, // "m"
-MIN_REDUCTION+168, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+168, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+168, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+168, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+168, // $
-MIN_REDUCTION+168, // $NT
+MIN_REDUCTION+5, // (default reduction)
   }
 ,
 { // state 1138
-0x80000000|1041, // match move
-0x80000000|829, // no-match move
+2,170, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+304, // (default reduction)
+  }
+,
+{ // state 1139
+0x80000000|453, // match move
+0x80000000|92, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1140
+2,170, // ws*
+MIN_REDUCTION+304, // (default reduction)
+  }
+,
+{ // state 1141
+93,87, // "a"
+97,937, // "r"
+  }
+,
+{ // state 1142
+100,385, // "o"
+  }
+,
+{ // state 1143
+93,45, // "a"
+94,45, // "b"
+95,45, // "s"
+96,45, // "t"
+97,45, // "r"
+98,45, // "c"
+99,45, // "e"
+100,45, // "o"
+101,45, // "l"
+102,45, // "n"
+103,45, // "k"
+104,45, // "y"
+105,45, // "h"
+106,45, // "i"
+107,45, // "u"
+108,45, // "d"
+109,45, // "f"
+110,45, // "m"
+111,45, // "x"
+112,45, // "g"
+113,45, // "p"
+114,45, // "v"
+115,45, // "w"
+116,45, // "z"
+117,45, // "!"
+118,45, // "="
+119,45, // "%"
+120,45, // "&"
+121,45, // "|"
+122,45, // "+"
+123,45, // ","
+124,45, // "-"
+125,45, // "."
+126,45, // "*"
+127,45, // "/"
+128,45, // ";"
+129,45, // "<"
+130,45, // ">"
+131,45, // "("
+132,45, // ")"
+133,45, // "["
+134,45, // "]"
+135,45, // "{"
+136,45, // "}"
+138,45, // "'"
+140,45, // '"'
+143,45, // "0"
+146,45, // "_"
+148,45, // "\"
+150,45, // {"1".."9"}
+151,45, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+152,45, // {"A".."Z" "j" "q"}
+153,45, // " "
+154,45, // {9}
+  }
+,
+{ // state 1144
+0x80000000|1030, // match move
+0x80000000|808, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1139
-97,290, // "r"
-100,173, // "o"
-104,623, // "y"
+{ // state 1145
+115,369, // "w"
   }
 ,
-{ // state 1140
--1, // $$start
--1, // start
-18, // ws*
--1, // $$0
-MIN_REDUCTION+189, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
--1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
--1, // reserved
--1, // letter
--1, // idChar**
--1, // $$1
--1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+189, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+189, // "k"
-MIN_REDUCTION+189, // "y"
-MIN_REDUCTION+189, // "h"
-1006, // "i"
-MIN_REDUCTION+189, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+189, // "m"
-MIN_REDUCTION+189, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+189, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
--1, // charPrintable
-210, // '"'
--1, // stringPrintable*
--1, // $$2
-736, // "0"
--1, // digit++
--1, // digit
--1, // "_"
--1, // escapeSequence
--1, // "\"
--1, // printable
-MIN_REDUCTION+189, // {"1".."9"}
--1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+189, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
--1, // stringPrintable
--1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
--1, // printable**
--1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
--1, // idChar*
--1, // multilineCommentPrintable*
--1, // printable*
--1, // token*
--1, // digit+
-MIN_REDUCTION+189, // $
-MIN_REDUCTION+189, // $NT
-  }
-,
-{ // state 1141
-2,872, // ws*
-MIN_REDUCTION+298, // (default reduction)
-  }
-,
-{ // state 1142
+{ // state 1146
 171,MIN_REDUCTION+136, // $NT
   }
 ,
-{ // state 1143
+{ // state 1147
 171,MIN_REDUCTION+182, // $NT
 MIN_REDUCTION+182, // (default reduction)
   }
 ,
-{ // state 1144
-101,868, // "l"
+{ // state 1148
+-1, // $$start
+-1, // start
+524, // ws*
+-1, // $$0
+MIN_REDUCTION+156, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+156, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+156, // "k"
+MIN_REDUCTION+156, // "y"
+MIN_REDUCTION+156, // "h"
+501, // "i"
+MIN_REDUCTION+156, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+156, // "m"
+MIN_REDUCTION+156, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+156, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+156, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+156, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+156, // $
+MIN_REDUCTION+156, // $NT
   }
 ,
-{ // state 1145
+{ // state 1149
 MIN_REDUCTION+326, // (default reduction)
   }
 ,
-{ // state 1146
-171,MIN_REDUCTION+340, // $NT
-MIN_REDUCTION+340, // (default reduction)
+{ // state 1150
+-1, // $$start
+-1, // start
+113, // ws*
+-1, // $$0
+MIN_REDUCTION+111, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+111, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+111, // "k"
+MIN_REDUCTION+111, // "y"
+MIN_REDUCTION+111, // "h"
+501, // "i"
+MIN_REDUCTION+111, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+111, // "m"
+MIN_REDUCTION+111, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+111, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+111, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+111, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+111, // $
+MIN_REDUCTION+111, // $NT
   }
 ,
-{ // state 1147
+{ // state 1151
+-1, // $$start
+-1, // start
+559, // ws*
+-1, // $$0
+MIN_REDUCTION+105, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+105, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+105, // "k"
+MIN_REDUCTION+105, // "y"
+MIN_REDUCTION+105, // "h"
+501, // "i"
+MIN_REDUCTION+105, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+105, // "m"
+MIN_REDUCTION+105, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+105, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+105, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+105, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+105, // $
+MIN_REDUCTION+105, // $NT
+  }
+,
+{ // state 1152
+2,289, // ws*
+157,534, // eol
+158,204, // ws
+160,634, // comment
+MIN_REDUCTION+280, // (default reduction)
+  }
+,
+{ // state 1153
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -35085,361 +34390,722 @@ MIN_REDUCTION+107, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+107, // $
 MIN_REDUCTION+107, // $NT
   }
 ,
-{ // state 1148
+{ // state 1154
 171,MIN_REDUCTION+218, // $NT
 MIN_REDUCTION+218, // (default reduction)
   }
 ,
-{ // state 1149
-MIN_REDUCTION+317, // (default reduction)
-  }
-,
-{ // state 1150
-126,192, // "*"
-  }
-,
-{ // state 1151
+{ // state 1155
 -1, // $$start
 -1, // start
-962, // ws*
+645, // ws*
 -1, // $$0
-MIN_REDUCTION+204, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+195, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+204, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+204, // "k"
-MIN_REDUCTION+204, // "y"
-MIN_REDUCTION+204, // "h"
-1006, // "i"
-MIN_REDUCTION+204, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+204, // "m"
-MIN_REDUCTION+204, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+204, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+195, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+195, // "k"
+MIN_REDUCTION+195, // "y"
+MIN_REDUCTION+195, // "h"
+501, // "i"
+MIN_REDUCTION+195, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+195, // "m"
+MIN_REDUCTION+195, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+195, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+204, // {"1".."9"}
+MIN_REDUCTION+195, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+204, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+195, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+204, // $
-MIN_REDUCTION+204, // $NT
+MIN_REDUCTION+195, // $
+MIN_REDUCTION+195, // $NT
   }
 ,
-{ // state 1152
-0x80000000|1088, // match move
-0x80000000|1098, // no-match move
+{ // state 1156
+MIN_REDUCTION+317, // (default reduction)
+  }
+,
+{ // state 1157
+-1, // $$start
+-1, // start
+1144, // ws*
+-1, // $$0
+MIN_REDUCTION+246, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+246, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+246, // "k"
+MIN_REDUCTION+246, // "y"
+MIN_REDUCTION+246, // "h"
+501, // "i"
+MIN_REDUCTION+246, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+246, // "m"
+MIN_REDUCTION+246, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+246, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+246, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+246, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+246, // $
+MIN_REDUCTION+246, // $NT
+  }
+,
+{ // state 1158
+0x80000000|1, // match move
+0x80000000|1205, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
+  }
+,
+{ // state 1159
+0x80000000|1082, // match move
+0x80000000|1091, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1153
-157,550, // eol
-158,387, // ws
-160,654, // comment
+{ // state 1160
+157,534, // eol
+158,367, // ws
+160,634, // comment
 MIN_REDUCTION+218, // (default reduction)
   }
 ,
-{ // state 1154
-MIN_REDUCTION+7, // (default reduction)
-  }
-,
-{ // state 1155
-99,600, // "e"
-  }
-,
-{ // state 1156
-MIN_REDUCTION+354, // (default reduction)
-  }
-,
-{ // state 1157
-0x80000000|2, // match move
-0x80000000|138, // no-match move
-0x80000000|1043, // NT-test-match state for idChar
-  }
-,
-{ // state 1158
-99,330, // "e"
-  }
-,
-{ // state 1159
-0x80000000|385, // match move
-0x80000000|1064, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1160
-MIN_REDUCTION+14, // (default reduction)
-  }
-,
 { // state 1161
-171,MIN_REDUCTION+214, // $NT
+0x80000000|969, // match move
+0x80000000|810, // no-match move
+// T-test match for "0":
+143,
   }
 ,
 { // state 1162
+MIN_REDUCTION+16, // (default reduction)
+  }
+,
+{ // state 1163
+107,326, // "u"
+  }
+,
+{ // state 1164
+MIN_REDUCTION+356, // (default reduction)
+  }
+,
+{ // state 1165
+2,543, // ws*
+MIN_REDUCTION+286, // (default reduction)
+  }
+,
+{ // state 1166
+0x80000000|141, // match move
+0x80000000|735, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 1167
+101,375, // "l"
+  }
+,
+{ // state 1168
+0x80000000|365, // match move
+0x80000000|1048, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1169
+171,MIN_REDUCTION+214, // $NT
+  }
+,
+{ // state 1170
+-1, // $$start
+-1, // start
+79, // ws*
+-1, // $$0
+MIN_REDUCTION+249, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+249, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+249, // "k"
+MIN_REDUCTION+249, // "y"
+MIN_REDUCTION+249, // "h"
+501, // "i"
+MIN_REDUCTION+249, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+249, // "m"
+MIN_REDUCTION+249, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+249, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+249, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+249, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+249, // $
+MIN_REDUCTION+249, // $NT
+  }
+,
+{ // state 1171
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -35498,129 +35164,304 @@ MIN_REDUCTION+158, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+158, // $
 MIN_REDUCTION+158, // $NT
   }
 ,
-{ // state 1163
-0x80000000|403, // match move
-0x80000000|132, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+{ // state 1172
+0x80000000|386, // match move
+0x80000000|143, // no-match move
+0x80000000|487, // NT-test-match state for reserved
   }
 ,
-{ // state 1164
+{ // state 1173
+-1, // $$start
+-1, // start
+253, // ws*
+-1, // $$0
+MIN_REDUCTION+278, // token
+-1, // `boolean
+-1, // `class
+-1, // `extends
+-1, // `void
+-1, // `int
+-1, // `while
+-1, // `if
+-1, // `else
+-1, // `for
+-1, // `break
+-1, // `this
+-1, // `false
+-1, // `true
+-1, // `super
+-1, // `null
+-1, // `return
+-1, // `instanceof
+-1, // `new
+-1, // `abstract
+-1, // `assert
+-1, // `byte
+-1, // `case
+-1, // `catch
+-1, // `char
+-1, // `const
+-1, // `continue
+-1, // `default
+-1, // `do
+-1, // `double
+-1, // `enum
+-1, // `final
+-1, // `finally
+-1, // `float
+-1, // `goto
+-1, // `implements
+-1, // `import
+-1, // `interface
+-1, // `long
+-1, // `native
+-1, // `package
+-1, // `private
+-1, // `protected
+-1, // `public
+-1, // `short
+-1, // `static
+-1, // `strictfp
+-1, // `switch
+-1, // `synchronized
+-1, // `throw
+-1, // `throws
+-1, // `transient
+-1, // `try
+-1, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+307, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+27, // "0"
+403, // digit++
+962, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+27, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+206, // digit+
+MIN_REDUCTION+278, // $
+-1, // $NT
+  }
+,
+{ // state 1174
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -35679,144 +35520,306 @@ MIN_REDUCTION+236, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+236, // $
 MIN_REDUCTION+236, // $NT
   }
 ,
-{ // state 1165
-MIN_REDUCTION+31, // (default reduction)
+{ // state 1175
+MIN_REDUCTION+360, // (default reduction)
   }
 ,
-{ // state 1166
-2,492, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+290, // (default reduction)
+{ // state 1176
+-1, // $$start
+-1, // start
+602, // ws*
+-1, // $$0
+MIN_REDUCTION+135, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+-1, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
+-1, // reserved
+-1, // letter
+-1, // idChar**
+-1, // $$1
+-1, // idChar
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+135, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+135, // "k"
+MIN_REDUCTION+135, // "y"
+MIN_REDUCTION+135, // "h"
+501, // "i"
+MIN_REDUCTION+135, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+135, // "m"
+MIN_REDUCTION+135, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+135, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
+-1, // charPrintable
+610, // '"'
+-1, // stringPrintable*
+-1, // $$2
+708, // "0"
+-1, // digit++
+-1, // digit
+-1, // "_"
+-1, // escapeSequence
+-1, // "\"
+-1, // printable
+MIN_REDUCTION+135, // {"1".."9"}
+-1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
+MIN_REDUCTION+135, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
+-1, // stringPrintable
+-1, // multilineCommentPrintable
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
+-1, // printable**
+-1, // multilineCommentPrintable**
+1062, // {10}
+1072, // {13}
+-1, // idChar*
+-1, // multilineCommentPrintable*
+-1, // printable*
+-1, // token*
+-1, // digit+
+MIN_REDUCTION+135, // $
+MIN_REDUCTION+135, // $NT
   }
 ,
-{ // state 1167
-2,609, // ws*
-MIN_REDUCTION+294, // (default reduction)
+{ // state 1177
+MIN_REDUCTION+361, // (default reduction)
   }
 ,
-{ // state 1168
-MIN_REDUCTION+359, // (default reduction)
-  }
-,
-{ // state 1169
+{ // state 1178
 -1, // $$start
 -1, // start
 -1, // ws*
@@ -35875,511 +35878,563 @@ MIN_REDUCTION+197, // token
 -1, // `transient
 -1, // `try
 -1, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
-803, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
+213, // ID
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
-75, // letter
+307, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-68, // "a"
-68, // "b"
-68, // "s"
-68, // "t"
-68, // "r"
-68, // "c"
-68, // "e"
-68, // "o"
-68, // "l"
-68, // "n"
-68, // "k"
-68, // "y"
-68, // "h"
-68, // "i"
-68, // "u"
-68, // "d"
-68, // "f"
-68, // "m"
-68, // "x"
-68, // "g"
-68, // "p"
-68, // "v"
-68, // "w"
-68, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+69, // "a"
+69, // "b"
+69, // "s"
+69, // "t"
+69, // "r"
+69, // "c"
+69, // "e"
+69, // "o"
+69, // "l"
+69, // "n"
+69, // "k"
+69, // "y"
+69, // "h"
+69, // "i"
+69, // "u"
+69, // "d"
+69, // "f"
+69, // "m"
+69, // "x"
+69, // "g"
+69, // "p"
+69, // "v"
+69, // "w"
+69, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-22, // "0"
-418, // digit++
-967, // digit
+27, // "0"
+403, // digit++
+962, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-22, // {"1".."9"}
+27, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-68, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+69, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-387, // ws
-612, // {12}
-654, // comment
+534, // eol
+367, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
-194, // digit+
+206, // digit+
 MIN_REDUCTION+197, // $
 MIN_REDUCTION+197, // $NT
   }
 ,
-{ // state 1170
-102,1121, // "n"
+{ // state 1179
+106,223, // "i"
   }
 ,
-{ // state 1171
+{ // state 1180
 MIN_REDUCTION+259, // (default reduction)
   }
 ,
-{ // state 1172
+{ // state 1181
 171,MIN_REDUCTION+209, // $NT
 MIN_REDUCTION+209, // (default reduction)
   }
 ,
-{ // state 1173
-2,810, // ws*
-MIN_REDUCTION+296, // (default reduction)
-  }
-,
-{ // state 1174
+{ // state 1182
 171,MIN_REDUCTION+172, // $NT
   }
 ,
-{ // state 1175
-MIN_REDUCTION+318, // (default reduction)
-  }
-,
-{ // state 1176
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+269, // (default reduction)
-  }
-,
-{ // state 1177
-0x80000000|841, // match move
-0x80000000|397, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 1178
-93,114, // "a"
-94,114, // "b"
-95,114, // "s"
-96,114, // "t"
-97,114, // "r"
-98,114, // "c"
-99,114, // "e"
-100,114, // "o"
-101,114, // "l"
-102,114, // "n"
-103,114, // "k"
-104,114, // "y"
-105,114, // "h"
-106,114, // "i"
-107,114, // "u"
-108,114, // "d"
-109,114, // "f"
-110,114, // "m"
-111,114, // "x"
-112,114, // "g"
-113,114, // "p"
-114,114, // "v"
-115,114, // "w"
-116,114, // "z"
-117,114, // "!"
-118,114, // "="
-119,114, // "%"
-120,114, // "&"
-121,114, // "|"
-122,114, // "+"
-123,114, // ","
-124,114, // "-"
-125,114, // "."
-126,114, // "*"
-127,114, // "/"
-128,114, // ";"
-129,114, // "<"
-130,114, // ">"
-131,114, // "("
-132,114, // ")"
-133,114, // "["
-134,114, // "]"
-135,114, // "{"
-136,114, // "}"
-139,518, // charPrintable
-140,114, // '"'
-143,114, // "0"
-146,114, // "_"
-147,589, // escapeSequence
-148,867, // "\"
-150,114, // {"1".."9"}
-151,114, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-152,114, // {"A".."Z" "j" "q"}
-153,114, // " "
-  }
-,
-{ // state 1179
-0x80000000|1015, // match move
-0x80000000|918, // no-match move
-// T-test match for "0":
-143,
-  }
-,
-{ // state 1180
-113,941, // "p"
-  }
-,
-{ // state 1181
-157,550, // eol
-158,387, // ws
-160,654, // comment
-MIN_REDUCTION+271, // (default reduction)
-  }
-,
-{ // state 1182
-0x80000000|1047, // match move
-0x80000000|1080, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
 { // state 1183
-0x80000000|256, // match move
-0x80000000|946, // no-match move
-// T-test match for "0":
-143,
+MIN_REDUCTION+329, // (default reduction)
   }
 ,
 { // state 1184
-106,888, // "i"
+89,279, // letter
+90,765, // idChar**
+92,216, // idChar
+93,69, // "a"
+94,69, // "b"
+95,69, // "s"
+96,69, // "t"
+97,69, // "r"
+98,69, // "c"
+99,69, // "e"
+100,69, // "o"
+101,69, // "l"
+102,69, // "n"
+103,69, // "k"
+104,69, // "y"
+105,69, // "h"
+106,69, // "i"
+107,69, // "u"
+108,69, // "d"
+109,69, // "f"
+110,69, // "m"
+111,69, // "x"
+112,69, // "g"
+113,69, // "p"
+114,69, // "v"
+115,69, // "w"
+116,69, // "z"
+143,159, // "0"
+145,621, // digit
+146,879, // "_"
+150,159, // {"1".."9"}
+152,69, // {"A".."Z" "j" "q"}
+165,1112, // idChar*
   }
 ,
 { // state 1185
-MIN_REDUCTION+352, // (default reduction)
+93,1163, // "a"
   }
 ,
 { // state 1186
-MIN_REDUCTION+59, // (default reduction)
+2,481, // ws*
+MIN_REDUCTION+290, // (default reduction)
   }
 ,
 { // state 1187
-95,882, // "s"
-96,220, // "t"
+0x80000000|1, // match move
+0x80000000|1170, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 { // state 1188
-0x80000000|449, // match move
-0x80000000|1017, // no-match move
-// T-test match for "0":
-143,
+MIN_REDUCTION+318, // (default reduction)
   }
 ,
 { // state 1189
-MIN_REDUCTION+319, // (default reduction)
+93,1125, // "a"
   }
 ,
 { // state 1190
-2,810, // ws*
-157,550, // eol
-158,1016, // ws
-160,654, // comment
-MIN_REDUCTION+296, // (default reduction)
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+269, // (default reduction)
   }
 ,
 { // state 1191
-0x80000000|469, // match move
-0x80000000|52, // no-match move
+0x80000000|1005, // match move
+0x80000000|900, // no-match move
 // T-test match for "0":
 143,
   }
 ,
 { // state 1192
-0x80000000|79, // match move
-0x80000000|72, // no-match move
+157,534, // eol
+158,367, // ws
+160,634, // comment
+MIN_REDUCTION+271, // (default reduction)
+  }
+,
+{ // state 1193
+0x80000000|1035, // match move
+0x80000000|1070, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1194
+108,1130, // "d"
+  }
+,
+{ // state 1195
+100,328, // "o"
+101,127, // "l"
+  }
+,
+{ // state 1196
+0x80000000|103, // match move
+0x80000000|119, // no-match move
 // T-test match for "0":
 143,
   }
 ,
-{ // state 1193
-0x80000000|454, // match move
-0x80000000|164, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1194
-2,893, // ws*
-MIN_REDUCTION+252, // (default reduction)
-  }
-,
-{ // state 1195
-0x80000000|1027, // match move
-0x80000000|39, // no-match move
-0x80000000|498, // NT-test-match state for reserved
-  }
-,
-{ // state 1196
-MIN_REDUCTION+343, // (default reduction)
-  }
-,
 { // state 1197
-0x80000000|679, // match move
-0x80000000|617, // no-match move
-0x80000000|498, // NT-test-match state for reserved
+MIN_REDUCTION+354, // (default reduction)
   }
 ,
 { // state 1198
-MIN_REDUCTION+327, // (default reduction)
+MIN_REDUCTION+33, // (default reduction)
   }
 ,
 { // state 1199
+0x80000000|436, // match move
+0x80000000|1008, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 1200
+100,96, // "o"
+  }
+,
+{ // state 1201
+MIN_REDUCTION+319, // (default reduction)
+  }
+,
+{ // state 1202
+0x80000000|82, // match move
+0x80000000|78, // no-match move
+// T-test match for "0":
+143,
+  }
+,
+{ // state 1203
+0x80000000|1186, // match move
+0x80000000|359, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1204
+0x80000000|443, // match move
+0x80000000|175, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1205
 -1, // $$start
 -1, // start
-40, // ws*
+21, // ws*
 -1, // $$0
-MIN_REDUCTION+180, // token
-89, // `boolean
-303, // `class
-1154, // `extends
-1010, // `void
-802, // `int
-41, // `while
-198, // `if
-427, // `else
-336, // `for
-1160, // `break
-480, // `this
-569, // `false
-595, // `true
-525, // `super
-724, // `null
-820, // `return
-414, // `instanceof
-181, // `new
-629, // `abstract
-133, // `assert
-1091, // `byte
-682, // `case
-99, // `catch
-371, // `char
-130, // `const
-1055, // `continue
-1165, // `default
-890, // `do
-121, // `double
-233, // `enum
-779, // `final
-859, // `finally
-766, // `float
-551, // `goto
-187, // `implements
-662, // `import
-622, // `interface
-413, // `long
-479, // `native
-1128, // `package
-709, // `private
-788, // `protected
-806, // `public
-344, // `short
-702, // `static
-824, // `strictfp
-995, // `switch
-447, // `synchronized
-177, // `throw
-1103, // `throws
-1082, // `transient
-8, // `try
-549, // `volatile
-984, // `!
-1186, // `!=
-801, // `%
-772, // `&&
-535, // `*
-605, // `(
-316, // `)
-547, // `{
-232, // `}
-835, // `-
-440, // `+
-219, // `=
-660, // `==
-435, // `[
-781, // `]
-13, // `||
-254, // `<
-558, // `<=
-420, // `,
-1013, // `>
-537, // `>=
-459, // `.
-1056, // `;
-789, // `++
-147, // `--
-710, // `/
+MIN_REDUCTION+189, // token
+1137, // `boolean
+24, // `class
+869, // `extends
+61, // `void
+792, // `int
+1121, // `while
+525, // `if
+999, // `else
+232, // `for
+505, // `break
+440, // `this
+1162, // `false
+59, // `true
+389, // `super
+226, // `null
+910, // `return
+1097, // `instanceof
+891, // `new
+837, // `abstract
+374, // `assert
+776, // `byte
+802, // `case
+84, // `catch
+690, // `char
+29, // `const
+716, // `continue
+547, // `default
+1109, // `do
+1198, // `double
+875, // `enum
+1124, // `final
+796, // `finally
+614, // `float
+392, // `goto
+718, // `implements
+198, // `import
+1041, // `interface
+688, // `long
+419, // `native
+145, // `package
+1059, // `private
+215, // `protected
+651, // `public
+924, // `short
+368, // `static
+364, // `strictfp
+803, // `switch
+444, // `synchronized
+1090, // `throw
+985, // `throws
+320, // `transient
+400, // `try
+43, // `volatile
+432, // `!
+309, // `!=
+1115, // `%
+565, // `&&
+786, // `*
+450, // `(
+760, // `)
+396, // `{
+1013, // `}
+155, // `-
+88, // `+
+379, // `=
+849, // `==
+1001, // `[
+438, // `]
+515, // `||
+997, // `<
+931, // `<=
+579, // `,
+933, // `>
+446, // `>=
+1010, // `.
+1076, // `;
+510, // `++
+552, // `--
+258, // `/
 -1, // ID
-16, // INTLIT
-286, // STRINGLIT
-765, // CHARLIT
+625, // INTLIT
+658, // STRINGLIT
+1067, // CHARLIT
 -1, // reserved
 -1, // letter
 -1, // idChar**
 -1, // $$1
 -1, // idChar
-973, // "a"
-1139, // "b"
-914, // "s"
-1059, // "t"
-626, // "r"
-223, // "c"
-182, // "e"
-MIN_REDUCTION+180, // "o"
-1014, // "l"
-437, // "n"
-MIN_REDUCTION+180, // "k"
-MIN_REDUCTION+180, // "y"
-MIN_REDUCTION+180, // "h"
-1006, // "i"
-MIN_REDUCTION+180, // "u"
-734, // "d"
-879, // "f"
-MIN_REDUCTION+180, // "m"
-MIN_REDUCTION+180, // "x"
-1068, // "g"
-293, // "p"
-94, // "v"
-12, // "w"
-MIN_REDUCTION+180, // "z"
-225, // "!"
-683, // "="
-466, // "%"
-506, // "&"
-663, // "|"
-658, // "+"
-381, // ","
-478, // "-"
-390, // "."
-680, // "*"
-124, // "/"
-226, // ";"
-265, // "<"
-1022, // ">"
-405, // "("
-686, // ")"
-56, // "["
-27, // "]"
-892, // "{"
-375, // "}"
-795, // intLit2
-1178, // "'"
+885, // "a"
+467, // "b"
+995, // "s"
+1002, // "t"
+431, // "r"
+721, // "c"
+176, // "e"
+MIN_REDUCTION+189, // "o"
+100, // "l"
+495, // "n"
+MIN_REDUCTION+189, // "k"
+MIN_REDUCTION+189, // "y"
+MIN_REDUCTION+189, // "h"
+501, // "i"
+MIN_REDUCTION+189, // "u"
+18, // "d"
+32, // "f"
+MIN_REDUCTION+189, // "m"
+MIN_REDUCTION+189, // "x"
+840, // "g"
+269, // "p"
+1006, // "v"
+13, // "w"
+MIN_REDUCTION+189, // "z"
+780, // "!"
+420, // "="
+740, // "%"
+935, // "&"
+222, // "|"
+152, // "+"
+1113, // ","
+528, // "-"
+585, // "."
+934, // "*"
+893, // "/"
+712, // ";"
+337, // "<"
+773, // ">"
+180, // "("
+257, // ")"
+476, // "["
+1161, // "]"
+1196, // "{"
+1046, // "}"
+503, // intLit2
+555, // "'"
 -1, // charPrintable
-210, // '"'
+610, // '"'
 -1, // stringPrintable*
 -1, // $$2
-736, // "0"
+708, // "0"
 -1, // digit++
 -1, // digit
 -1, // "_"
 -1, // escapeSequence
 -1, // "\"
 -1, // printable
-MIN_REDUCTION+180, // {"1".."9"}
+MIN_REDUCTION+189, // {"1".."9"}
 -1, // {"#".."$" ":" "?".."@" "^" "`" "~"}
-MIN_REDUCTION+180, // {"A".."Z" "j" "q"}
-612, // " "
-612, // {9}
+MIN_REDUCTION+189, // {"A".."Z" "j" "q"}
+595, // " "
+595, // {9}
 -1, // stringPrintable
 -1, // multilineCommentPrintable
-550, // eol
-1016, // ws
-612, // {12}
-654, // comment
+534, // eol
+204, // ws
+595, // {12}
+634, // comment
 -1, // printable**
 -1, // multilineCommentPrintable**
-1146, // {10}
-733, // {13}
+1062, // {10}
+1072, // {13}
 -1, // idChar*
 -1, // multilineCommentPrintable*
 -1, // printable*
 -1, // token*
 -1, // digit+
-MIN_REDUCTION+180, // $
-MIN_REDUCTION+180, // $NT
+MIN_REDUCTION+189, // $
+MIN_REDUCTION+189, // $NT
+  }
+,
+{ // state 1206
+3,622, // $$0
+4,694, // token
+5,1137, // `boolean
+6,24, // `class
+7,869, // `extends
+8,61, // `void
+9,792, // `int
+10,1121, // `while
+11,525, // `if
+12,999, // `else
+13,232, // `for
+14,505, // `break
+15,440, // `this
+16,1162, // `false
+17,59, // `true
+18,389, // `super
+19,226, // `null
+20,910, // `return
+21,1097, // `instanceof
+22,891, // `new
+23,837, // `abstract
+24,374, // `assert
+25,776, // `byte
+26,802, // `case
+27,84, // `catch
+28,690, // `char
+29,29, // `const
+30,716, // `continue
+31,547, // `default
+32,1109, // `do
+33,1198, // `double
+34,875, // `enum
+35,1124, // `final
+36,796, // `finally
+37,614, // `float
+38,392, // `goto
+39,718, // `implements
+40,198, // `import
+41,1041, // `interface
+42,688, // `long
+43,419, // `native
+44,145, // `package
+45,1059, // `private
+46,215, // `protected
+47,651, // `public
+48,924, // `short
+49,368, // `static
+50,364, // `strictfp
+51,803, // `switch
+52,444, // `synchronized
+53,1090, // `throw
+54,985, // `throws
+55,320, // `transient
+56,400, // `try
+57,43, // `volatile
+93,885, // "a"
+94,467, // "b"
+95,995, // "s"
+96,1002, // "t"
+97,431, // "r"
+98,721, // "c"
+99,176, // "e"
+101,100, // "l"
+102,495, // "n"
+106,501, // "i"
+108,18, // "d"
+109,32, // "f"
+112,840, // "g"
+113,269, // "p"
+114,1006, // "v"
+115,13, // "w"
+168,1159, // token*
+MIN_REDUCTION+3, // (default reduction)
+  }
+,
+{ // state 1207
+0x80000000|1018, // match move
+0x80000000|41, // no-match move
+0x80000000|487, // NT-test-match state for reserved
+  }
+,
+{ // state 1208
+MIN_REDUCTION+345, // (default reduction)
+  }
+,
+{ // state 1209
+MIN_REDUCTION+327, // (default reduction)
+  }
+,
+{ // state 1210
+0x80000000|1, // match move
+0x80000000|74, // no-match move
+0x80000000|1031, // NT-test-match state for idChar
   }
 ,
 };
 }
 public TokenGrammarParseTable(TokenGrammar actionObj) {
   actionObject = actionObj;
-  parseTable = new int[1200][];
+  parseTable = new int[1211][];
   int doneSoFar = 0;
   doneSoFar += new Initter1().doInit(doneSoFar);
   doneSoFar += new Initter2().doInit(doneSoFar);
@@ -37049,7 +37104,7 @@ private static int[] prodTable = {
 (156<<16)+1,
 // multilineCommentPrintable ::= "/" !"*"
 (156<<16)+1,
-// multilineCommentPrintable ::= "/" "*"
+// multilineCommentPrintable ::= "/" "*" !"/"
 (156<<16)+2,
 // multilineCommentPrintable ::= eol
 (156<<16)+1,
@@ -37065,6 +37120,10 @@ private static int[] prodTable = {
 (160<<16)+4,
 // comment ::= "/" "/" !printable eol
 (160<<16)+3,
+// comment ::= "/" "*" multilineCommentPrintable** "/" "*" "/"
+(160<<16)+6,
+// comment ::= "/" "*" !multilineCommentPrintable "/" "*" "/"
+(160<<16)+5,
 // comment ::= "/" "*" multilineCommentPrintable** "*" "/"
 (160<<16)+5,
 // comment ::= "/" "*" !multilineCommentPrintable "*" "/"
@@ -37711,8 +37770,8 @@ private String[] actionProdNameTable = {
 "stringPrintable ::= escapeSequence", // 325
 "multilineCommentPrintable ::= {9 \" \"..\")\" \"+\"..\".\" \"0\"..\"~\"}", // 326
 "multilineCommentPrintable ::= \"*\" !\"/\"", // 327
-"multilineCommentPrintable ::= \"/\" !\"*\"", // 328
-"multilineCommentPrintable ::= # \"/\" \"*\"", // 329
+"multilineCommentPrintable ::= # \"/\" !\"*\"", // 328
+"multilineCommentPrintable ::= # \"/\" \"*\" !\"/\"", // 329
 "multilineCommentPrintable ::= eol", // 330
 "letter ::= {\"A\"..\"Z\" \"a\"..\"z\"}", // 331
 "digit ::= {\"0\"..\"9\"}", // 332
@@ -37720,34 +37779,36 @@ private String[] actionProdNameTable = {
 "ws ::= comment", // 334
 "comment ::= \"/\" \"/\" printable** eol", // 335
 "comment ::= \"/\" \"/\" printable** eol", // 336
-"comment ::= \"/\" \"*\" multilineCommentPrintable** \"*\" \"/\"", // 337
-"comment ::= \"/\" \"*\" multilineCommentPrintable** \"*\" \"/\"", // 338
-"ws ::= eol", // 339
-"eol ::= {10} registerNewline", // 340
-"eol ::= {13} {10} registerNewline", // 341
-"eol ::= {13} !10 registerNewline", // 342
-"stringPrintable* ::= stringPrintable* stringPrintable", // 343
-"stringPrintable* ::= stringPrintable* stringPrintable", // 344
-"idChar** ::= idChar* !idChar", // 345
-"ws* ::= ws* ws", // 346
-"ws* ::= ws* ws", // 347
-"multilineCommentPrintable** ::= multilineCommentPrintable* !multilineCommentPrintable", // 348
-"printable** ::= printable* !printable", // 349
-"token* ::= token* token", // 350
-"token* ::= token* token", // 351
-"digit++ ::= digit+ !digit", // 352
-"digit+ ::= digit", // 353
-"digit+ ::= digit+ digit", // 354
-"printable* ::= printable* printable", // 355
-"printable* ::= printable* printable", // 356
-"multilineCommentPrintable* ::= multilineCommentPrintable* multilineCommentPrintable", // 357
-"multilineCommentPrintable* ::= multilineCommentPrintable* multilineCommentPrintable", // 358
-"idChar* ::= idChar* idChar", // 359
-"idChar* ::= idChar* idChar", // 360
-"", // 361
-"", // 362
+"comment ::= \"/\" \"*\" multilineCommentPrintable** \"/\" \"*\" \"/\"", // 337
+"comment ::= \"/\" \"*\" multilineCommentPrintable** \"/\" \"*\" \"/\"", // 338
+"comment ::= \"/\" \"*\" multilineCommentPrintable** \"*\" \"/\"", // 339
+"comment ::= \"/\" \"*\" multilineCommentPrintable** \"*\" \"/\"", // 340
+"ws ::= eol", // 341
+"eol ::= {10} registerNewline", // 342
+"eol ::= {13} {10} registerNewline", // 343
+"eol ::= {13} !10 registerNewline", // 344
+"stringPrintable* ::= stringPrintable* stringPrintable", // 345
+"stringPrintable* ::= stringPrintable* stringPrintable", // 346
+"idChar** ::= idChar* !idChar", // 347
+"ws* ::= ws* ws", // 348
+"ws* ::= ws* ws", // 349
+"multilineCommentPrintable** ::= multilineCommentPrintable* !multilineCommentPrintable", // 350
+"printable** ::= printable* !printable", // 351
+"token* ::= token* token", // 352
+"token* ::= token* token", // 353
+"digit++ ::= digit+ !digit", // 354
+"digit+ ::= digit", // 355
+"digit+ ::= digit+ digit", // 356
+"printable* ::= printable* printable", // 357
+"printable* ::= printable* printable", // 358
+"multilineCommentPrintable* ::= multilineCommentPrintable* multilineCommentPrintable", // 359
+"multilineCommentPrintable* ::= multilineCommentPrintable* multilineCommentPrintable", // 360
+"idChar* ::= idChar* idChar", // 361
+"idChar* ::= idChar* idChar", // 362
 "", // 363
 "", // 364
+"", // 365
+"", // 366
 };
 public int[][] getActionTable() { return actionTable; }
 private int[][] actionTable = {
@@ -40506,12 +40567,13 @@ private int[][] actionTable = {
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0x3)/*popOffPushBack:1*/,
     },
-    { // 328: multilineCommentPrintable ::= "/" !"*" @void
+    { // 328: multilineCommentPrintable ::= [#] "/" !"*" @void
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
-      ((1<<5)|0x3)/*popOffPushBack:1*/,
+      ((11<<5)|0x6)/*nullProductionAction:11*/,
+      ((2<<5)|0x3)/*popOffPushBack:2*/,
     },
-    { // 329: multilineCommentPrintable ::= [#] "/" "*" @nestedCommentsWarning(int,char,char)=>
+    { // 329: multilineCommentPrintable ::= [#] "/" "*" !"/" @nestedCommentsWarning(int,char,char)=>
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
@@ -40538,37 +40600,41 @@ private int[][] actionTable = {
     { // 334: ws ::= comment @void
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 335: comment ::= "/" "/" printable** eol @void
+    { // 335: comment ::= "/" "/" printable** eol @foundComment(char,char)=>
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
-      ((2<<5)|0x3)/*popOffPushBack:2*/,
+      ((87<<5)|0x5)/*methodCall:87*/,
     },
-    { // 336: comment ::= "/" "/" !printable [printable**] eol @void
+    { // 336: comment ::= "/" "/" !printable [printable**] eol @foundComment(char,char)=>
       ((1<<5)|0xe)/*popPos:1*/,
       ((0<<5)|0x6)/*nullProductionAction:0*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
-      ((2<<5)|0x3)/*popOffPushBack:2*/,
+      ((87<<5)|0x5)/*methodCall:87*/,
     },
-    { // 337: comment ::= "/" "*" multilineCommentPrintable** "*" "/" @void
+    { // 337: comment ::= "/" "*" multilineCommentPrintable** "/" "*" "/" @foundmultiComment(char,char,char,char,char)=>
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
-      ((4<<5)|0x3)/*popOffPushBack:4*/,
+      ((88<<5)|0x5)/*methodCall:88*/,
     },
-    { // 338: comment ::= "/" "*" !multilineCommentPrintable [multilineCommentPrintable**] "*" "/" @void
+    { // 338: comment ::= "/" "*" !multilineCommentPrintable [multilineCommentPrintable**] "/" "*" "/" @foundmultiComment(char,char,char,char,char)=>
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
@@ -40578,18 +40644,42 @@ private int[][] actionTable = {
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
-      ((4<<5)|0x3)/*popOffPushBack:4*/,
+      ((88<<5)|0x5)/*methodCall:88*/,
     },
-    { // 339: ws ::= eol @void
+    { // 339: comment ::= "/" "*" multilineCommentPrintable** "*" "/" @foundOthermultiComment(char,char,char,char)=>
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((89<<5)|0x5)/*methodCall:89*/,
+    },
+    { // 340: comment ::= "/" "*" !multilineCommentPrintable [multilineCommentPrintable**] "*" "/" @foundOthermultiComment(char,char,char,char)=>
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((3<<5)|0x6)/*nullProductionAction:3*/,
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((1<<5)|0xe)/*popPos:1*/,
+      ((1<<5)|0x0)/*popToPushBack:1*/,
+      ((89<<5)|0x5)/*methodCall:89*/,
+    },
+    { // 341: ws ::= eol @void
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 340: eol ::= {10} [registerNewline] @void
+    { // 342: eol ::= {10} [registerNewline] @void
       ((12<<5)|0x6)/*nullProductionAction:12*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0x3)/*popOffPushBack:1*/,
     },
-    { // 341: eol ::= {13} {10} [registerNewline] @void
+    { // 343: eol ::= {13} {10} [registerNewline] @void
       ((12<<5)|0x6)/*nullProductionAction:12*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
@@ -40597,108 +40687,108 @@ private int[][] actionTable = {
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((2<<5)|0x3)/*popOffPushBack:2*/,
     },
-    { // 342: eol ::= {13} !10 [registerNewline] @void
+    { // 344: eol ::= {13} !10 [registerNewline] @void
       ((12<<5)|0x6)/*nullProductionAction:12*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0x3)/*popOffPushBack:1*/,
     },
-    { // 343: stringPrintable* ::= stringPrintable* stringPrintable @append
+    { // 345: stringPrintable* ::= stringPrintable* stringPrintable @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xb)/*append:1*/,
     },
-    { // 344: stringPrintable* ::= [stringPrintable*] stringPrintable @append
+    { // 346: stringPrintable* ::= [stringPrintable*] stringPrintable @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((2<<5)|0x6)/*nullProductionAction:2*/,
       ((1<<5)|0xb)/*append:1*/,
     },
-    { // 345: idChar** ::= idChar* !idChar @pass
+    { // 347: idChar** ::= idChar* !idChar @pass
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
     },
-    { // 346: ws* ::= ws* ws @append
+    { // 348: ws* ::= ws* ws @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 347: ws* ::= [ws*] ws @append
+    { // 349: ws* ::= [ws*] ws @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((5<<5)|0x6)/*nullProductionAction:5*/,
     },
-    { // 348: multilineCommentPrintable** ::= multilineCommentPrintable* !multilineCommentPrintable @pass
+    { // 350: multilineCommentPrintable** ::= multilineCommentPrintable* !multilineCommentPrintable @pass
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 349: printable** ::= printable* !printable @pass
+    { // 351: printable** ::= printable* !printable @pass
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 350: token* ::= token* token @append
+    { // 352: token* ::= token* token @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 351: token* ::= [token*] token @append
+    { // 353: token* ::= [token*] token @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((8<<5)|0x6)/*nullProductionAction:8*/,
     },
-    { // 352: digit++ ::= digit+ !digit @pass
+    { // 354: digit++ ::= digit+ !digit @pass
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
     },
-    { // 353: digit+ ::= digit @singleList
+    { // 355: digit+ ::= digit @singleList
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xa)/*singleList:1*/,
     },
-    { // 354: digit+ ::= digit+ digit @append
+    { // 356: digit+ ::= digit+ digit @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xb)/*append:1*/,
     },
-    { // 355: printable* ::= printable* printable @append
+    { // 357: printable* ::= printable* printable @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 356: printable* ::= [printable*] printable @append
+    { // 358: printable* ::= [printable*] printable @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x6)/*nullProductionAction:1*/,
     },
-    { // 357: multilineCommentPrintable* ::= multilineCommentPrintable* multilineCommentPrintable @append
+    { // 359: multilineCommentPrintable* ::= multilineCommentPrintable* multilineCommentPrintable @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 358: multilineCommentPrintable* ::= [multilineCommentPrintable*] multilineCommentPrintable @append
+    { // 360: multilineCommentPrintable* ::= [multilineCommentPrintable*] multilineCommentPrintable @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((6<<5)|0x6)/*nullProductionAction:6*/,
     },
-    { // 359: idChar* ::= idChar* idChar @append
+    { // 361: idChar* ::= idChar* idChar @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((1<<5)|0xb)/*append:1*/,
     },
-    { // 360: idChar* ::= [idChar*] idChar @append
+    { // 362: idChar* ::= [idChar*] idChar @append
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
       ((9<<5)|0x6)/*nullProductionAction:9*/,
       ((1<<5)|0xb)/*append:1*/,
     },
-    { // 361: $$0 ::= token* @pass
+    { // 363: $$0 ::= token* @pass
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 362: $$1 ::= ws* @pass
+    { // 364: $$1 ::= ws* @pass
       ((1<<5)|0xe)/*popPos:1*/,
     },
-    { // 363: $$2 ::= '"' ws* @pass
+    { // 365: $$2 ::= '"' ws* @pass
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
     },
-    { // 364: $$2 ::= '"' [ws*] @pass
+    { // 366: $$2 ::= '"' [ws*] @pass
       ((5<<5)|0x6)/*nullProductionAction:5*/,
       ((1<<5)|0xe)/*popPos:1*/,
       ((1<<5)|0x0)/*popToPushBack:1*/,
@@ -40758,7 +40848,7 @@ private int[][] nullActionTable = {
     },
     { // registerNewline
       ((11<<5)|0x6)/*nullProductionAction:11*/,
-      ((87<<5)|0x5)/*methodCall:87*/,
+      ((90<<5)|0x5)/*methodCall:90*/,
     },
 };
 public void actionCall(int idx, wrangLR.runtime.SemanticInfo si) {
@@ -41213,6 +41303,29 @@ public void actionCall(int idx, wrangLR.runtime.SemanticInfo si) {
     }
     break;
     case 87: {
+      char parm0 = (Character)si.popPb();
+      char parm1 = (Character)si.popPb();
+      actionObject.foundComment(parm0,parm1);
+    }
+    break;
+    case 88: {
+      char parm0 = (Character)si.popPb();
+      char parm1 = (Character)si.popPb();
+      char parm2 = (Character)si.popPb();
+      char parm3 = (Character)si.popPb();
+      char parm4 = (Character)si.popPb();
+      actionObject.foundmultiComment(parm0,parm1,parm2,parm3,parm4);
+    }
+    break;
+    case 89: {
+      char parm0 = (Character)si.popPb();
+      char parm1 = (Character)si.popPb();
+      char parm2 = (Character)si.popPb();
+      char parm3 = (Character)si.popPb();
+      actionObject.foundOthermultiComment(parm0,parm1,parm2,parm3);
+    }
+    break;
+    case 90: {
       int parm0 = (Integer)si.popPb();
       actionObject.registerNewline(parm0);
     }
@@ -41307,6 +41420,9 @@ private String[] saNameSigTable = {
 "int zero(char,char,char)",
 "Character convertEscapeChar(char,char)",
 "void nestedCommentsWarning(int,char,char)",
+"void foundComment(char,char)",
+"void foundmultiComment(char,char,char,char,char)",
+"void foundOthermultiComment(char,char,char,char)",
 "void registerNewline(int)",
 };
 public String[] getSaNameSigTable() {
@@ -41400,6 +41516,9 @@ private int[] sigCountTable = {
 3,1,
 2,1,
 3,0,
+2,0,
+5,0,
+4,0,
 1,0,
 };
 public int[] getSigCountTable() {

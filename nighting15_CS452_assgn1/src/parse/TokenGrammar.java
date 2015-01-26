@@ -22,6 +22,13 @@ public class TokenGrammar implements wrangLR.runtime.MessageObject {
         System.out.println(errorMsg.lineAndChar(pos)+": "+s);
     }
 
+    /**
+     * Converts escape characters found in string, and character literals to the correct ascii value.
+     * @param escape - the character, "/"
+     * @param c - the character found after the escape.
+     * @return - the ascii value associated with the escaped character,
+     *           or 0 if it does not match an escape character
+     */
     public char convertEscapeChar(char escape, char c) {
         switch(c) {
             case 34: case 39: case 92: // " ' \
@@ -582,15 +589,17 @@ public class TokenGrammar implements wrangLR.runtime.MessageObject {
     //: stringPrintable ::= {32 33 35..91 93..126} => pass
     //: stringPrintable ::= escapeSequence => pass
 
-    // any printable character including NEWLINE
+    // any printable character for multi-line comments
     //: multilineCommentPrintable ::= {9 32..41 43..46 48..126}
     //: multilineCommentPrintable ::= "*" !"/"
     //: multilineCommentPrintable ::= "/" !"*"
-    //: multilineCommentPrintable ::= # "/*" =>
+    //: multilineCommentPrintable ::= # "/*" !"/" =>
     public void nestedCommentsWarning(int pos, char c1, char c2) {
         warning(pos, "Nested comments");
     }
     //: multilineCommentPrintable ::= eol
+
+
 
     // a letter
     //: letter ::= {"a".."z" "A".."Z"} => pass
@@ -608,8 +617,19 @@ public class TokenGrammar implements wrangLR.runtime.MessageObject {
     // comment
     //: ws ::= comment
 
-    //: comment ::= "//" printable** eol
-    //: comment ::= "/*" multilineCommentPrintable** "*/"
+    //: comment ::= "//" printable** eol =>
+    public void foundComment(char c1, char c2) {
+        System.out.println("Found a // comment");
+    }
+    //: comment ::= "/*" multilineCommentPrintable** "/" "*/" =>
+    public void foundmultiComment(char c1, char c2, char c3, char c4, char s5) {
+        System.out.println("Found a /* comment");
+    }
+
+    //: comment ::= "/*" multilineCommentPrintable** "*/" =>
+    public void foundOthermultiComment(char c1, char c2, char c3, char c4) {
+        System.out.println("Found a /* comment");
+    }
 
     // multilineCommentPrintable**
 

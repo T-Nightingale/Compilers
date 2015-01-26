@@ -1,27 +1,25 @@
+
+
 identifier // dsfsdf
 /*lsdf4 dsfs
 d/*
 sdfa89 98239832!@#$%^&*()~`_+-=":?><|}{[]\;',./
 d_f**/
 
-/*
-This should be in a comment
-//*/
+        id2
 
-id2
-
-"new line: \nf"
-"tab: \tf"
-"formfeed: \fd"
-"carriage return: \ra"
-"tab: \ts"
-"quote: \""
-"tick: \'"
-"slash: \\"
-'\n'
-'\t'
-'\f'
-'\r'
+        "new line: \nf"
+        "tab: \tf"
+        "formfeed: \fd"
+        "carriage return: \ra"
+        "tab: \ts"
+        "quote: \""
+        "tick: \'"
+        "slash: \\"
+        '\n'
+        '\t'
+        '\f'
+        '\r'
 
 
 
@@ -39,5 +37,4 @@ class *
 
         im after the comment
         big booty bitches
-
 

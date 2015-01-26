@@ -10,3 +10,4 @@ class Blizzard {
     int b = a+215;
   }
 }
+
