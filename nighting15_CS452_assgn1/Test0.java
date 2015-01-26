@@ -4,6 +4,10 @@ d/*
 sdfa89 98239832!@#$%^&*()~`_+-=":?><|}{[]\;',./
 d_f**/
 
+/*
+This should be in a comment
+//*/
+
 id2
 
 "new line: \nf"
