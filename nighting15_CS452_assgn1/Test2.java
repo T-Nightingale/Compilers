@@ -2,10 +2,16 @@
 This should be in a comment
 /*/
 
+/*
+//*/
+iAmNotAComment
+/*
+*/
+
 /* /
 This should be in a comment
 <*/
-iAmNotAComment
+
 /* /
 This should be in a comment
 ,*/

@@ -38,3 +38,4 @@ class *
         im after the comment
         big booty bitches
 
+"\\t"

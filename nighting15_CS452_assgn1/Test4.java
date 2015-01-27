@@ -1,0 +1,16 @@
+String a = "a";
+        String a = " ";
+        String a = "@";
+        String a = "a a";
+        String a = "\\";
+        String a = "\"";
+        String a = "\'";
+        String a = "\r";
+        String a = "\t";
+        String a = "\f";
+        String a = "\n";
+        String a = "\\\"\t\\\"";
+        char b = 'a';
+        char b = '@';
+        char b = '1';
+        char b = '\\';
