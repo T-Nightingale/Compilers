@@ -3,6 +3,14 @@ import java.util.List;
 
 import errorMsg.*;
 
+/**
+ * Compilers: Assignment 1
+ * @author Taylor Nightingale
+ *
+ * Completed extentions:
+ *  - 1: warning message for nested /* style comments
+ *  - 2: recognize string escape literals
+ */
 public class TokenGrammar implements wrangLR.runtime.MessageObject {
 
     public TokenGrammar(ErrorMsg em) {
@@ -599,8 +607,6 @@ public class TokenGrammar implements wrangLR.runtime.MessageObject {
     }
     //: multilineCommentPrintable ::= eol
 
-
-
     // a letter
     //: letter ::= {"a".."z" "A".."Z"} => pass
 
@@ -616,24 +622,9 @@ public class TokenGrammar implements wrangLR.runtime.MessageObject {
 
     // comment
     //: ws ::= comment
-
-    //: comment ::= "//" printable** eol =>
-    public void foundComment(char c1, char c2) {
-        System.out.println("Found a // comment");
-    }
-    //: comment ::= "/*" multilineCommentPrintable** "/" "*/" =>
-    public void foundmultiComment(char c1, char c2, char c3, char c4, char s5) {
-        System.out.println("Found a /* comment");
-    }
-
-    //: comment ::= "/*" multilineCommentPrintable** "*/" =>
-    public void foundOthermultiComment(char c1, char c2, char c3, char c4) {
-        System.out.println("Found a /* comment");
-    }
-
-    // multilineCommentPrintable**
-
-    //multilineCommentPrintable**
+    //: comment ::= "//" printable** eol
+    //: comment ::= "/*" multilineCommentPrintable** "/" "*/"
+    //: comment ::= "/*" multilineCommentPrintable** "*/"
 
     // end of line
     //: ws ::= eol
