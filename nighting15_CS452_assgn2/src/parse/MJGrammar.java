@@ -4,6 +4,12 @@ import java.util.List;
 import errorMsg.*;
 import syntaxtree.*;
 
+/**
+ * Compilers Assignment 2
+ * @author Taylor Nightingale
+ *
+ * Extras 1, and 2 completed.
+ */
 public class MJGrammar
 		implements wrangLR.runtime.MessageObject, wrangLR.runtime.FilePosObject {
 	
@@ -386,6 +392,7 @@ public class MJGrammar
         }
         return new NewArray(pos, a, e);
     }
+
     //: <exp8> ::= # `new # ID `( `) =>
     public Exp newObject(int objPos, int typePos, String name) {
         return new NewObject(objPos, new IdentifierType(typePos, name));
