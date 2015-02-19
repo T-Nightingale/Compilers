@@ -66,6 +66,12 @@ public class Sem2Visitor extends ASTvisitor {
         return null;
     }
 
+    /**
+     * Connect sub, and super classes.
+     *
+     * @param n the class to look at
+     * @return null, no need to recurse
+     */
     public Object visitClassDecl(ClassDecl n) {
         if(n.superName != null) {
             if (globalSymTab.containsKey(n.superName)) {
