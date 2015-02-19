@@ -43,10 +43,13 @@ public class Sem1Visitor extends ASTvisitor {
     @Override
     public Object visitClassDecl(ClassDecl n) {
         // Add the class to the global symbol table
-        if(!globalSymTab.containsKey(n.name))
+        if(!globalSymTab.containsKey(n.name)) {
             globalSymTab.put(n.name, n);
-        else
-            errorMsg.error(n.pos, "duplicate class declaration: " + n.name);
+        }
+        else {
+            errorMsg.error(n.pos, "Error: duplicate class declaration: " + n.name);
+            return null;
+        }
 
         // Set "current class" to this class declaration (n)
         currentClass = n;
@@ -64,11 +67,13 @@ public class Sem1Visitor extends ASTvisitor {
      */
     public Object visitInstVarDecl(InstVarDecl n) {
         // Add the instance variable to the class
-        if(!currentClass.instVarTable.containsKey(n.name))
+        if(!currentClass.instVarTable.containsKey(n.name)) {
             currentClass.instVarTable.put(n.name, n);
-        else
-            errorMsg.error(n.pos, "duplicate instance variable symbol: " + n.name);
-
+        }
+        else {
+            errorMsg.error(n.pos, "Error: duplicate instance variable symbol: " + n.name);
+            return null;
+        }
         // there is nothing lower in the tree, so we do not need to recurse
         return null;
     }
@@ -82,10 +87,13 @@ public class Sem1Visitor extends ASTvisitor {
      */
     public Object visitMethodDecl(MethodDecl n) {
         // Add the method to the class
-        if(!currentClass.methodTable.containsKey(n.name))
+        if(!currentClass.methodTable.containsKey(n.name)) {
             currentClass.methodTable.put(n.name, n);
-        else
-            errorMsg.error(n.pos, "duplicate method symbol: " + n.name);
+        }
+        else {
+            errorMsg.error(n.pos, "Error: duplicate method symbol: " + n.name);
+            return null;
+        }
 
         return null;
     }
