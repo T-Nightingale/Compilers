@@ -1,6 +1,6 @@
 class Main extends Lib {
-  void main() {
+  public void main() {
   }
-  void abc(int x, int y, String x) {
+  public void abc(int x, int y, String x) {
   }
 }

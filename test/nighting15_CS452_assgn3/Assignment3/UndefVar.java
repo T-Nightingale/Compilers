@@ -8,6 +8,7 @@ class Abc extends Main {
 }
 class Abcd extends Abc {
   public void main() {
-    j = 3;
+      int pest = 4;
+      nest = 3;
   }
 }

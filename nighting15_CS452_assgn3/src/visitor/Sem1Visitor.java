@@ -4,6 +4,7 @@ import syntaxtree.*;
 import java.util.*;
 import errorMsg.*;
 /**
+ * @author Taylor Nightingale
  * The purpose of the Sem1Visitor class is to:
  * - enter each class declaration into the global symbol table
  *   - duplicate class names are detected
@@ -48,7 +49,6 @@ public class Sem1Visitor extends ASTvisitor {
         }
         else {
             errorMsg.error(n.pos, "Error: duplicate class declaration: " + n.name);
-            return null;
         }
 
         // Set "current class" to this class declaration (n)
@@ -65,6 +65,7 @@ public class Sem1Visitor extends ASTvisitor {
      * @param n the current instance variable
      * @return null since we have nothing left to explore
      */
+    @Override
     public Object visitInstVarDecl(InstVarDecl n) {
         // Add the instance variable to the class
         if(!currentClass.instVarTable.containsKey(n.name)) {
@@ -72,7 +73,6 @@ public class Sem1Visitor extends ASTvisitor {
         }
         else {
             errorMsg.error(n.pos, "Error: duplicate instance variable symbol: " + n.name);
-            return null;
         }
         // there is nothing lower in the tree, so we do not need to recurse
         return null;
@@ -85,6 +85,7 @@ public class Sem1Visitor extends ASTvisitor {
      * @param n
      * @return null since we have nothing left to explore
      */
+    @Override
     public Object visitMethodDecl(MethodDecl n) {
         // Add the method to the class
         if(!currentClass.methodTable.containsKey(n.name)) {
@@ -138,7 +139,6 @@ public class Sem1Visitor extends ASTvisitor {
         s3.visit(classLibDecl);
         s3.visit(classStringDecl);
         s3.visit(classRunMainDecl);
-
     }
 
     private static ClassDecl createClass(String name, String superName) {

@@ -6,6 +6,7 @@ import errorMsg.*;
 
 
 /**
+ * @author Taylor Nightingale
  * the purpose of this class is to
  * - link each ClassDecl to the ClassDecl for its superclass (via
  *   its 'superLink'
@@ -39,6 +40,7 @@ public class Sem2Visitor extends ASTvisitor {
      * @param n the program (Program)
      * @return null
      */
+    @Override
     public Object visitProgram(Program n) {
         // Visit all of our subnodes.
         super.visitProgram(n);
@@ -48,18 +50,15 @@ public class Sem2Visitor extends ASTvisitor {
             // Make sure no class is a child of String or RunMain
             if(c.superName.equals("String")) {
                 errorMsg.error(c.pos, "Error: cannot extend String: " + c.name);
-                return null;
             }
             else if(c.superName.equals("RunMain")) {
                 errorMsg.error(c.pos, "Error: cannot extend RunMain: " + c.name);
-                return null;
             }
 
             // Make sure there is no cycle of classes
             if(DEBUG) System.out.println("isClassCycle(" + c.name  + ")");
             if(isClassCycle(c, globalSymTab.size())) {
                 errorMsg.error(c.pos, "Error: cyclical class definition: " + c.name);
-                return null;
             }
         }
 
@@ -72,6 +71,7 @@ public class Sem2Visitor extends ASTvisitor {
      * @param n the class to look at
      * @return null, no need to recurse
      */
+    @Override
     public Object visitClassDecl(ClassDecl n) {
         if(n.superName != null) {
             if (globalSymTab.containsKey(n.superName)) {
@@ -80,12 +80,10 @@ public class Sem2Visitor extends ASTvisitor {
             }
             else {
                 errorMsg.error(n.pos, "Error: undefined super class name: " + n.superName);
-                return null;
 
             }
         } else {
             errorMsg.error(n.pos, "Error: undefined super class name: null");
-            return null;
         }
 
         return null;
