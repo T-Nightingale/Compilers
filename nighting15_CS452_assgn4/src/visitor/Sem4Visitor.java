@@ -33,7 +33,6 @@ import errorMsg.*;
 //   with its "return" expression
 // - ensuring that the type of the control expression for an if- or
 //   while-statement is boolean
-//TODO: should fail for signature mismatch with subclass
 public class Sem4Visitor extends ASTvisitor {
 
     public static final int NO_ERROR = -1;
@@ -129,8 +128,6 @@ public class Sem4Visitor extends ASTvisitor {
         return null;
     }
 
-
-    // TODO: incorrect start
     @Override
     public Object visitPlus(Plus p) {
         super.visitPlus(p);
@@ -194,7 +191,6 @@ public class Sem4Visitor extends ASTvisitor {
         l.type = theBoolType;
         return null;
     }
-    // TODO: incorrect end
 
     @Override
     public Object visitEquals(Equals e) {
@@ -228,7 +224,6 @@ public class Sem4Visitor extends ASTvisitor {
         return null;
     }
 
-    // TODO: IDK if the following are correct.
     @Override
     public Object visitArrayLength(ArrayLength a) {
         super.visitArrayLength(a);
@@ -315,7 +310,6 @@ public class Sem4Visitor extends ASTvisitor {
         return null;
     }
 
-    //TODO: may be incorrect
     @Override
     public Object visitNewObject(NewObject n) {
         super.visitNewObject(n);
@@ -323,7 +317,6 @@ public class Sem4Visitor extends ASTvisitor {
         return null;
     }
 
-    //TODO: may be incorrect
     @Override
     public Object visitNewArray(NewArray n) {
         super.visitNewArray(n);
@@ -576,7 +569,7 @@ public class Sem4Visitor extends ASTvisitor {
         } while(c.superLink != null);
 
             if(link == null) {
-            if(pos > 0) {
+            if(pos > NO_ERROR) {
                 errorMsg.error(pos, msg);
             }
         }
@@ -587,7 +580,7 @@ public class Sem4Visitor extends ASTvisitor {
         if(t == null) {
             return null;
         } else if (!(t instanceof IdentifierType)) {
-            if(pos > 0) {
+            if(pos > NO_ERROR) {
                 errorMsg.error(pos, msg);
             }
             return null;
@@ -617,7 +610,7 @@ public class Sem4Visitor extends ASTvisitor {
         } while(c.superLink != null);
 
         if(link == null) {
-            if(pos > 0) {
+            if(pos > NO_ERROR) {
                 errorMsg.error(pos, msg);
             }
         }
@@ -628,7 +621,7 @@ public class Sem4Visitor extends ASTvisitor {
         if(t == null) {
             return null;
         } else if (!(t instanceof IdentifierType)) {
-            if(pos > 0) {
+            if(pos > NO_ERROR) {
                 errorMsg.error(pos, msg);
             }
             return null;
@@ -644,14 +637,14 @@ public class Sem4Visitor extends ASTvisitor {
                 c = c.superLink;
             } while(c.superLink != null);
 
-            if(link == null && pos > 0) {
+            if(link == null && pos > NO_ERROR) {
                 errorMsg.error(pos, msg);
             }
 
             return link;
         }
         else {
-            if(pos > 0) { //TODO: may not need this
+            if(pos > NO_ERROR) {
                 errorMsg.error(pos, msg);
             }
             return null;
